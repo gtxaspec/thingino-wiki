@@ -28,7 +28,15 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Update GitHub Pages from wiki" || echo "No changes to commit"
-          git stash  # Stash any uncommitted changes
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to stash"
+          else
+            git stash  # Stash any uncommitted changes
+          fi
           git pull --rebase origin master  # Pull the latest changes
-          git stash pop  # Reapply the stashed changes
+          if git stash list | grep -q "stash@{0}"; then
+            git stash pop  # Reapply the stashed changes
+          else
+            echo "No stash entries to pop"
+          fi
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/gtxaspec/thingino-wiki.git master
