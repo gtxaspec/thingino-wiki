@@ -20,8 +20,9 @@ jobs:
         run: |
           mkdir -p wiki-pages
           git clone https://github.com/themactep/thingino-firmware.wiki.git wiki-repo
-          cp -r wiki-repo/*.md wiki-pages/
+          cp -r wiki-repo/*.md docs/
           rm -rf wiki-repo
+          mv docs/Home.md docs/index.md
 
       - name: Sync Wiki to Pages
         run: |
