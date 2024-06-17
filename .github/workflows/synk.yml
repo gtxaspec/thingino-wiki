@@ -15,15 +15,16 @@ jobs:
         with:
           repository: gtxaspec/thingino-wiki  # Your GitHub Pages repository
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: pages-repo
 
       - name: Clone Wiki repository
-        run: git clone https://github.com/themactep/thingino-firmware.wiki.git wiki-repo
+        run: |
+          mkdir -p wiki-pages
+          git clone https://github.com/themactep/thingino-firmware.wiki.git wiki-repo
+          cp -r wiki-repo/*.md wiki-pages/
+          rm -rf wiki-repo
 
       - name: Sync Wiki to Pages
         run: |
-          rsync -av --delete wiki-repo/ pages-repo/
-          cd pages-repo
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
