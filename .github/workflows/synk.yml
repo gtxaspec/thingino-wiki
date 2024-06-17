@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: gtxaspec/thingino-wiki  # Replace with your GitHub Pages repository
+          token: ${{ secrets.GITHUB_TOKEN }}
           path: pages-repo
 
       - name: Clone Wiki repository
