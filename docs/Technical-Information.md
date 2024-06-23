@@ -2,7 +2,6 @@
 
 Thingino leverages a customized version of U-Boot 2013.07, which includes numerous improvements designed to facilitate ease of use, compatibility, installation, and bug fixes. These enhancements are unique to Thingino and are not present in other firmwares unless they specifically use the Thingino U-Boot version. The customizations make the bootloader more robust and user-friendly, addressing specific needs and issues encountered in the Thingino environment.
 
-#### Key Features:
 - **Ease of Use:** Simplified configuration and boot processes.
 - **Enhanced Compatibility:** Improved support for a wider range of hardware components.
 - **Streamlined Installation:** Easier installation procedures tailored to Thingino devices.
@@ -19,7 +18,7 @@ Thingino also uses a customized version of the Linux kernel 3.10.14. This kernel
 - T30
 - T31
 
-### Improvements and Fixes:
+### Improvements and Fixes
 
 - **Driver Issues:** Numerous fixes have been applied to resolve driver-related problems, ensuring stable and reliable operation of hardware components.
 - **Vendor Kernel Bugs:** Addressed various bugs found in the vendor-provided kernel to enhance overall system stability.
@@ -29,7 +28,7 @@ Thingino also uses a customized version of the Linux kernel 3.10.14. This kernel
 
 The repositories for both the customized U-Boot and the Linux kernel are publicly available. All the changes and improvements made by Thingino are accessible for everyone to enjoy, use, and learn from. By sharing these repositories, Thingino encourages collaboration and continuous learning within the community.
 
-### Access the Repositories:
+### Access the Repositories
 - **U-Boot Repository:** [GitHub U-Boot Repository](https://github.com/gtxaspec/u-boot-ingenic)
 - **Linux Kernel Repository:** [GitHub Kernel Repository](https://github.com/gtxaspec/thingino-linux)
 
