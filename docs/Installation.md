@@ -1,4 +1,8 @@
-### Using cloner tool
+## Installation
+
+Installing software on hardware devices can vary significantly between different vendors and hardware designs. This document outlines several methods of installation, each tailored to accommodate the unique characteristics of various devices. Some installation methods are straightforward and do not require the user to open the device, such as using USB recovery methods or SD card installations. However, other methods may necessitate physically opening the device to access interfaces like UART. The following sections provide detailed instructions for each method, ensuring you can successfully install the software on your device regardless of its design or vendor.
+
+### Using the ingenic cloner tool
 
 If your camera has a USB port, there is a good chance that you can install the firmware using [Ingenic USB Cloner](Ingenic-USB-Cloner).
 
