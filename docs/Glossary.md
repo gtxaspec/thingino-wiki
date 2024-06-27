@@ -167,6 +167,7 @@
 - SPCR - Serial Peripheral Control Register
 - SPDR - Serial Peripheral Data Register
 - SPI - Serial Peripheral Interface
+- SPL - Secondary Program Loader
 - SPLL - Software Phase-Locked Loop
 - SPSR - Serial Peripheral Status Register
 - SRK - Storage Root Key
@@ -180,6 +181,7 @@
 - Temper - Temporal noise reduction
 - TFTP - Trivial File Transfer Protocol
 - TOPS - TeraOperations Per Second
+- TPL - Tertiary Program Loader
 - TPM - Trusted Platform Module
 - TPU - Tensor Processing Unit
 - TTL - Transistor-Transistor Logic
@@ -193,7 +195,7 @@
 ### V
 
 - VCO - Voltage-Controlled Oscillator
-- VPLL - Vector Phase-Locked Loop
+- VPL - Verifying Program Loader
 - VPU - Vision Processing Unit
  
 ### W
