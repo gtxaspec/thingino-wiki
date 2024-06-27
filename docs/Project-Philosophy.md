@@ -13,7 +13,8 @@ Help newcomers.
 
 ## Development
 
-We are hobbyists and we do things the way we know how. If you know better, come and teach us.
+> “Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius — and a lot of courage to move in the opposite direction.”
+― E.F. Schumacher 
 
 Less is more. Try to get the best result with the least amount of code and the simplest tools.
 
@@ -29,3 +30,5 @@ Good readable code with little or no comments is better than bad obfuscated code
 Debug messages must contain details: what happened, where it happened, what data came in, what data came out, etc. 
 _"Shit happened!!!!"_ is not a good debug message.
 While _"Shit happened while running make_it_good(a) with a=123. Got 567 when 987 was expected."_ is.
+
+We are hobbyists and we do things the way we know how. If you know better, come and teach us.
