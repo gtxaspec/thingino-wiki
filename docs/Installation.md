@@ -66,12 +66,7 @@ reset
 
 ### From another firmware
 
-Update the installed firmware to the latest version.
-```
-root@openipc-t31:~# sysupgrade -r -k
-```
-
-After rebooting, download the U-Boot image for your camera from https://github.com/gtxaspec/u-boot-ingenic/releases/, flash it to the first partition (mtd0), wipe the existing environment (mtd1) and reboot.
+Download the U-Boot image for your camera from https://github.com/gtxaspec/u-boot-ingenic/releases/, flash it to the first partition (mtd0), wipe the existing environment (mtd1) and reboot.
 
 ```
 root@openipc-t31:~# curl -L -s -o /tmp/uboot.bin https://github.com/gtxaspec/u-boot-ingenic/releases/download/latest/u-boot-t31l.bin
@@ -80,7 +75,9 @@ root@openipc-t31:~# flash_eraseall /dev/mtd1
 root@openipc-t31:~# reboot
 ```
 
-Update the boot arguments to replace the dynamic overlay size with a hard-coded value to overcome the limitations of the existing kernel, enable the updates, and reboot again.
+**If your camera has an SD card slot**, download the latest Thingino firmware for your camera from https://github.com/themactep/thingino-firmware/releases/tag/firmware and save it as `autoupdate-full.bin` to a FAT32 formatted SD card. Insert the card into the camera and reboot. The camera will reflash itself and reboot again to populate the environment. You should now have a Thingino camera.
+
+**If your camera does not have an SD card slot**, update the boot arguments to replace the dynamic overlay size with a hard-coded value to overcome the limitations of the existing kernel, enable the updates, and reboot again.
 
 ```
 root@openipc-t31:~# fw_setenv bootargs 'mem=${osmem} rmem=${rmem} console=${serialport},${baudrate}n8 panic=${panic_timeout} root=/dev/mtdblock3 rootfstype=squashfs init=/init mtdparts=jz_sfc:256k(boot),64k(env),${kern_size}(kernel),${rootfs_size}(rootfs),1024k(rootfs_data)${update}'
