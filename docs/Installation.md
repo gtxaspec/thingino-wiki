@@ -1,8 +1,20 @@
 ## Installation
 
-Installing software on hardware devices can vary significantly between different vendors and hardware designs. This document outlines several methods of installation, each tailored to accommodate the unique characteristics of various devices. Some installation methods are straightforward and do not require the user to open the device, such as using USB recovery methods or SD card installations. However, other methods may necessitate physically opening the device to access interfaces like UART. The following sections provide detailed instructions for each method, ensuring you can successfully install the software on your device regardless of its design or vendor.
+Installing software on hardware devices can vary widely between different vendors and hardware designs.
 
-### Using the ingenic cloner tool
+Off the top of my head, I can think of the following methods to replace the stock firmware on your camera:
+
+- Desolder the flash chip and reprogram it in a programmer (requires a soldering station, programmer with adapter, soldering skills).
+- Use [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) and reprogram via USB port (requires a USB OTG port on the camera, USB cable with data lines).
+- Use programming clip on the chip on the board and re-program in place (requires a programmer and a clip).
+- Use SD cart and replace firmware from U-Boot shell (requires SD card slot, UART connection, access to U-Boot shell).
+- Use [wz_mini_hacks](https://github.com/gtxaspec/wz_mini_hacks) and get creative (requires SD card slot).
+- Break the stock Linux password and get access to the shell (requires a UART connection)
+- ... maybe something else
+
+This document outlines several methods of installation, each tailored to accommodate the unique characteristics of various devices. Some installation methods are straightforward and do not require the user to open the device, such as using USB recovery methods or SD card installations. However, other methods may necessitate physically opening the device to access interfaces like UART. The following sections provide detailed instructions for each method, ensuring you can successfully install the software on your device regardless of its design or vendor.
+
+### Using the Ingenic USB Cloner tool
 
 If your camera has a USB port, there is a good chance that you can install the firmware using [Ingenic USB Cloner](Ingenic-USB-Cloner).
 
