@@ -24,8 +24,8 @@ Some camera brands use a security method to protect their devices by embedding a
 
 #### Implications
 
-1. **Protection Against Unauthorized Firmware**: Only firmware signed by the manufacturer can be installed and run on the device. Any other firmware will cause the device to fail to boot.
+1. **Firmware Restrictions**: Only firmware signed by the manufacturer can be installed and run on the device. Any other firmware will cause the device to fail to boot.
 
-2. **Device Locking**: If you try to install firmware that is not signed with the correct key, the device will not work. 
+2. **Boot Failures**: If you try to install firmware that is not signed with the correct key, the device will not work. 
 
 3. **Physical SoC Replacement**: The only way to fix the device is to replace the SoC chip with a new one. This is because the OTP key cannot be modified or reset.  This involves using specialized equipment to physically remove and replace the SoC chip. thingino.com lists these as "Conditionally Supported"
