@@ -1,36 +1,47 @@
-### Hardware
-
-Porting thingino to a new camera is relatively easy.
+Porting Thingino to a new camera is relatively easy.
 
 In our repo, we have what we call **modules**, starter firmware files designed to support a certain set of core elements: SoC, image sensor, and either a wireless module or Ethernet for networking. Such a file is not a complete **camera firmware**, but it would allow you to start your project and boot into thingino linux for further investigation.
 
-Open your camera and find out what kind of hardware you have. 
+Open your camera and find out what kind of hardware you have. Take photos of all the boards from both sides, take close-up photos of all the components, pads, and connectors, along with their labels. Color code the connectors with markers to avoid mixing them up when reassembling the camera back.
 
-THE NEXT STEP IS VERY IMPORTANT!
+ALL STEPS ARE VERY IMPORTANT!
 
-Make a backup of your existing firmware. Verify the backup by taking at least two consecutive reads and comparing their checksums. They should match.
+### Firmware Backup
 
-Download or compile a firmware binary for your hardware set.
+First things first. Make a backup of your existing firmware. Desolder the flash chip and read in a programmer, read it in-place using a programming clip, dump it with a patched [Ingenic USB Cloner](https://thingino.com/cloner/), copy it to an SD card from within U-Boot shell, or at least dump it via serial connection.
 
-Install the firmware on the camera using one of the available techniques. Reboot the camera. If all went well, you should see a boot log and the following message: "Welcome to the Thingino firmware!
+Verify the backup by doing at least two consecutive reads and comparing their checksums. They should match.
 
-### GPIO Map
+### Boot Log Analysis
 
-Look in the boot log of the stock Linux for hints about GPIO pins.
+Connect to the UART port on your camera and read the boot log of the stock firmware. Save it to disk. Or better yet, set your terminal to automatically save full logs of your sessions. Check the boot log of stock Linux for notes on GPIO pins. 
 
-Unpack the stock firmware dump file using `binwalk`. Analyze its contents for clues about GPIO pin settings. You may need to use [Ghidra](https://github.com/NationalSecurityAgency/ghidra/) to read hardcoded values from appropriate drivers and applications.
+### Stock Firmware Analysis
+
+Unpack the stock firmware dump file using [binwalk](https://themactep.com/notes/how-to-install-binwalk-with-jffs-ubi-and-cramfs-support). Analyze its contents for clues about GPIO pin settings. You may need to use [Ghidra](https://github.com/NationalSecurityAgency/ghidra/) to read hardcoded values from appropriate drivers and applications.
+
+Locate the password hash in the extracted files. Check the Internet to see if the hash has already been bruteforced to reveal the plaintext password.
 
 Alternatively, you may need to gain access to the stock Linux firmware to read the GPIO from a live system.
 
-Locate the password hash in the extracted files. Check the Internet to see if the hash has already been bruteforced to reveal the plaintext password.
-If not, try repacking the firmware to replace the unknown password hash with a known one or with a passwordless access.
+### Stock Firmware Hajacking
 
-Using the stock Linux firmware, run the following command to dump the GPIO map:
+Try to patch the stock firmware dump with our [Hijacker](https://gist.github.com/themactep/237d98ce45b9fe71d794b20edaa15baa/edit) script to replace the unknown password hash with a known one or with a passwordless access, flash it on the camera and gain access to the system.
+
+Once inside, run the following command and save the result.
 ```
 mount -t debugfs none /sys/kernel/debug; cat /sys/kernel/debug/gpio
 ```
 
 The stock firmware console is usually cluttered with debug messages from various processes, so be quick to copy the response before it disappears from the screen.
+
+This is your GPIO map. You will need it.
+
+### New Firmware
+
+[Download](https://github.com/themactep/thingino-firmware/releases/) or compile a firmware binary for your hardware set.
+
+Install the firmware on the camera using one of the available techniques. Reboot the camera. If all went well, you should see a boot log and the following message: "Welcome to the Thingino firmware!
 
 ### U-Boot Environment
 
