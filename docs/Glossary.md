@@ -12,6 +12,7 @@
 - AI - Artificial Intellect
 - AM - Amplitude Modulated
 - AMIC - Analog Microphone
+- Archon - Ingenic Zeratul T31 Platform code name
 - APLL - Analog Phase-Locked Loop
 - ASIC - Application-Specific Integrated Circuit
 - AWB - Automatic White Balance
@@ -86,6 +87,7 @@
 - I2C - Inter-Integrated Circuit (serial protocol)
 - IC - Integrated Circuit
 - ICR - Infrared Cutfilter Removal
+- Immortal - Ingenic Zeratul T20 Platform code name
 - IMP - Ingenic Media Platform
 - IP - Internet Protocol
 - IPC - IP Camera
@@ -185,6 +187,7 @@
 - TPM - Trusted Platform Module
 - TPU - Tensor Processing Unit
 - TTL - Transistor-Transistor Logic
+- Turret - Closed Source Zeratul Bootloader (U-Boot)
 
 ### U
 
