@@ -202,9 +202,17 @@ Note: Not all sensors supported on all SOC models
 3. ATH9k  
 
 **Altobeam**  
+4. ATBM6011B  
 4. ATBM6012B  
+4. ATBM6012BX  
+5. ATBM6021  
+5. ATBM6022  
 5. ATBM6031  
+5. ATBM6031X  
 6. ATBM6032  
+6. ATBM6032X  
+6. ATBM6132S  
+6. ATBM6132U  
 7. ATBM6041  
 8. ATBM6441  
 
