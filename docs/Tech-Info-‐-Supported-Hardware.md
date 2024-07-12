@@ -1,33 +1,44 @@
 ## SOC Models
 
-Ingenic:
+Ingenic:  
 
-1. T10L
-2. T10N
-3. T10A
-4. T20L
-5. T20N
-6. T20X
-7. T21L
-8. T21N
-9. T21X
-10. T21Z
-11. T21ZL
-12. T23N
-13. T23ZN
-14. T30L
-15. T30N
-16. T30X
-17. T30A
-18. T31L
-19. T31LC
-20. T31N
-21. T31X
-22. T31A
-23. T31AL
-24. T31ZL
-25. T31ZX
-26. T31XL
+**T10 (Mango):**  
+1․ T10L  
+2. T10N  
+3. T10A  
+
+**T20 (Bull):**  
+4. T20L  
+5. T20N  
+6. T20X  
+
+**T21 (Turkey):**  
+7. T21L  
+8. T21N  
+9. T21X  
+10. T21Z  
+11. T21ZL  
+
+**T23 (Pike):**  
+12. T23N  
+13. T23ZN  
+
+**T30 (Monkey):**  
+14. T30L  
+15. T30N  
+16. T30X  
+17. T30A  
+
+**T31 (Swan):**  
+18. T31L  
+19. T31LC  
+20. T31N  
+21. T31X  
+22. T31A  
+23. T31AL  
+24. T31ZL  
+25. T31ZX  
+26. T31XL  
 
 ## Sensors 
 Note: Not all sensors supported on all SOC models
@@ -195,7 +206,7 @@ Note: Not all sensors supported on all SOC models
 ## Wireless Modules  
 
 **Broadcom**  
-1  AP6181  
+1․ AP6181  
 2. AP6212[a]
   
 **Atheros**  
