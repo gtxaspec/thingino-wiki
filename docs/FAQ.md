@@ -19,7 +19,7 @@ fw_setenv wlanmac 12:34:56:78:AB:EF
 
 ### Do you have a mobile app to view/control the camera?
 
-We recommend to use [tinyCam Monotor Pro](https://tinycammonitor.com/).
+We recommend to use [tinyCam Monitor Pro](https://tinycammonitor.com/).
 
 ![Screenshot_2024-06-01-00-50-52-704_com alexvas dvr pro](https://github.com/themactep/thingino-firmware/assets/37488/58b1a981-31b8-499a-b416-a7f885d947a3)
 
