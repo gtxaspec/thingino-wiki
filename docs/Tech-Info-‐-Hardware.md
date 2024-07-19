@@ -1,0 +1,1 @@
+hardware experimentation notes / info
