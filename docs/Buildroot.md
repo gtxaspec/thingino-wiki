@@ -5,7 +5,7 @@ We use the latest available version of [Buildroot][1] with [slight modifications
 Camera hardware is primarily based on the SoC model, image sensor, and sometimes a wireless module. Different cameras may use the same SoC, sensor, and Wi-Fi module, thus requiring similarly built firmware, but still have different GPIO mapping and peripheral configuration. To avoid repeating settings in configs, we have decoupled camera-specific configs from the underlying hardware configs (we call them modules). We just tell the camera config stored in `config/cameras/' which hardware module stored in `config/modules/' to use:
 
 ```
-# MODULE: t31x_gc2053_rtl8189ftv_defconfig
+# MODULE: t31x_gc2053_rtl8189ftv
 ```
 
 Then in the module config file we have everything configured for the Triade: SoC, sensor and the Wi-Fi module, if there is one.

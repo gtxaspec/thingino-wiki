@@ -2,13 +2,13 @@
 
 Thingino is an external tree of the [Buildroot][1] tool. So the best possible documentation is available [here][2].
 
-Thingino uses a slightly [modified version][3] of Buildroot, allowing to create better symlinks for truly relocatable toolchain.
+Thingino uses a slightly [modified version][3] of Buildroot, allowing it to create better symlinks for a truly relocatable toolchain.
 
 Thingino uses its own `Makefile` to do most of the pre-build configuration. It then passes the build command to Buildroot.
 
 Buildroot's native `make` directives are accessible from firmware using the `br-` prefix, e.g. `make br-help` will show help output from the Buildroot Makefile, while `make help` will only show help from the Thingino Makefile.
 
-### Bulding a Package 
+### Building a Package 
 
 Prefixed Buildroot `make` directives to work with a package at different stages:
 
