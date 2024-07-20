@@ -9,7 +9,7 @@ In addition, there is:
 - `gpio_sub1g` - some cameras have a 925MHz [CC1101 or similar](https://www.ti.com/product/CC1101) transceiver, which is enabled with this pin.
 - `gpio_default_net` - ???
 
-# Thingino GPIO assignments as of 2024:07:20 11:00:13 EDT -0400
+# Thingino GPIO assignments as of 2024/07/20 11:00:13 EDT -0400
 
 | Model | button|default_net|ir850|ir940|ircut|lds|led_b|led_g|led_r|led_w|led_y|mmc_cd|mmc_power|motor_h|motor_v|scl|sda|speaker|sub1g|usb_en|white|wlan
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
