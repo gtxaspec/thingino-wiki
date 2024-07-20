@@ -2,25 +2,11 @@ Each camera has a unique set of gpio assignments.  These are stored as environme
 
 # List of `gpio_` variables
 
-- `gpio_button` - This GPIO pin is linked to the "reset" button on the device.  When it is pressed, Thingino will (do what exactly?)
-- `gpio_ir940` - This GPIO pin turns on the 940nm infrared LED on the device
-- `gpio_ir850` - This GPIO pin turns on the 850nm LED.  See [here](https://github.com/themactep/wiki/blob/master/hardware/components/ir-leds.md) for more info about the IR LEDs
-- `gpio_ircut` - This is typically a pair of GPIOs that controls the solenoids for the [IRcut device](https://github.com/themactep/wiki/blob/master/hardware/components/ir-cut.md). Care is needed when determining those since activating them for even short periods of time may burn them out.
-- `gpio_led_b` - This turns on the blue LED in the device (if it has one)
-- `gpio_led_g` - This turns on the green LED if present
-- `gpio_led_r` - This turns on the red LED if present
-- `gpio_led_y` - This turns on the yellow LED if present
-- `gpio_mmc_cd` - This input pin serves to detect whether an SD card is inserted into the SD/MMC device
-- `gpio_mmc_power` - Some cameras require this GPIO pin to power up the MMC device
-- `gpio_wlan` - Some cameras require this GPIO pin to provide power to the WiFi chip
-- `gpio_motor_h` - 4 pins to drive the horizontal (pan) motor in a PTZ camera - order matters.  Reversing the order reverses the movement.
-- `gpio_motor_v` - 4 pins to drive the vertical (tilt) motor in a PTZ camera
+Most of the variables are explained on the [[Camera Configuration|Camera-configuration#bootloader-environment-explained]] page.
+In addition, there is:
+
 - `gpio_scl`/`gpio_sda` - these are the clock and data lines for an [I2C device](https://en.wikipedia.org/wiki/I%C2%B2C). Unclear what this is used for in Thingino
-- `gpio_speaker` - an output pin that either directly drives the device's speaker, or drives an amplifier that enables the speaker
 - `gpio_sub1g` - some cameras have a 925MHz [CC1101 or similar](https://www.ti.com/product/CC1101) transceiver, which is enabled with this pin.
-- `gpio_usb_en` - ???
-- `gpio_white` - ???
-- `gpio_default` - (not shown below) - the UBoot loader will put the listed GPIOs in the listed state
 - `gpio_default_net` - ???
 
 # Thingino GPIO assignments as of 2024:07:20 11:00:13 EDT -0400
