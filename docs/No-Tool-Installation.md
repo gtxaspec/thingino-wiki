@@ -28,7 +28,8 @@ Eject the card, put it in the camera, turn it on and wait two minutes, then foll
 
 ## Others
 
-[WLTechBlog](https://www.youtube.com/@wltechblog) published a number of videos describing the process for some cameras:
+Josh from [WLTechBlog](https://www.youtube.com/@wltechblog) published a number of videos describing the process for some cameras:
 
 - [Wyze Cam V3](https://www.youtube.com/watch?v=SX637mrp0R0)
 - [Wansview W7](https://www.youtube.com/watch?v=jCRiIljSWlw)
+- [WUUK Y0510](https://www.youtube.com/watch?v=PhXbeY-PBgg)
