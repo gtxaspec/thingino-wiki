@@ -1,4 +1,4 @@
-This page reflects some notes from the development of Thingino for devices sold under the Galayou G2 brand. It is accurate as of July 2024.
+This page reflects some notes from the development of Thingino for devices sold under the [Galayou G2](https://www.galayou-store.com) brand. It is accurate as of July 2024.
 
 The Galayou G2 comes in 2 variations. One uses a T31LC SoC and the 
 other a T23N SoC.  This page discusses only the T23N variant.
@@ -15,9 +15,10 @@ on the FAT partition of a SD card.  The format of these files appears to be:
 
 It appears to be using some kind of HMAC algorithm, perhaps a variation of HMAC-RS256.  
 There is also a program `/app/bin/update` whose purpose is to allow firmware updates from user mode. This program was reverse engineered
-with Qiling's user mode emulation to determine the information above, in combination with Ghidra.
+with [Qiling's user mode emulation to determine the information above](https://gist.github.com/godmar/bf05db4e6e014977ae3f4351d057c36d), in combination with [Ghidra](https://ghidra-sre.org/).
 
-Unfortunately, this requires that the device be opened in order to install Thingino. Either in-circuit flashing can be attempted, or a UART connection must be made.
+Unfortunately, these facts require that the device must be opened in order to install Thingino. 
+Either in-circuit flashing of the flash chip can be attempted, or a UART connection must be made. Both will be explained in turn.
 
 ## Installation via UART + SDCard
 
@@ -27,18 +28,18 @@ The UART can be found here:
 
 To flash Thingino we can use the stock UBoot loader.  However, this vendor decided to remove the commands that would
 allow us to access the FAT file system.  For this reason, we need to write the image as a raw sequence of blocks onto an
-empty SD card, using the following steps. **Verify first that your SD card is in `/dev/sda` and not elsewhere**!
+empty SD card, using the following steps. **Pro tip: make sure your SD card is really in `/dev/sda` and not something you still need**!
 ```
 wget https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-galayou_g2_t23n.bin
 sudo dd seek=16 bs=512 if=thingino-galayou_g2_t23n.bin of=/dev/sda oflag=direct conv=fsync
 ```
-This will write the 8MB image at offset 16 to the device (the offset is chosen so that the partition table is kept intact.)
-This will destroy any filesystem on the SD card.
+This will write the 8MB image at offset 16 (sector) to the device (the offset is chosen so that the partition table is kept intact.)
+This will destroy any filesystem on the SD card's first partition, so the card will no longer mount.
 
-In step 1 insert the SD card into the camera (ideally with the camera turned off).  If the camera is on and running the
+Next, insert the SD card into the camera (ideally with the camera turned off).  If the camera is on and running the
 stock firmware while a card is inserted, it will try to mount it (which in this case will fail since the FAT filesystem was destroyed).
 
-Now attach a terminal program to your UART adapter (`screen` or `minicom`, as described under [[UART Commands|UART-Connection#commands-for-various-terminal-programs-with-session-logging]]) and turn on the camera.  When you see a message hit any key.  
+Now attach a terminal program to your UART adapter (`screen` or `minicom`, as described under [[UART Commands|UART-Connection#commands-for-various-terminal-programs-with-session-logging]]) and turn on the camera.  When you see a message to ``hit any key'', do so.  
 You would see:
 ```
 U-Boot SPL 2013.07 (Nov 18 2023 - 10:39:44)
@@ -89,7 +90,7 @@ High Capacity: No
 Capacity: 121 MiB
 Bus Width: 1-bit
 ```
-Now you're ready to read the firmware from the SD card into RAM. We pick `0x82000000` as a free address.
+Now you're ready to read the firmware from the SD card into RAM. We pick `0x82000000` as a free address for a temporary buffer.
 ```
 isvp_t23# mmc read 0x82000000 0x10 0x4000
 
@@ -125,8 +126,9 @@ SF: 8388608 bytes @ 0x0 Written: OK
 ```
 Now type `reset` and the device should reboot into Thingino.
 You'll see it reboot twice before going into portal mode; see [[instructions here|Configuring-Wi‐Fi-Access#captive-portal]].
+Set it up via the portal.
 
-Then, your Thingino should be on your network. If your router respects DHCP requested IP addresses, and if `192.168.1.10` is unused, it might be there. If not, get the IP address either from your router or log in as root and check `ip a`.
+Then, your Thingino should be on your network. If your router respects DHCP requested IP addresses, and if `192.168.1.10` is unused in your network, it might be there. If not, get the IP address either from your router or log in as root and check `ip a`.
 
 Two steps remain which you can do via the WebUI:
 
@@ -134,9 +136,11 @@ Two steps remain which you can do via the WebUI:
 
 ![image](https://github.com/user-attachments/assets/541eefde-d94f-4888-adf7-c78821b49db7)
 
+Don't forget to hit `Save`.
+
 - Under Settings -> Time, set your Timezone and reboot.
 
-Finally, you can remove the serial and log into the camera:
+Finally, you can remove the serial connection and log into the camera:
 ```
 $ ssh root@192.168.1.10
 root@192.168.1.10's password: 
@@ -151,13 +155,13 @@ root@192.168.1.10's password:
 [root@ing-galayou-g2-00cc ~]# 
 ```
 
-## In-circuit flashing
+## In-circuit Flashing
 
 Different developers have had different success with in-circuit flashing with a CH341 device and clip.
 If attempting it, do not connect pin 8. The device appears to be using a [P25Q64H](https://www.puyasemi.com/download_path/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/Flash/P25Q64H_Datasheet_V1.4.pdf) 8MB nor flash chip surface mounted next to the 
-SD card on the side of the board that has the SoC.  
+SD card on the side of the board that has the SoC. You would use a program such as [SNANDer](https://github.com/Droid-MAX/SNANDer) in this case. 
 
 ## MMC oddity - 1-bit mode only
 
-During testing, it was found that the MMC device does not operate in 4-bit mode.  Normally, an SD card provides 4 data lines (D0 to D3),
+During testing, it was found that the MMC device does not operate in 4-bit mode.  (See the output of `mmcinfo` above in the stock UBoot loader). Normally, an SD card provides 4 data lines (D0 to D3),
 but in this device it appears to operate in 1-bit mode.  This is odd because the existing code did not even provide an option for this mode - the default capability of the host controller was set to 4 bits.  This was solved by adding a [`isvp_t23n_sfcnor_mmc1bit`](https://github.com/gtxaspec/u-boot-ingenic/commit/40303cc4e9c4f790ca235f972066c5c9a2bb778e) configuration to Thingino UBoot and a corresponding kernel configuration option to Thingino's Linux kernel [CONFIG_JZMMC_V12_MMC0_1BIT](https://github.com/gtxaspec/thingino-linux/commit/a4417fd29af2f77a2b303bccb969b49c105fedc0).

@@ -24,7 +24,7 @@ Locate the password hash in the extracted files. Check the Internet to see if th
 
 Alternatively, you may need to gain access to the stock Linux firmware to read the GPIO from a live system.
 
-### Stock Firmware Hajacking
+### Stock Firmware Hijacking
 
 Try to patch the stock firmware dump with our [Hijacker](https://gist.github.com/themactep/237d98ce45b9fe71d794b20edaa15baa/edit) script to replace the unknown password hash with a known one or with a passwordless access, flash it on the camera and gain access to the system.
 
