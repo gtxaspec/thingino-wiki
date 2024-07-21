@@ -227,6 +227,9 @@ Note: Not all sensors supported on all SOC models
 7. ATBM6041  
 8. ATBM6441  
 
+**HiSilicon**  
+9. Hi3881  
+
 **Mediatek**  
 9. MT7601  
 
