@@ -3,7 +3,7 @@ This page reflects some notes from the development of Thingino for devices sold 
 The Galayou G2 comes in 2 variations. One uses a T31LC SoC and the 
 other a T23N SoC.  This page discusses only the T23N variant.
 
-## Stock firmware update notes
+## Attempting to update via the Stock Firmware Update process
  
 Unlike the Cinnado D1, which is also T23N based, the G2 does not accept unsigned firmware updates via the SD card.  
 The bootloader includes a command `gvsdupdate` which checks for files `jzt23Nall.bin`, `jzt23Nsd.bin`, and `jzt23Nota.bin`
@@ -19,6 +19,12 @@ with [Qiling's user mode emulation to determine the information above](https://g
 
 Unfortunately, these facts require that the device must be opened in order to install Thingino. 
 Either in-circuit flashing of the flash chip can be attempted, or a UART connection must be made. Both will be explained in turn.
+
+## Opening the device
+
+To open the case, it's not necessary to remove the base. You can use a special tool which most of you have readily available, as shown in this video:
+
+[Instructional video of how to professionally open a G2](https://github.com/user-attachments/assets/7d187996-7663-473d-a047-c3bd146ea6c4)
 
 ## Installation via UART + SDCard
 
@@ -118,7 +124,7 @@ isvp_t23# sf erase 0x0 0x800000
 SF: 8388608 bytes @ 0x0 Erased: OK
 --->erase spend 278 ms
 ```
-Now write the new image to the flash (takes 50s in this example):
+Now write the new image to the flash (takes 51s in this example):
 ```
 isvp_t23# sf write 0x82000000 0x0 0x800000
 SF: 8388608 bytes @ 0x0 Written: OK
