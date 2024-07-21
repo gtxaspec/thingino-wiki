@@ -26,4 +26,9 @@ cp v4_boot.bin /media/yoursdcard/
 ```
 Eject the card, put it in the camera, turn it on and wait two minutes, then follow the [[Wifi Portal Setup Process|Configuring-Wi‐Fi-Access#captive-portal]].
 
+## Others
 
+[WLTechBlog](https://www.youtube.com/@wltechblog) published a number of videos describing the process for some cameras:
+
+- [Wyze Cam V3](https://www.youtube.com/watch?v=SX637mrp0R0)
+- [Wansview W7](https://www.youtube.com/watch?v=jCRiIljSWlw)
