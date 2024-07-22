@@ -95,6 +95,7 @@
 - ISP - Image Signal Processor
 - ISVP - Ingenic Smart Video Platform
 - IVS - Intelligent Video System (Movement Detection, algorithms, etc.)
+- IVDC - ISP-VPU Direct Connect
 
 ### J
 
