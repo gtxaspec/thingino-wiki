@@ -13,3 +13,4 @@
 - [Kernels for Xburst2 architecture](https://github.com/gtxaspec/openipc_linux/tree/ingenic-t31-4.4.94), for T40 and T41 SoC, check out _ingenic-t31-4.4.94_ branch.
 - [Kernel modules](https://github.com/themactep/ingenic-sdk), including those for image sensors.
 - [Ingenic development samples](https://github.com/gtxaspec/libimp-samples-musl) compatible with musl.
+- [libimp development headers](https://github.com/gtxaspec/ingenic-headers)
