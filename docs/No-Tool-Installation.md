@@ -10,15 +10,16 @@ Nevertheless, we share instructions for certain devices.
 
 ### Verifying the SoC Model of Cinnado D1
 
-First, you need to verify that your D1 uses the T23N SoC.
+To verify which of the known SoCs was used in the Cinnado D1 the case needs to be opened. The case is divided into two parts and the upper case is clipped into the bottom. You don't need to unscrew your camera. Carefully remove the upper case perhaps with a small tool. After that you can adjust the camera to see the board and which chipset has been used.
+
+The procedure below works only if the D1 uses the T23N SoC.
 
 <img src="https://github.com/user-attachments/assets/80766e30-c062-45f7-96e8-506066560639" alt="Cinnado D1" width="500">
 
-To verify which of the known SoCs was used in the Cinnado D1 the case needs to be opened. The case is divided into two parts and the upper case is clipped into the bootom. You don´t need to unscrew your camera. Carefully remove the upper case perhaps with a small tool. After that you can adjust the camera to see the board and which chipset has been used.
 
 ### Update Process
 
-The [Cinnado D1](https://www.cinnado.com/D1) devices' bootloader will look for a file `v4_boot.bin` which if present, will be used to replace the device's bootloader.
+The [Cinnado D1](https://www.cinnado.com/D1) stock bootloader will look for a file `v4_boot.bin` which if present, will be used to replace the device's bootloader.
 Therefore, Thingino's bootloader can be installed first, and then Thingino via Thingino's [[auto update process|Installation#from-an-sd-card]].  The steps would be as follows:
 
 First, download the full image
