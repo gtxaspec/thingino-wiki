@@ -5,7 +5,7 @@ other a T23N SoC.  This page discusses only the T23N variant.
 
 ## Attempting to update via the Stock Firmware Update process
  
-Unlike the Cinnado D1, which is also T23N based, the G2 does not accept unsigned firmware updates via the SD card.  
+Unlike the [[Cinnado D1|No-Tool-Installation#cinnado-d1-based-on-t23n-soc]], which is also T23N based, the G2 does not accept unsigned firmware updates via the SD card.  
 The bootloader includes a command `gvsdupdate` which checks for files `jzt23Nall.bin`, `jzt23Nsd.bin`, and `jzt23Nota.bin`
 on the FAT partition of a SD card.  The format of these files appears to be:
 
