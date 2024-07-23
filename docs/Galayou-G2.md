@@ -13,7 +13,7 @@ on the FAT partition of a SD card.  The format of these files appears to be:
 - a 64-byte signature
 - followed by the firmware 
 
-It appears to be using some kind of HMAC algorithm, perhaps a variation of HMAC-RS256.  
+It appears to be using some kind of HMAC algorithm, perhaps a variation of HMAC-RS512 (it computes a SHA-512-based message digest).  
 There is also a program `/app/bin/update` whose purpose is to allow firmware updates from user mode. This program was reverse engineered
 with [Qiling's user mode emulation to determine the information above](https://gist.github.com/godmar/bf05db4e6e014977ae3f4351d057c36d), in combination with [Ghidra](https://ghidra-sre.org/).
 
