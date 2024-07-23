@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/95762325-e08e-4b1a-9bf1-2ef2dbd214b1)
 
-Sold by Personal (Argentine telecom company), to be used strictly with their paid cloud service and mobile app. The camera itself is a clone of the Wyze Pan Cam v3 and the Atom cam v3, but with several differences, most notably on the GPIO mappings.
+Sold by Personal (Argentine telecom company), to be used strictly with their paid cloud service and mobile app. The camera itself is a clone of the Wyze Pan Cam v3 and the Atom Cam Swing, but with several differences, most notably on the GPIO mappings.
 
 ## Features
 * Ingenic T31X running at 1.4GHz
