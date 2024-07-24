@@ -146,6 +146,7 @@
 - PIR - Passive infrared (sensor)
 - PLL - Phase-Locked Loop
 - PPPoE - Point-to-Point Protocol over Ethernet
+- PSK - Pre-Shared Key
 - PTZ - Pan–Tilt–Zoom
 - PiP - Picture-in-Picture
 - PoE - Power over Ethernet
