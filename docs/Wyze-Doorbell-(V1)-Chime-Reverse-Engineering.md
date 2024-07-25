@@ -35,12 +35,13 @@ Below is a list of identified command codes and their suspected meaning.
 
 #### SUB1G_INIT
 
-CMD is `0x14` and it is followed by `0xff`.  This is issues when the camera starts up. It appears to initialize the CC1310.
+CMD is `0x14` and it is followed by a single `0xff` in the body. 
+This is issued when the camera starts up. It appears to initialize the CC1310.
 Full packet: `0xaa 0x55 0x53 0x04 0x14 0xff 0x02 0x69`
 
 #### SUB1G_DELETE_ALL_CHIME
 
-CMD is 0x3f.  Empty body. 
+CMD is 0x3f.  Empty body. We suspect it's issued to deassociate all chimes.
 
 #### PAIRING
 
@@ -130,5 +131,14 @@ information:
                LEN   RES   ??    7    7    D    8    F    D    5    3   ??   ??  CKSUM    
 ```
 
+### Exception.
 
-(*) special case: we have observed one packet where the fourth byte is not the length. This will be discussed below
+Special case: we have observed one packet where the fourth byte is not the length. 
+
+```
+0xaa 0x55 0x53 0x71 0xff 0x02 0xc2
+```
+here `0x71 0xff` replaces LEN + CMD + BODY.
+This is sent in response to a packet from the chime that's `0x55 0xaa 0x53 0x70 0xff 0x02 0xc1`
+Perhaps this is a heartbeat?
+
