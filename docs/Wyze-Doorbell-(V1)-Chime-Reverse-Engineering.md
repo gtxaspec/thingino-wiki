@@ -12,6 +12,21 @@ Once validated, the camera sends VERIFY_RESULT to the chime to complete the proc
 It is not clear whether the Chime's MCU cryptographically checks the result, or whether this is solely to
 keep track of which chime is connected to which camera.
 
+## Use with Thingino
+
+An already paired chime can be used with Thingino as follows
+
+- Turn on power to the transceiver by setting GPIO 61 high:
+```
+gpio high 61
+```
+- Put `/dev/ttyS0` in raw mode and 115200 baud
+```
+stty -F /dev/ttyS0 raw
+stty -F /dev/ttyS0 speed 115200
+```
+- You can now send sounds. (the `SUB1G_INIT` command below appears to not be necessary.)
+
 ## Message Format
 The communication protocol appears to be as follows.  
 ```
