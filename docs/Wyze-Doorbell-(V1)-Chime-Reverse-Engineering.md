@@ -27,6 +27,11 @@ stty -F /dev/ttyS0 speed 115200
 ```
 - You can now send sounds. (the `SUB1G_INIT` command below appears to not be necessary.)
 
+## Pairing a chime
+
+Put the chime in pairing mode (by holding the reset button), then send the `VERIFY_RESULT` packet (listed below).
+This should bring the chime out of pairing mode. 
+
 ## Message Format
 The communication protocol appears to be as follows.  
 ```
