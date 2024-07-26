@@ -5,13 +5,6 @@ The doorbell camera uses a [CC1310](https://www.ti.com/product/CC1310) chip that
 
 Each chime has a 4-digit MAC that's printed on the back, such as `77:D8:FD:53`.
 
-## Executive Summary.
-During pairing, the camera issues a number of commands. First, the camera must discover the chime's MAC address.
-Once it has that, it will send a challenge to the chime. The chime responds with a code that's validated via Wyze's APIs.
-Once validated, the camera sends VERIFY_RESULT to the chime to complete the process.  
-It is not clear whether the Chime's MCU cryptographically checks the result, or whether this is solely to
-keep track of which chime is connected to which camera.
-
 ## Use with Thingino
 
 An already paired chime can be used with Thingino as follows
