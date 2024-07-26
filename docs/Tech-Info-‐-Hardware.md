@@ -5,9 +5,9 @@ Each camera has a unique set of gpio assignments.  These are stored as environme
 Most of the variables are explained on the [[Camera Configuration|Camera-configuration#bootloader-environment-explained]] page.
 In addition, there is:
 
-- `gpio_scl`/`gpio_sda` - these are the clock and data lines for an [I2C device](https://en.wikipedia.org/wiki/I%C2%B2C). Unclear what this is used for in Thingino
+- `gpio_scl`/`gpio_sda` - these are the clock and data lines for an [I2C device](https://en.wikipedia.org/wiki/I%C2%B2C).  Currently unused in Thingino.
 - `gpio_sub1g` - some cameras have a 925MHz [CC1101 or similar](https://www.ti.com/product/CC1101) transceiver, which is enabled with this pin.
-- `gpio_default_net` - ???
+- `gpio_default_net` - GPIOs configured at boot only if the device lacks a physical ethernet connection.
 
 # Thingino GPIO assignments as of 2024/07/20 11:00:13 EDT -0400
 
