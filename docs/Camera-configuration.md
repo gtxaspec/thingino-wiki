@@ -52,6 +52,7 @@ Copy the file to an SD card, insert the card into your camera and reboot.
 
 #### Pan and tilt motors
 
+- `gpio_motor_en` - GPIO pin for enabling the motor controller
 - `gpio_motor_h` - GPIO pins for horizontal (pan) motors
 - `gpio_motor_v` - GPIO pins for vertical motion (tilt) motors
 - `motor_maxstep_h` - Maximum number of microsteps for pan motor
