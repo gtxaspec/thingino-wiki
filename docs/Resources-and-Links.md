@@ -14,3 +14,4 @@
 - [Kernel modules](https://github.com/themactep/ingenic-sdk), including those for image sensors.
 - [Ingenic development samples](https://github.com/gtxaspec/libimp-samples-musl) compatible with musl.
 - [libimp development headers](https://github.com/gtxaspec/ingenic-headers)
+- [prudynt](https://github.com/gtxaspec/prudynt-t)
