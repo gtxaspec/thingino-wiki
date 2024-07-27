@@ -1,6 +1,6 @@
 ## SOC Models
 
-Ingenic:  
+Ingenic XBurst-1:  
 
 **T10 (Mango):**  
 1․ T10L  
@@ -39,6 +39,9 @@ Ingenic:
 24. T31ZL  
 25. T31ZX  
 26. T31XL  
+
+Ingenic XBurst-2:  
+**_Coming Soon_**
 
 ## Sensors 
 Note: Not all sensors supported on all SOC models

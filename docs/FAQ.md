@@ -26,8 +26,10 @@ We recommend to use [tinyCam Monitor Pro](https://tinycammonitor.com/).
 ### Can Thingino run on this unsupported camera?
 
 If the camera in question has an Ingenic SoC, there is a good chance that Thingino can run on it.
-You can try to convert it using one of the prebuild module firmware files or build a new one yourself.
-Donate such a camera to the project to speed up the process.
+You can try to convert it using one of the prebuilt module firmware files or build a new one yourself.
+Donate such a camera to the project to speed up the process!  
+
+See our complete table of [Supported Hardware](https://github.com/themactep/thingino-firmware/wiki/Tech-Info-%E2%80%90-Supported-Hardware).
 
 ### Is Thingino a fork of OpenIPC?
 
@@ -38,4 +40,4 @@ While there are some similarities, there are also significant differences betwee
 
 ### Is My Data Safe? Do You Collect Data Metrics or Telemetry?
 
-Thingino does not collect any data metrics or telemetry, ensuring your data remains solely on your device and entirely under your control. Being fully open source, Thingino allows you to audit the code and verify its operations, providing full transparency and peace of mind.
+Thingino does not collect any data metrics or telemetry, ensuring your data remains solely on your device and entirely under your control. Being fully open source, Thingino allows you to audit the code and verify its operations, providing full transparency and peace of mind.  **_We Don't Want Your Data!_**

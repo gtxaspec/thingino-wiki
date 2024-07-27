@@ -1,6 +1,6 @@
-Thingino firmware currently supports devices using Ingenic XBurst1-based System-on-Chips (SoCs). For a detailed list of supported chip models, please refer to the [Supported Hardware wiki article](https://github.com/themactep/thingino-firmware/wiki/Tech-Info-%E2%80%90-Supported-Hardware).
+Thingino currently supports devices using Ingenic XBurst1-based System-on-Chips (SoCs). For a detailed list of supported chip models, please refer to the [Supported Hardware wiki article](https://github.com/themactep/thingino-firmware/wiki/Tech-Info-%E2%80%90-Supported-Hardware).
 
-Even if your specific device is not listed, there is a high likelihood that Thingino can support it. This is because Thingino firmware is designed to be highly adaptable. While a specific configuration profile for your device might not exist, the firmware can still be tailored to meet the requirements of your hardware. 
+Even if your specific device is not listed, there is a high likelihood that Thingino can support it. This is because Thingino is designed to be highly adaptable. While a specific configuration profile for your device might not exist, the firmware can still be tailored to meet the requirements of your hardware. 
 
 The reason your device may not be listed as supported is probably that we don't yet have the hardware on hand to test. If you have a device in mind that you would like to make work with Thingino but do not have the skills to do it yourself, please consider donating a copy of such a device to the project.
 
