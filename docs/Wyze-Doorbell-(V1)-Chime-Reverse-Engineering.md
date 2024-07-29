@@ -105,8 +105,9 @@ Empty body.  Presumably a request to send a version back to the camera
 
 This code actually plays a chime. There appear to be 2 codes that do that identically.
 
-CMD 0x70
-CMD 0x47
+- CMD 0x70
+
+- CMD 0x47
 
 BODY
 ```
