@@ -170,6 +170,29 @@ https://github.com/themactep/thingino-firmware/assets/12115272/f50f91c6-338b-4ea
 
 Now, you're all set to enjoy hassle-free development with Thingino in a clean, organized environment!
 
+Remote Debugging
+----------------
+
+### Build Thingino using development packages and gdb.
+
+Add two lines to the `/path/to/thingino/local.fragment` file:
+```
+BR2_THINGINO_DEV_PACKAGES=y
+BR2_PACKAGE_GDB=y
+```
+Recompile the firmware and flash the camera.
+
+Login to the camera Linux and run `gdbserver --multi :1234`.
+
+On your workstation, execute
+```
+~/output/cameraprofile/host/bin/mipsel-linux-gdb \
+	-ex 'target extended-remote 192.168.1.10:1234' \
+	-ex 'set remote exec-file /bin/prudynt' \
+```
+
+Replace `cameraprofile`, `192.168.1.10`, `/bin/prudynt` with actual data relevant to your use case.
+
 [1]: https://buildroot.org/
 [2]: https://buildroot.org/docs.html
 [3]: https://github.com/buildroot/buildroot/compare/master...themactep:buildroot:master
