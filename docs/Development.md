@@ -188,10 +188,12 @@ On your workstation, execute
 ```
 ~/output/cameraprofile/host/bin/mipsel-linux-gdb \
 	-ex 'target extended-remote 192.168.1.10:1234' \
-	-ex 'set remote exec-file /bin/prudynt' \
+	-ex 'set remote exec-file /bin/prudynt'
 ```
 
-Replace `cameraprofile`, `192.168.1.10`, `/bin/prudynt` with actual data relevant to your use case.
+To stop gdbserver, run `monitor exit` in the client, then exit the client with `exit` or `quit`.
+
+* Replace `cameraprofile`, `192.168.1.10`, `/bin/prudynt` with actual data relevant to your use case.
 
 [1]: https://buildroot.org/
 [2]: https://buildroot.org/docs.html
