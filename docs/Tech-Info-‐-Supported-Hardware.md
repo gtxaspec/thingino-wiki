@@ -227,6 +227,8 @@ Note: Not all sensors supported on all SOC models
 6. ATBM6032X  
 6. ATBM6132S  
 6. ATBM6132U  
+6. ATBM6062U  
+6. ATBM6062S  
 7. ATBM6041  
 8. ATBM6441  
 
