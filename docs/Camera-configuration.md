@@ -62,6 +62,7 @@ Copy the file to an SD card, insert the card into your camera and reboot.
 #### Wireless networking
 
 - `gpio_wlan` - GPIO pin to control power to wireless card
+- `wlanbus` - Wireless card bus type, can be `usb` or `sdio`
 - `wlandev` - Wireless card driver
 - `wlandevopts` - Arguments to pass to wireless driver
 - `wlanssid` - Wireless network name
