@@ -20,6 +20,9 @@ First things first. Make a backup of your existing firmware. Desolder the flash 
 
 Verify the backup by doing at least two consecutive reads and comparing their checksums. They should match.
 
+> [!IMPORTANT]  
+> Analyzing the stock firmware is essential for effective device support. Without access to the stock firmware, identifying GPIOs can become a time-consuming task that requires the use of a multimeter, along with significant patience and effort.
+
 ### Boot Log Analysis
 
 Connect to the UART port on your camera and read the boot log of the stock firmware. Save it to disk. Or better yet, set your terminal to automatically save full logs of your sessions. Check the boot log of stock Linux for notes on GPIO pins. 
@@ -40,10 +43,10 @@ Once inside, run the following command and save the result.
 ```
 mount -t debugfs none /sys/kernel/debug; cat /sys/kernel/debug/gpio
 ```
-
-The stock firmware console is usually cluttered with debug messages from various processes, so be quick to copy the response before it disappears from the screen.
-
 This is your GPIO map. You will need it.
+
+> [!NOTE]  
+> You may encounter a device where debugfs is disabled. As a result, viewing the GPIO map using `/sys/kernel/debug/gpio` won't be possible. In such cases, you'll need to identify GPIOs using alternative methods, such as decompiling and analyzing driver modules.
 
 ### New Firmware
 
