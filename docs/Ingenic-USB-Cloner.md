@@ -34,6 +34,9 @@ The **Config** button should reappear.
 
 ![](https://thingino.com/a/cloner-0-5.png)
 
+> [!IMPORTANT]  
+> The options described in the screenshots will not match if you did not load the `cloner_profiles.ingenic` bundle as outlined in the previous steps.
+
 Click the **Config** button in the top-right corner.
 
 In the **Config** window, under the **INFO** tab, access various configuration menus.
@@ -74,7 +77,8 @@ Once you are ready to begin, short-circuit pins 5 and 6 of the flash chip with a
 
 Short pins 5 and 6 ON THE FLASH CHIP, not SoC or any other chip, use the photos as a reference, as described in this document.
 
-__Do not try to short-circuit any random chip! It will most likely burn your camera circuit.__
+> [!CAUTION]
+> __Do not try to short-circuit any random chip! It will most likely burn your camera circuit.__
 
 ![](https://thingino.com/a/flash-chip-short.png)
 
