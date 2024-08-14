@@ -3,7 +3,7 @@
 To successfully compile the firmware, you need a modern Linux distribution equipped with up-to-date system libraries and tools. Specifically:
 
 > [!IMPORTANT]  
-> Building is only supported on  **x86_64** platforms at the moment.
+> Building is currently supported only on **x86_64** platforms. Attempting to build on RISC-V or ARM64 hosts will result in failure.
 
 - **Required Distribution**: Recent versions of Debian or Ubuntu, are recommended.
 - **Essential Libraries and Tools**:
