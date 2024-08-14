@@ -22,8 +22,6 @@ We have personally tested the following devices and can confirm their functional
 | WVDBV1    | 2AUIUWVDB1A    | WYZEDB3_MB_T31_2.2                | T31X  | SDIO: RTL8189FTV |
 | WYZECP2   | 2AUIUWYZECP2   | DF3-MCU-S01-V2.2                  | T31X  | SDIO: ATBM6031   |
 | WYZECPAN3 | 2AUIUWYZECPAN3 | WYZE PAN V3 MB V 1.3              | T31X  | SDIO: ATBM6031   |
-| WYZEC3P   | 2AUIUWYZEC3P   | WYZEV3PRO_T40GC4653_v2.2_20220228 | T40XP | SDIO: RTL8192FS  |
-| WVOD2     | 2AUIUWVOD2     | HL_WCO2 MAIN01 V1.0               | T31ZX | SDIO: BCM43438   |
 | ATOMCAM2  |                | V3C_T31GC2063 V1.1_202001110      | T31ZX | SDIO: ATBM6031   |
 | PERSONALCAM  |           |                                | T31X    | SDIO: ATBM6031   |
 
