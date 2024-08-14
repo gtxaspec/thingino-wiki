@@ -21,7 +21,8 @@ For detailed instructions on setting up and using containers to compile firmware
 Start by cloning the Thingino firmware repository to your local machine. Open a terminal and run the following command:
 
 ```bash
-git clone https://github.com/themactep/thingino-firmware
+git clone --depth=1 --recurse-submodules \
+--shallow-submodules https://github.com/themactep/thingino-firmware
 ```
 
 ### Step 2: Navigate to the Firmware Directory
