@@ -23,7 +23,7 @@ When selecting a device to use with Thingino, consider the following factors:
 Once you have your device, there are several methods to install Thingino depending on your device's capabilities:
 
 **a. Install Using USB (If USB Data Works):**
-   - If your device supports USB data transfer, you can install Thingino directly via USB. This is often the simplest method, requiring minimal technical knowledge. At a minimum, this may require disassembly, but not modification of the device.  Follow the detailed [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) guide available in the wiki.
+   - If your device supports USB data transfer, you can install Thingino directly via USB. This is often the simplest method, requiring minimal technical knowledge. At a minimum, this may require disassembly, but not modification of the device.  Follow the detailed [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) guide available in the wiki. Note that the usb cords included with cameras do not have data lines, you will need to provide your own tested cord.
 
 **b. Install via No-Tool Installation:**
    - Some devices support a [no-tool installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method, allowing you to flash Thingino without any special hardware tools. This method is ideal for users who want a straightforward installation process, with no device disassembly required. Device specific instructions can be found in the wiki.
