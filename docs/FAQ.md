@@ -42,4 +42,4 @@ While there are some similarities, there are also significant differences betwee
 
 ### Is My Data Safe? Do You Collect Data Metrics or Telemetry?
 
-Thingino does not collect any data metrics or telemetry, ensuring your data remains solely on your device and entirely under your control. Being fully open source, Thingino allows you to audit the code and verify its operations, providing full transparency and peace of mind.  **_We Don't Want Your Data!_**
+Thingino does not collect any data metrics or telemetry, ensuring your data remains solely on your device and entirely under your control. Being fully open source, Thingino allows you to audit the code and verify its operations, providing full transparency and peace of mind.  :no_entry_sign:**_We Don't Want Your Data!_**:no_entry_sign:
