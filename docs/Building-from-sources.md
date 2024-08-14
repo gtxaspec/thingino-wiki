@@ -2,6 +2,9 @@
 
 To successfully compile the firmware, you need a modern Linux distribution equipped with up-to-date system libraries and tools. Specifically:
 
+> [!IMPORTANT]  
+> Building is only supported on  **x86_64** platforms at the moment.
+
 - **Required Distribution**: Recent versions of Debian or Ubuntu, are recommended.
 - **Essential Libraries and Tools**:
   - **glibc 2.31 or newer**: Ensure your system's C library is up-to-date to avoid compatibility issues.
