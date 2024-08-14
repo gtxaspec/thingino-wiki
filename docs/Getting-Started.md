@@ -28,9 +28,9 @@ Once you have your device, there are several methods to install Thingino dependi
 **c. Install via Chip Flash Programmer:**
    - For advanced users, or if other installation methods are not feasible, you can use a chip flash programmer to install Thingino. This method requires disassembling the device and connecting a programmer to the device's flash chip. It’s recommended for users with experience in hardware programming.
 
-### 3. How to Access Your Camera Running Thingino
+### How to Access Your Camera Running Thingino
 
-After successfully installing Thingino, you can access your camera through various methods:
+After successfully installing Thingino, you can access your camera through various methods after completing [Network Setup](https://github.com/themactep/thingino-firmware/wiki/Configuring-Wi%E2%80%90Fi-Access):
 
 **a. Via RTSP:**
    - Thingino supports RTSP (Real-Time Streaming Protocol), allowing you to stream video from your camera to any RTSP-compatible player or software. The RTSP stream URL can be found in the camera's preview page after installation.
