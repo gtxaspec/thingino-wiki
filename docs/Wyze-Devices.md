@@ -1,31 +1,31 @@
 Thingino supports a variety of Wyze-branded devices.  
 
-However, beginning with the Wyze Cam Pan 3, Wyze has implemented secure boot on their SoC chips. For more details, please refer to the [Secure Boot](https://github.com/themactep/thingino-firmware/wiki/Supported-Cameras#secure-boot-and-camera-soc-security) section.  
+> [!CAUTION]
+> Beginning with the Wyze Cam Pan 3, Wyze has implemented secure boot on their SoC chips. For more details, please refer to the [Secure Boot](https://github.com/themactep/thingino-firmware/wiki/Supported-Cameras#secure-boot-and-camera-soc-security) section.  
 
 We have personally tested the following devices and can confirm their functionality. The documentation provided below is for reference:
 
 ### Device Info
 
-| MODEL     | FCC ID         | PCB VER                           |  SoC  | WIFI                  | MAC PREFIX |
-|-----------|----------------|-----------------------------------|-------|-----------------------|------------|
-| WYZEC2    | 2ANJHWYZEC2    | 2019-06-38                        | T20X  | SDIO: Realtek 8189FTV | 2C:AA:8E   |
-| WYZECP1   | 2ANJHHWYZECP1  | DF3-IFPM01 V1.4                   | T20X  | SDIO: Realtek 8189ES  | 2C:AA:8E   |
-| WYZEC3    | 2AUIUWYZEC3    | WYZEV3_T31GC2053 V1.4_20201010    | T31ZX | SDIO: Realtek 8189FTV | 7C:78:B2   |
-| WYZEC3    | 2AUIUWYZEC3A   | WYZEV3_T31GC2053 V1.2_20200715    | T31X  | SDIO: Realtek 8189FTV | 7C:78:B2   |
-| WYZEC3    | 2AUIUWYZEC3A   | WYZEV3_T31GC2053 V2.02_20210523   | T31ZX | SDIO: AltoBeam 6031   | D0:3F:27   |
-| WYZEC3    | 2AUIUWYZEC3A   | WYZEV3_T31GC2053 V2.03_20211206   | T31X  | SDIO: AltoBeam 6031   | D0:3F:27   |
-| WYZEC3    | 2AUIUWYZEC3B   | WYZEV3_T31GC2053 V2.02_20210523   | T31ZX | SDIO: Realtek 8189FTV | D0:3F:27   |
-| WYZEC3    | 2AUIUWYZEC3B   | WYZEV3_T31GC2053 V2.03_20211206   | T31X  | SDIO: Realtek 8189FTV | D0:3F:27   |
-| WYZEC3    | 2AUIUWYZEC3F   | WYZEV3_T31AGC2053 V3.2_20210714   | T31A  | SDIO: AltoBeam 6031   | D0:3F:27   |
-| WYZEC3    | 2AUIUWYZEC3F   | WYZEV3_T31AGC2053 V3.2_20210714   | T31A  | SDIO: AltoBeam 6031   | D0:3F:27   |
-| WVDBV1    | 2AUIUWVDB1A    | WYZEDB3_MB_T31_2.2                | T31X  | SDIO: Realtek 8189FTV | 7C:78:B2   |
-| WYZECP2   | 2AUIUWYZECP2   | DF3-MCU-S01-V2.2                  | T31X  | SDIO: AltoBeam 6031   | 7C:78:B2   |
-| WYZECPAN3 | 2AUIUWYZECPAN3 | WYZE PAN V3 MB V 1.3              | T31X  | SDIO: AltoBeam 6031   | D0:3F:27   |
-| WYZEC3P   | 2AUIUWYZEC3P   | WYZEV3PRO_T40GC4653_v2.2_20220228 | T40XP | SDIO: Realtek 8192FS  | D0:3F:27   |
-| WVOD2     | 2AUIUWVOD2     | HL_WCO2 MAIN01 V1.0               | T31ZX | SDIO: BCM43438        | D0:3F:27   |
-| ATOMCAM2  |                | V3C_T31GC2063 V1.1_202001110      | T31ZX | SDIO: AltoBeam 6031   | 7C:DD:E9   |
-| PERSONALCAM  |           |                                | T31??    | SDIO: AltoBeam 6031   | ??:??:??   |
-
+| MODEL     | FCC ID         | PCB VER                           |  SoC  | WIFI             |
+|-----------|----------------|-----------------------------------|-------|------------------|
+| WYZEC2    | 2ANJHWYZEC2    | 2019-06-38                        | T20X  | SDIO: RTL8189FTV |
+| WYZECP1   | 2ANJHHWYZECP1  | DF3-IFPM01 V1.4                   | T20X  | SDIO: RTL8189ES  |
+| WYZEC3    | 2AUIUWYZEC3    | WYZEV3_T31GC2053 V1.4_20201010    | T31ZX | SDIO: RTL8189FTV |
+| WYZEC3    | 2AUIUWYZEC3A   | WYZEV3_T31GC2053 V1.2_20200715    | T31X  | SDIO: RTL8189FTV |
+| WYZEC3    | 2AUIUWYZEC3A   | WYZEV3_T31GC2053 V2.02_20210523   | T31ZX | SDIO: ATBM6031   |
+| WYZEC3    | 2AUIUWYZEC3A   | WYZEV3_T31GC2053 V2.03_20211206   | T31X  | SDIO: ATBM6031   |
+| WYZEC3    | 2AUIUWYZEC3B   | WYZEV3_T31GC2053 V2.02_20210523   | T31ZX | SDIO: RTL8189FTV |
+| WYZEC3    | 2AUIUWYZEC3B   | WYZEV3_T31GC2053 V2.03_20211206   | T31X  | SDIO: RTL8189FTV |
+| WYZEC3    | 2AUIUWYZEC3F   | WYZEV3_T31AGC2053 V3.2_20210714   | T31A  | SDIO: ATBM6031   |
+| WYZEC3    | 2AUIUWYZEC3F   | WYZEV3_T31AGC2053 V3.2_20210714   | T31A  | SDIO: ATBM6031   |
+| WVDBV1    | 2AUIUWVDB1A    | WYZEDB3_MB_T31_2.2                | T31X  | SDIO: RTL8189FTV |
+| WYZECP2   | 2AUIUWYZECP2   | DF3-MCU-S01-V2.2                  | T31X  | SDIO: ATBM6031   |
+| WYZECPAN3 | 2AUIUWYZECPAN3 | WYZE PAN V3 MB V 1.3              | T31X  | SDIO: ATBM6031   |
+| WYZEC3P   | 2AUIUWYZEC3P   | WYZEV3PRO_T40GC4653_v2.2_20220228 | T40XP | SDIO: RTL8192FS  |
+| WVOD2     | 2AUIUWVOD2     | HL_WCO2 MAIN01 V1.0               | T31ZX | SDIO: BCM43438   |
+| ATOMCAM2  |                | V3C_T31GC2063 V1.1_202001110      | T31ZX | SDIO: ATBM6031   |
+| PERSONALCAM  |           |                                | T31X    | SDIO: ATBM6031   |
 
 GPIO:
 
