@@ -1,6 +1,6 @@
 ### How to Choose a Compatible Device for Thingino
 
-> [!TIP]
+> [!IMPORTANT]
 > Thingino is a DIY project that may require disassembly and some advanced computer skills. While the developers strive to ensure that all procedures and software are safe, reliable, and as user-friendly as possible, users should be prepared for the technical nature of the project. It’s important to be aware that, in rare cases, unforeseen circumstances could lead to device damage or corruption. As such, users should proceed with caution and be prepared for potential challenges.
 
 When selecting a device to use with Thingino, consider the following factors:
@@ -23,10 +23,10 @@ When selecting a device to use with Thingino, consider the following factors:
 Once you have your device, there are several methods to install Thingino depending on your device's capabilities:
 
 **a. Install Using USB (If USB Data Works):**
-   - If your device supports USB data transfer, you can install Thingino directly via USB. This is often the simplest method, requiring minimal technical knowledge. At a minimum, this may require disassembly, but not modification of the device.  Follow the detailed Ingenic USB Cloner guide available in the wiki.
+   - If your device supports USB data transfer, you can install Thingino directly via USB. This is often the simplest method, requiring minimal technical knowledge. At a minimum, this may require disassembly, but not modification of the device.  Follow the detailed [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) guide available in the wiki.
 
 **b. Install via No-Tool Installation:**
-   - Some devices support a no-tool installation method, allowing you to flash Thingino without any special hardware tools. This method is ideal for users who want a straightforward installation process, with no device disassembly required. Device specific instructions can be found in the wiki.
+   - Some devices support a [no-tool installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method, allowing you to flash Thingino without any special hardware tools. This method is ideal for users who want a straightforward installation process, with no device disassembly required. Device specific instructions can be found in the wiki.
 
 **c. Install via Chip Flash Programmer:**
    - For advanced users, or if other installation methods are not feasible, you can use a chip flash programmer to install Thingino. This method requires disassembling the device and connecting a programmer to the device's flash chip. It’s recommended for users with experience in hardware programming.
