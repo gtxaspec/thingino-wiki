@@ -1,5 +1,8 @@
 ### How to Choose a Compatible Device for Thingino
 
+> [!TIP]
+> Thingino is a DIY project that may require disassembly and some advanced computer skills. While the developers strive to ensure that all procedures and software are safe, reliable, and as user-friendly as possible, users should be prepared for the technical nature of the project. It’s important to be aware that, in rare cases, unforeseen circumstances could lead to device damage or corruption. As such, users should proceed with caution and be prepared for potential challenges.
+
 When selecting a device to use with Thingino, consider the following factors:
 
 **a. Device Type:**

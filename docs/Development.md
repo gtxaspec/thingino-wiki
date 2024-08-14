@@ -64,9 +64,7 @@ Thingino adds a few shortcut directives of its own:
 
 These toolchains are designed to support various Ingenic SoC targets and leverage different versions of GCC (GNU Compiler Collection) and libc implementations (GNU and musl).
 
-#### Toolchain Overview
-
-The following toolchains are available for development:
+The following precompiled toolchains are available for development:
 
 - **GNU GCC Toolchains for XBurst1:**
   - `toolchain_xburst1_gnu_gcc12`
@@ -100,6 +98,9 @@ These versions ensure compatibility with a wide range of software, offering deve
 #### Choosing a Toolchain
 
 When selecting a toolchain for your project, consider the following:
+
+> [!IMPORTANT]  
+> Precompiled toolchains are currently supported only on **x86_64** platforms.
 
 - **Target Architecture:** Ensure the toolchain supports your SoC (XBurst1 vs. XBurst2).
 - **Libc Implementation:** Decide between GNU libc and musl libc based on your project's needs. Musl libc is designed for static linking and simplicity, while GNU libc offers extensive features and dynamic linking support.  
