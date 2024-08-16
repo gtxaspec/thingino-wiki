@@ -23,13 +23,18 @@ When selecting a device to use with Thingino, consider the following factors:
 Once you have your device, there are several methods to install Thingino depending on your device's capabilities:
 
 **a. Install Using USB (If USB Data Works):**
-   - If your device supports USB data transfer, you can install Thingino directly via USB. This is often the simplest method, requiring minimal technical knowledge. At a minimum, this may require disassembly, but not modification of the device.  Follow the detailed [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) guide available in the wiki. Note that the usb cords included with cameras do not have data lines, you will need to provide your own tested cord.
+   - If your device supports USB data transfer, you can install Thingino directly via USB. This is often the simplest method, requiring minimal technical knowledge. At a minimum, this may require disassembly, but not modification of the device.  Follow the detailed [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) guide available in the wiki. Note that the usb cords included with cameras do not have data lines, you will need to provide your own tested cord. Also note that the presence of a USB port on the camera does not necessarily mean that USB data transfer is possible on the camera; the port may be used just to power the camera.
 
 **b. Install via No-Tool Installation:**
    - Some devices support a [no-tool installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method, allowing you to flash Thingino without any special hardware tools. This method is ideal for users who want a straightforward installation process, with no device disassembly required. Device specific instructions can be found in the wiki.
 
 **c. Install via Flash Chip Programmer:**
    - For advanced users, or if other installation methods are not feasible, you can use a [flash chip programmer](https://github.com/themactep/wiki/blob/master/hacking/ch341a-programmer.md) to install Thingino. This method requires disassembling the device and connecting a programmer to the device's flash chip. It’s recommended for users with experience in hardware programming.
+
+**d. Install via U-Boot/SD-Card:**
+   - Some cameras can be flashed via SD Card from the stock UBoot bootloader prompt.  This method requires that you access and then
+    interrupt the stock firmware's boot process via the [[UART console|UART-Connection]], load the image from the SD Card, and
+    flash it via UBoot's flash write commands.
 
 ### How to Access Your Camera Running Thingino
 
@@ -39,7 +44,7 @@ After successfully installing Thingino, you can access your camera through vario
    - Thingino supports RTSP (Real-Time Streaming Protocol), allowing you to stream video from your camera to any RTSP-compatible player or software. The RTSP stream URL can be found in the camera's preview page after installation.
 
 **b. Via Built-in Preview Page:**
-   - Thingino includes a built-in web interface that allows you to preview your camera’s video feed directly in a web browser. This is a quick and convenient way to check the camera's output without additional software.
+   - Thingino includes a built-in web interface that allows you to preview your camera’s video feed directly in a web browser in [MJPEG](https://en.wikipedia.org/wiki/Motion_JPEG) format. This is a quick and convenient way to check the camera's output without additional software, but it's more consumes more bandwidth and provides lower framerates than the H.264/H.265 streams provided via RTSP.
 
 **c. Via ONVIF:**
    - For users integrating their camera into a larger security system, Thingino supports ONVIF (Open Network Video Interface Forum) protocol. This allows your camera to be detected and managed by ONVIF-compatible network video recorders (NVRs) and software.  It is enabled by default.

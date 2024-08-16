@@ -20,10 +20,18 @@ Thingino also supports ONVIF for integrating with network video recorders (NVRs)
 
 To modify the ONVIF settings, you can edit the configuration file located at `/etc/onvif.conf`.
 
+**M-JPEG Stream:**
+
+An M-JPEG is available at
+
+`http://ip/x/mjpeg.cgi`
+
 **Still Image Snapshot:**
 
 You can capture a still image snapshot from your camera using the following URL:
 
-`http://ip/cgi-bin/image.cgi`
+`http://ip/x/image.cgi`
 
-Replace `ip` with the actual IP address of your camera.
+For both M-JPEG and the still image, replace `ip` with the actual IP address of your camera.
+The username/password is `root` and your root password (default `root`).  HTTP
+Basic Authentication is used.
