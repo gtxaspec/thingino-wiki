@@ -16,7 +16,7 @@ When selecting a device to use with Thingino, consider the following factors:
    - Visit [Thingino.com](https://thingino.com) for a list of devices that have been thoroughly tested and confirmed to work with Thingino. This list is regularly updated based on community feedback and internal testing.
 
 **c. Choosing Your Own Ingenic-Based Device:**
-   - If you choose to use a device that isn’t listed on Thingino.com, ensure it features an Ingenic SoC, as Thingino will work only on cameras that use Ingenic-based SoCs that power many affordable IP cameras. Before making a purchase, review the device’s specifications (if possible) or consult the community to verify compatibility with our [[supported hardware|Tech-Info-‐-Supported-Hardware]]. Be prepared to undertake tasks such as disassembling the device, photographing and documenting the PCB, [[connecting to UART ports|UART-Connection]] to access boot logs, and dumping the firmware. For detailed instructions, refer to the [[porting guide.|Porting-Guide]]
+   - If you choose to use a device that isn’t listed on Thingino.com, ensure it features an Ingenic SoC, as Thingino will work only on cameras that use Ingenic-based SoCs that power many affordable IP cameras. Before making a purchase, review the device’s specifications (if possible) or consult the [[community|Resources-and-Links#information]] to verify compatibility with our [[supported hardware|Tech-Info-‐-Supported-Hardware]]. Be prepared to undertake tasks such as disassembling the device, photographing and documenting the PCB, [[connecting to UART ports|UART-Connection]] to access boot logs, and dumping the firmware. For detailed instructions, refer to the [[porting guide.|Porting-Guide]]
 
 ### Determining How to Install Thingino
 
