@@ -5,12 +5,8 @@
 
 When selecting a device to use with Thingino, consider the following factors:
 
-**a. Device Type:**
-   - **PTZ (Pan-Tilt-Zoom):** If you need a camera that can pan, tilt, and zoom, consider PTZ models. These are ideal for larger areas where you want more control over the viewing angle.
-   - **Indoor Cameras:** Choose this type if you need a camera for monitoring indoor spaces. They are generally smaller and more aesthetically pleasing for home or office use.
-   - **Outdoor PTZ Cameras:** These are designed for outdoor use and offer PTZ functionality while being weather-resistant.
-   - **Outdoor Weatherproof Cameras:** Ideal for fixed-angle monitoring in outdoor environments. These cameras are built to withstand various weather conditions.
-   - **Doorbell Cameras:** If you need a smart doorbell with camera functionality, look for doorbell camera models that are compatible with Thingino.
+**a. Device Type:**  
+   - Thingino supports a variety of devices, including indoor and outdoor cameras, fixed-angle and PTZ (Pan-Tilt-Zoom) models, and smart doorbell cameras. Whether you need a basic indoor camera, a weatherproof outdoor model, or advanced PTZ functionality, Thingino offers compatibility with a wide range of devices for various use cases.
 
 **b. Confirmed Working Devices:**
    - Visit [Thingino.com](https://thingino.com) for a list of devices that have been thoroughly tested and confirmed to work with Thingino. This list is regularly updated based on community feedback and internal testing.
