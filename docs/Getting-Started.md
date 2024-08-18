@@ -45,3 +45,4 @@ After successfully installing Thingino, you can access your camera through vario
 **c. Via ONVIF:**
    - For users integrating their camera into a larger security system, Thingino supports ONVIF (Open Network Video Interface Forum) protocol. This allows your camera to be detected and managed by ONVIF-compatible network video recorders (NVRs) and software.  It is enabled by default.
 
+Once your device is up and running with Thingino, consider giving back to the community by [[contributing|Contributions]]. Whether it's through sharing your knowledge, improving the code, updating documentation, or simply spreading the word about Thingino, your contributions help make the project better for everyone. By getting involved, you can help shape the future of Thingino and support other users in their journey. Every contribution, no matter the size, makes a difference!
