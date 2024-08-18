@@ -39,8 +39,8 @@ After successfully installing Thingino, you can access your camera through vario
 **a. Via RTSP:**
    - Thingino supports RTSP (Real-Time Streaming Protocol), allowing you to stream video from your camera to any RTSP-compatible player or software. The RTSP stream URL can be found in the camera's preview page after installation.
 
-**b. Via Built-in Preview Page:**
-   - Thingino includes a built-in web interface that allows you to preview your camera’s video feed directly in a web browser in [MJPEG](https://en.wikipedia.org/wiki/Motion_JPEG) format. This is a quick and convenient way to check the camera's output without additional software, but it's more consumes more bandwidth and provides lower framerates than the H.264/H.265 streams provided via RTSP.
+**b. Via Built-in Web-UI Preview Page:**
+   - Thingino includes a built-in web interface that allows you to preview your camera’s video feed directly in a web browser in [MJPEG](https://en.wikipedia.org/wiki/Motion_JPEG) format. This is a quick and convenient way to check the camera's output without additional software, but it's more consumes more bandwidth and provides lower framerates than the H.264/H.265 streams provided via RTSP.  See the [[Web-UI|Web-UI]] entry for more information.
 
 **c. Via ONVIF:**
    - For users integrating their camera into a larger security system, Thingino supports ONVIF (Open Network Video Interface Forum) protocol. This allows your camera to be detected and managed by ONVIF-compatible network video recorders (NVRs) and software.  It is enabled by default.

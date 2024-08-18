@@ -14,6 +14,7 @@ For more details on our project philosophy, please see the [Project Philosophy](
 
 Please join our [Telegram channel][3] and [Discord server][4] for realtime conversation with developers and users of the firmware. 
 
+New users can begin by visiting the [[Getting Started|getting-started]] entry.  
 
 [1]: https://github.com/gtxaspec/prudynt-t
 [2]: https://github.com/gtxaspec/raptor
