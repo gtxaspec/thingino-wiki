@@ -1,6 +1,6 @@
 ### Video Streaming Endpoints
 
-Thingino provides several video streaming endpoints that you can use to access your camera feeds:
+The default streamer in Thingino is [prudynt-t](https://github.com/gtxaspec/prudynt-t). Prudynt offers multiple video streaming endpoints that allow you to access your camera feeds:
 
 **Default RTSP Endpoints:**
 - **1080p Feed:** `rtsp://thingino:thingino@ip/ch0`
