@@ -2,6 +2,8 @@ The Ingenic USB Cloner application is a PC side utility that interfaces with the
 By placing the SOC into "USB-Boot" mode, you are able to use the Ingenic USB Cloner to directly flash the firmware chip
 without physically removing, or interfacing to the flash chip.  This method simplifies firmware backup and installation on capable devices.
 
+This guide provides step-by-step instructions for completing a full backup and writing a firmware binary to your device. It is designed to walk you through the process, helping you become familiar with the Ingenic Cloner tool. However, please note that this guide is not intended to be an all-inclusive reference and does not cover all features of Cloner. It focuses on the basic steps needed to perform the outlined tasks, offering a foundation for using the utility effectively.
+
 ## Downloading Cloner  
 > [!TIP]
 > For better success and compatibility, we suggest using the Linux version of Cloner.
