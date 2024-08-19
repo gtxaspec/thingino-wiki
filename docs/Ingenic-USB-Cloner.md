@@ -54,7 +54,7 @@ After entering the password in the previous step, the **Config** button should n
 
 In the **Config** window, under the **INFO** tab, access various configuration menus.
 
-In the **Platform** dropdown menu, select _T_. Choose the appropriate SOC version for your device next to _Platform T_.
+In the **Platform** dropdown menu, select **_T_**. Choose the appropriate SOC version for your device next to **_Platform T_**.
 
 ![](https://thingino.com/a/cloner-0-6.png)
 
@@ -96,7 +96,7 @@ Select the firmware image file you want to write, and click Open.
 
 ![](https://thingino.com/a/cloner-0-9.png)
 
-Click **Save** button to return to the main screen.
+Once you have selected your firmware image file for writiing, click the **Save** button to return to the main screen.
 
 ![](https://thingino.com/a/cloner-0-10.png)
 
@@ -130,12 +130,16 @@ Short pins 5 and 6 ON THE FLASH CHIP, not SoC or any other chip, use the photos 
 
 While maintaining the short, connect the USB cable to the computer. Wait 5 seconds, then release the short.
 
-It may take up to 30 seconds for Cloner to recognize the device. Check your Device Manager, or `dmesg` for the Ingenic Cloner device.
+It may take up to 30 seconds for Cloner to recognize the device. On Windows, you can check if the device is detected via Device Manager, and on Linux, you can use dmesg to verify detection of the Ingenic Cloner device.
 
 ![](https://thingino.com/a/windows-device-manager-libusb.png)
 
-Once all progress bars turn green, the operations are complete.
+Once the device is recognized, the progress bars will change from purple to green. When all bars are green, the operations are complete.
 
 Carefully follow these steps to ensure the Cloner application is set up correctly and operates as expected.
 
-Vendor Documentation: [Quick Guide PDF](https://thingino.com/dl/USBCloner_The_Burn_tool_Quick_Guide.pdf)
+## Vendor Documentation
+
+Refer to the vendor documentation for additional in-depth information.  
+
+[Quick Guide PDF](https://thingino.com/dl/USBCloner_The_Burn_tool_Quick_Guide.pdf)
