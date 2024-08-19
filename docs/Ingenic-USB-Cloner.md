@@ -8,7 +8,7 @@ This guide provides step-by-step instructions for completing a full backup and w
 > [!TIP]
 > For better success and compatibility, we strongly recommend using the Linux version of Ingenic USB Cloner.
 
-Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.
+Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.configs/modules/t31x_sc3336_syn43438
 
 - [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-ubuntu_alpha_thingino.tar.gz)
 - [Ingenic Cloner for Windows](https://thingino.com/dl/cloner-2.5.43-windows_alpha_thingino.zip)
@@ -23,7 +23,7 @@ Create a folder named `0_Firmware_Root` inside the Cloner directory.
 ![](https://github.com/user-attachments/assets/28584a28-394c-47ac-9fd7-14b8e9120be3)
 
 > [!CAUTION]
-> The `0_Firmware_Root` directory **MUST** be created and correctly named to ensure backups are completed successfully.  
+> The `0_Firmware_Root` directory **MUST** be created and correctly named to ensure backups are completed successfully. Backup operations will **fail** if this directory is missing.
 
 Open the Cloner application. Ensure you are using version 2.5.43 for compatibility.
 
