@@ -2,16 +2,19 @@ The Ingenic USB Cloner application is a PC side utility that interfaces with the
 By placing the SOC into "USB-Boot" mode, you are able to use the Ingenic USB Cloner to directly flash the firmware chip
 without physically removing, or interfacing to the flash chip.
 
+## Downloading Cloner  
 > [!TIP]
 > For better success and compatibility, we suggest using the Linux version of Cloner.
 
-## Downloading Cloner  
 Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.
 
 - [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-ubuntu_alpha_thingino.tar.gz)
 - [Ingenic Cloner for Windows](https://thingino.com/dl/cloner-2.5.43-windows_alpha_thingino.zip)
 
 Navigate to the `cloner-2.5.xx-ubuntu_alpha` directory, with "xx" indicating your downloaded version of Cloner.
+
+> [!IMPORTANT]  
+> Windows users may need to install additional drivers for support.  See the [[Vendor Documentation|Ingenic-USB-Cloner#vendor-documentation]] PDF Guide for additional details.
 
 Create a folder named `0_Firmware_Root` inside the Cloner directory.
 
