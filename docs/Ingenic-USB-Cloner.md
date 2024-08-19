@@ -2,10 +2,15 @@ The Ingenic USB Cloner application is a PC side utility that interfaces with the
 By placing the SOC into "USB-Boot" mode, you are able to use the Ingenic USB Cloner to directly flash the firmware chip
 without physically removing, or interfacing to the flash chip.
 
+> [!TIP]
+> For better success and compatibility, we suggest using the Linux version of Cloner.
+
+## Downloading Cloner  
+
 Download Cloner bundle for your operating system using the links below. Extract the bundle to a working directory on your computer.
 
-- [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-ubuntu_alpha_thingino.tar.gz) (recommended)
-- [Ingenic Cloner for Windows](https://thingino.com/dl/cloner-2.5.43-windows_alpha_thingino.zip) (not recommended)
+- [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-ubuntu_alpha_thingino.tar.gz)
+- [Ingenic Cloner for Windows](https://thingino.com/dl/cloner-2.5.43-windows_alpha_thingino.zip)
 
 Navigate to the `cloner-2.5.xx-ubuntu_alpha` directory, with "xx" indicating your downloaded version of Cloner.
 
@@ -15,29 +20,33 @@ Open the Cloner application. Ensure you are using version 2.5.43 for compatibili
 
 ![](https://thingino.com/a/cloner-0-1.png)
 
-- Download extra configuration files [from here](https://thingino.com/dl/cloner_profiles.ingenic)
+## Installing configuration bundle 
+
+- Download the configuration bundle [from here](https://thingino.com/dl/cloner_profiles.ingenic)
 or [from here](https://github.com/gtxaspec/ingenic-cloner-profiles/releases/download/latest/cloner_profiles.ingenic).
 
-Click "Load Image" and select the downloaded `cloner_profiles.ingenic` file.
-
+Click **Load Image** and select the downloaded `cloner_profiles.ingenic` file.
+ 
 ![](https://thingino.com/a/cloner-0-2.png)
-
-If the lock level became "2", change it back to "0".
-
-![](https://thingino.com/a/cloner-0-3.png)
-
-Enter _!@#_ (_exclamation mark_, _"at" symbol_, _number sign_) as the password.
-
-![](https://thingino.com/a/cloner-0-4.png)
-
-The **Config** button should reappear.
-
-![](https://thingino.com/a/cloner-0-5.png)
 
 > [!IMPORTANT]  
 > The options described in the screenshots will not match if you did not load the `cloner_profiles.ingenic` bundle as outlined in the previous steps.
 
-Click the **Config** button in the top-right corner.
+## Enable configuration mode  
+
+Change the **Lock Level** from **2**, to **0**
+
+![](https://thingino.com/a/cloner-0-3.png)
+
+Enter **_!@#_** (_exclamation mark_, _"at" symbol_, _number sign_) as the password.  Click OK.
+
+![](https://thingino.com/a/cloner-0-4.png)
+
+## Cloner configuration
+
+After entering the password in the previous step, the **Config** button should now appear in the main screen. Click the **Config** button in the top-right corner.
+
+![](https://thingino.com/a/cloner-0-5.png)
 
 In the **Config** window, under the **INFO** tab, access various configuration menus.
 
@@ -45,9 +54,22 @@ In the **Platform** dropdown menu, select _T_. Choose the appropriate SOC versio
 
 ![](https://thingino.com/a/cloner-0-6.png)
 
-In the **Board** dropdown menu, select the relevant operation: _sfc_nor_writer_full.cfg_ for the selected SoC.
+## Cloner Function Setup
 
-![](https://thingino.com/a/cloner-0-7.png)
+### Backup
+
+> [!WARNING]  
+> We **strongly recommend** using Cloner to create a **full backup** of the existing stock firmware. This is an essential step if you ever need to restore the original functionality or analyze the stock firmware for compatibility.
+
+In the **Board** dropdown menu, choose the appropriate _**reader**_ operation based on your device's flash chip size. The available options are 8MB, 16MB, and 32MB.
+
+For the example below, we will select: _sfc_nor_reader_16M.cfg_ for the specific SoC.
+
+![](https://github.com/user-attachments/assets/ced87cec-5ae5-407f-ad43-a4f5d89bcf0f)
+
+Click the **Save** button to save your choice and return to the main menu.
+
+### Writer operations
 
 On the **POLICY** tab, click "..." (_three dot_) button in the setting column and select the firmware image file you want to write.
 
@@ -93,3 +115,7 @@ Once all progress bars turn green, the operations are complete.
 Carefully follow these steps to ensure the Cloner application is set up correctly and operates as expected.
 
 [Quick Guide PDF](https://thingino.com/dl/USBCloner_The_Burn_tool_Quick_Guide.pdf)
+
+
+====
+![cloner writer full profile](https://thingino.com/a/cloner-0-7.png)
