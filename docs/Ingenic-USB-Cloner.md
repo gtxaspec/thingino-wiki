@@ -8,7 +8,7 @@ This guide provides step-by-step instructions for completing a full backup and w
 > [!TIP]
 > For better success and compatibility, we strongly recommend using the Linux version of Ingenic USB Cloner.
 
-Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.configs/modules/t31x_sc3336_syn43438
+Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.
 
 - [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-ubuntu_alpha_thingino.tar.gz)
 - [Ingenic Cloner for Windows](https://thingino.com/dl/cloner-2.5.43-windows_alpha_thingino.zip)

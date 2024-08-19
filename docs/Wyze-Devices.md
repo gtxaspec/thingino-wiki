@@ -1,9 +1,27 @@
-Thingino supports a variety of Wyze-branded devices.  
+Thingino supports a variety of Wyze-branded devices. 
+
+## Supported Devices
 
 > [!CAUTION]
 > Beginning with the Wyze Cam Pan 3, Wyze has implemented secure boot on their SoC chips. For more details, please refer to the [Secure Boot](https://github.com/themactep/thingino-firmware/wiki/Supported-Cameras#secure-boot-and-camera-soc-security) section.  
 
-We have personally tested the following devices and can confirm their functionality. The documentation provided below is for reference:
+### Installation
+Thingino has great support for the Wyze Cam V2 and Wyze Cam V3.
+
+1. Watch the following No Tool Installation guides
+   * [Wyze Cam V2](https://www.youtube.com/watch?v=1pSx_jaXfoE)
+   * [Wyze Cam V3](https://www.youtube.com/watch?v=SX637mrp0R0)
+1. Follow the steps in [Getting Started](https://github.com/themactep/thingino-firmware/wiki/Getting-Started) including making a **full backup**
+1. Configure the camera with the following settings to best mimic stock behavior:
+   * Motion Settings:
+     * sensitivity: 8
+   * Audio Settings:
+     * input_vol: 120;
+     * input_gain: 31;
+     * input_alc_gain: 7;
+     * input_noise_suppression: 1;
+
+Alternatively, we have personally tested the following devices and can confirm their functionality. The documentation provided below is for reference:
 
 ### Device Info
 
