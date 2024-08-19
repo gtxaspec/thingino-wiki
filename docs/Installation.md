@@ -8,6 +8,7 @@ Off the top of my head, I can think of the following methods to replace the stoc
 - Use [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) and reprogram via USB port (requires a USB OTG port on the camera, USB cable with data lines).
 - Use programming clip on the chip on the board and re-program in place (requires a programmer and a clip).
 - Use SD cart and replace firmware from U-Boot shell (requires SD card slot, UART connection, access to U-Boot shell).
+- Use a [No Tool Installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method if it exists for your camera.
 - Use [wz_mini_hacks](https://github.com/gtxaspec/wz_mini_hacks) and get creative (requires SD card slot).
 - Break the stock Linux password and get access to the shell (requires a UART connection)
 - ... maybe something else
