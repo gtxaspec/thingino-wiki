@@ -6,7 +6,7 @@ This guide provides step-by-step instructions for completing a full backup and w
 
 ## Downloading Cloner  
 > [!TIP]
-> For better success and compatibility, we suggest using the Linux version of Cloner.
+> For better success and compatibility, we strongly recommend using the Linux version of Ingenic USB Cloner.
 
 Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.
 
@@ -139,6 +139,9 @@ It may take up to 30 seconds for Cloner to recognize the device. On Windows, you
 ![](https://thingino.com/a/windows-device-manager-libusb.png)
 
 Once the device is recognized, the progress bars will change from purple to green. When all bars are green, the operations are complete.
+
+> [!IMPORTANT]  
+> We strongly recommend running the backup process at least _**twice**_ to ensure data integrity. After completing a backup, be sure to copy **all** files from the `0_Firmware_Root` directory to a secure location, otherwise they **_will_** be overwritten!  Keep _**both**_ backup copies for safekeeping and future reference.  
 
 Carefully follow these steps to ensure the Cloner application is set up correctly and operates as expected.
 
