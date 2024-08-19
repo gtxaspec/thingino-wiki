@@ -1,6 +1,6 @@
 The Ingenic USB Cloner application is a PC side utility that interfaces with the "USB-Boot" mode built into Ingenic SOCs.
 By placing the SOC into "USB-Boot" mode, you are able to use the Ingenic USB Cloner to directly flash the firmware chip
-without physically removing, or interfacing to the flash chip.
+without physically removing, or interfacing to the flash chip.  This method simplifies firmware backup and installation on capable devices.
 
 ## Downloading Cloner  
 > [!TIP]
@@ -29,8 +29,7 @@ Open the Cloner application. Ensure you are using version 2.5.43 for compatibili
 
 ## Installing configuration bundle 
 
-- Download the configuration bundle [from here](https://thingino.com/dl/cloner_profiles.ingenic)
-or [from here](https://github.com/gtxaspec/ingenic-cloner-profiles/releases/download/latest/cloner_profiles.ingenic).
+- Download the latest configuration bundle [from here](https://github.com/gtxaspec/ingenic-cloner-profiles/releases/download/latest/cloner_profiles.ingenic).
 
 Click **Load Image** and select the downloaded `cloner_profiles.ingenic` file.
  
