@@ -6,8 +6,7 @@ without physically removing, or interfacing to the flash chip.
 > For better success and compatibility, we suggest using the Linux version of Cloner.
 
 ## Downloading Cloner  
-
-Download Cloner bundle for your operating system using the links below. Extract the bundle to a working directory on your computer.
+Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.
 
 - [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-ubuntu_alpha_thingino.tar.gz)
 - [Ingenic Cloner for Windows](https://thingino.com/dl/cloner-2.5.43-windows_alpha_thingino.zip)
@@ -15,6 +14,11 @@ Download Cloner bundle for your operating system using the links below. Extract 
 Navigate to the `cloner-2.5.xx-ubuntu_alpha` directory, with "xx" indicating your downloaded version of Cloner.
 
 Create a folder named `0_Firmware_Root` inside the Cloner directory.
+
+![](https://github.com/user-attachments/assets/28584a28-394c-47ac-9fd7-14b8e9120be3)
+
+> [!CAUTION]
+> The `0_Firmware_Root` directory **MUST** be created and correctly named to ensure backups are completed successfully.  
 
 Open the Cloner application. Ensure you are using version 2.5.43 for compatibility.
 
@@ -54,6 +58,8 @@ In the **Platform** dropdown menu, select _T_. Choose the appropriate SOC versio
 
 ![](https://thingino.com/a/cloner-0-6.png)
 
+Next, you can proceed with either performing a [[backup|Ingenic-USB-Cloner#backup]] or [[writing firmware|Ingenic-USB-Cloner#writing-firmware]].
+
 ## Cloner Function Setup
 
 ### Backup
@@ -69,11 +75,24 @@ For the example below, we will select: _sfc_nor_reader_16M.cfg_ for the specific
 
 Click the **Save** button to save your choice and return to the main menu.
 
-### Writer operations
+![](https://github.com/user-attachments/assets/a5db14c8-b688-4f52-a3b2-af1fb63d9b14)
 
-On the **POLICY** tab, click "..." (_three dot_) button in the setting column and select the firmware image file you want to write.
+You may now begin [[the backup operation.|ingenic-usb-cloner#starting-cloner-operations]]
+
+### Writing Firmware
+
+In the **Board** dropdown menu, select the appropriate _**writer**_ operation based on your specific needs. The available options are:
+
+- **_sfc_nor_writer.cfg**: for writing individual partitions  
+- **_sfc_nor_writer_full.cfg**: for writing full firmware images
+
+![cloner writer full profile](https://thingino.com/a/cloner-0-7.png)
+
+Find and click on the **POLICY** tab, then click **...** (_three dot_) button in the setting column to open the file selection dialog.
 
 ![](https://thingino.com/a/cloner-0-8.png)
+
+Select the firmware image file you want to write, and click Open.
 
 ![](https://thingino.com/a/cloner-0-9.png)
 
@@ -81,15 +100,20 @@ Click **Save** button to return to the main screen.
 
 ![](https://thingino.com/a/cloner-0-10.png)
 
+### Starting Cloner Operations
+
 Click **Start** button on the main screen.
 
-![](https://thingino.com/a/cloner-0-11.png)
+![image](https://github.com/user-attachments/assets/af05e268-060d-4ccc-aea1-d9a047302e2f)
 
-Plug the USB cable into the device, leaving the other end unplugged.
+At this stage, ensure your device is unplugged from your computer.
 
-If you are flashing a blank flash memory chip, or the bootloader is not installed, the Ingenic SoC will default to "USB-Boot" mode. Shorting pins on the flash chip is **not** required in this case.
+Connect the USB cable to the device, but leave the other end disconnected.
 
-Otherwise, locate the flash memory chip on the camera circuit board. Typically this is a square chip with 8 pins labeled _25Q64_ or _25Q128_, rarely _25L64_ or _25L128_. If you have trouble locating the chip, try taking some pictures of your board from both sides.
+> [!IMPORTANT]  
+> If you are flashing a blank flash memory chip, or the bootloader is not installed, the Ingenic SoC will default to "USB-Boot" mode. Shorting pins on the flash chip is **not** required in this case.
+
+Locate the flash memory chip on the camera circuit board. Typically this is a square chip with 8 pins labeled _25Q64_ or _25Q128_, rarely _25L64_ or _25L128_. If you have trouble locating the chip, try taking some pictures of your board from both sides.  You can then try and reach out to our [[community|Resources-and-Links#information]] for further assistance.
 
 Pins 5 and 6 of the SOIC8 chip are on the opposite corner of pin 1, indicated by the embossed or drawn dot next to it.
 
@@ -104,7 +128,7 @@ Short pins 5 and 6 ON THE FLASH CHIP, not SoC or any other chip, use the photos 
 
 ![](https://thingino.com/a/flash-chip-short.png)
 
-While maintaining the short, connect the USB cable to the computer. Wait 2 seconds, then release the short.
+While maintaining the short, connect the USB cable to the computer. Wait 5 seconds, then release the short.
 
 It may take up to 30 seconds for Cloner to recognize the device. Check your Device Manager, or `dmesg` for the Ingenic Cloner device.
 
@@ -114,8 +138,4 @@ Once all progress bars turn green, the operations are complete.
 
 Carefully follow these steps to ensure the Cloner application is set up correctly and operates as expected.
 
-[Quick Guide PDF](https://thingino.com/dl/USBCloner_The_Burn_tool_Quick_Guide.pdf)
-
-
-====
-![cloner writer full profile](https://thingino.com/a/cloner-0-7.png)
+Vendor Documentation: [Quick Guide PDF](https://thingino.com/dl/USBCloner_The_Burn_tool_Quick_Guide.pdf)
