@@ -8,10 +8,7 @@ Thingino supports a variety of Wyze-branded devices.
 ### Installation
 Thingino has great support for the Wyze Cam V2 and Wyze Cam V3.
 
-1. Watch the following No Tool Installation guides
-   * [Wyze Cam V2](https://www.youtube.com/watch?v=1pSx_jaXfoE)
-   * [Wyze Cam V3](https://www.youtube.com/watch?v=SX637mrp0R0)
-1. Follow the steps in [Getting Started](https://github.com/themactep/thingino-firmware/wiki/Getting-Started) including making a **full backup**
+1. Follow the steps in [Getting Started](https://github.com/themactep/thingino-firmware/wiki/Getting-Started) to install Thingino.
 1. Configure the camera with the following settings to best mimic stock behavior:
    * Motion Settings:
      * sensitivity: 8

@@ -14,26 +14,22 @@ When selecting a device to use with Thingino, consider the following factors:
 **c. Choosing Your Own Ingenic-Based Device:**
    - If you choose to use a device that isn’t listed on Thingino.com, ensure it features an Ingenic SoC, as Thingino will work only on cameras that use Ingenic-based SoCs that power many affordable IP cameras. Before making a purchase, review the device’s specifications (if possible) or consult the [[community|Resources-and-Links#information]] to verify compatibility with our [[supported hardware|Tech-Info-‐-Supported-Hardware]]. Be prepared to undertake tasks such as disassembling the device, photographing and documenting the PCB, [[connecting to UART ports|UART-Connection]] to access boot logs, and dumping the firmware. For detailed instructions, refer to the [[porting guide.|Porting-Guide]]
 
-### Backup Your Existing Firmware
-
-> [!WARNING]  
-> We **strongly recommend** using Cloner to create a **full backup** of the existing stock firmware.
-
-Decide if you want to revert to stock in the future. This is an essential step if you ever need to restore the original functionality or analyze the stock firmware for compatibility. At a minimum, this may require disassembly, but not modification of the device. Follow the [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) guide to perform a full backup.
-
 ### Determining How to Install Thingino
 
-Once you have your device, there are several methods to install Thingino depending on your device's capabilities:
+> [!WARNING]  
+> We **strongly recommend** creating a **full backup** of the existing stock firmware. This is an essential step if you ever need to restore the original functionality or analyze the stock firmware for compatibility.
+
+Once you have your device, there are several methods to create a full backup and then install Thingino depending on your device's capabilities:
 
 **a. Install Using USB (If USB Data Works):**
-   - If your device supports USB data transfer, you can install Thingino directly via USB. This is often the simplest method, requiring minimal technical knowledge. If you already performed a backup using Cloner, this is the most straight forward method. Follow the detailed [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) guide available in the wiki. 
+   - If your device supports USB data transfer, you can backup and then install Thingino directly via USB. This is often the simplest method, requiring minimal technical knowledge. At a minimum, this may require disassembly, but not modification of the device. Follow the detailed [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) guide available in the wiki. 
    - Note that the usb cords included with cameras typically do not have data lines, you will need to provide your own tested cord. Also note that the presence of a USB port on the camera does not necessarily mean that USB data transfer is possible on the camera; the port may be used just to power the camera.
 
 **b. Install via No-Tool Installation:**
    - Some devices support a [no-tool installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method, allowing you to flash Thingino without any special hardware tools. This method is ideal for users who want a straightforward installation process, with no device disassembly required. Device specific instructions can be found in the wiki.
 
 **c. Install via Flash Chip Programmer:**
-   - For advanced users, or if other installation methods are not feasible, you can use a [flash chip programmer](https://github.com/themactep/wiki/blob/master/hacking/ch341a-programmer.md) to install Thingino. This method requires disassembling the device and connecting a programmer to the device's flash chip. It’s recommended for users with experience in hardware programming.
+   - For advanced users, or if other installation methods are not feasible, you can use a [flash chip programmer](https://github.com/themactep/wiki/blob/master/hacking/ch341a-programmer.md) to backup and then install Thingino. This method requires disassembling the device and connecting a programmer to the device's flash chip. It’s recommended for users with experience in hardware programming.
 
 **d. Install via U-Boot/SD-Card:**
    - Some cameras can be flashed via SD Card from the stock UBoot bootloader prompt.  This method requires that you access and then

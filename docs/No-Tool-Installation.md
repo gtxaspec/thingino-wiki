@@ -39,6 +39,9 @@ Eject the card, put it in the camera, turn it on and wait two minutes, then foll
 
 ## Information about other cameras that support a No Tool Install
 
+> [!WARNING]  
+> The following installers **DO NOT** create a **full backup** and require technical know-how to revert back to the stock firmware.
+
 Josh from [WLTechBlog](https://www.youtube.com/@wltechblog) published a number of videos describing the process for multiple cameras:
 
 - [Wyze Cam V2](https://www.youtube.com/watch?v=1pSx_jaXfoE)
