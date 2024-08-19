@@ -59,6 +59,7 @@
 ### E
 
 - ECL - Emitter-Coupled Logic
+- eFuse - Electrical Fuse, one-time programmable memory
 - ESR - Equivalent Series Resistance
 
 ### F
