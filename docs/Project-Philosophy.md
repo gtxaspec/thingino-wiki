@@ -4,7 +4,7 @@ We are a welcoming and friendly group of embedded development enthusiasts. Howev
 
 When you join the conversation, don't just come to take — bring something to share with others.
 
-We have a wealth of resources and a rich history of discussions. Before asking questions, explore the knowledge base, read the wiki, and use the search function.
+We have a wealth of resources and a rich history of discussions. Before asking questions, explore the knowledge base, including the discussion history in both Discord and Telegram, read the wiki, and use the search function.
 
 Spread the word, and help newcomers find their way.
 
