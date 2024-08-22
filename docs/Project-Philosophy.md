@@ -2,7 +2,7 @@
 
 We are a welcoming and friendly group of embedded development enthusiasts. However, respect must be earned — it is not given automatically, and special treatment should not be expected.
 
-When you join the conversation, don't just come to take — bring something to share with others.
+When you join the conversation, When you join the conversation, come not just to take, but also to share with others.
 
 We have a wealth of resources and a rich history of discussions. Before asking questions, explore the knowledge base, including the discussion history in both Discord and Telegram, read the wiki, and use the search function.
 
@@ -12,7 +12,7 @@ Spread the word, and help newcomers find their way.
 
 In Thingino, common sense is the foundation of our development decisions. While it's easy to get lost in technical details and complex solutions, we believe that simplicity and practicality should guide our work.  
 
-Embedded development often lacks this straightforward approach, but we strive to change that.
+Embedded development often lacks this straightforward approach — we aim to change that.
 
 We prioritize clear, effective solutions over unnecessary complexity. This means thinking critically about what truly needs to be done and finding the most efficient way to achieve it. If a solution is obvious and works well, we embrace it — prioritizing simplicity and effectiveness over complexity.
 
@@ -29,7 +29,7 @@ Less is more. Try to get the best result with the least amount of code and the s
 
 Any camera-specific configuration and customization should be done outside the camera, if possible.
 
-Bad code is better than no code at all. But good code is better than bad code.
+Bad code is better than no code at all, but good code is always better than bad code.
 
 Scripts, comments, documentation, and examples should go to off-camera resources: project website, project wiki, etc.
 Remember that we only have so much space in embedded.
