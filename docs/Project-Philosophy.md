@@ -2,7 +2,7 @@
 
 We are a welcoming and friendly group of embedded development enthusiasts. However, respect must be earned — it is not given automatically, and special treatment should not be expected.
 
-When you join the conversation, When you join the conversation, come not just to take, but also to share with others.
+When you join the conversation, come not just to take, but also to share with others.
 
 We have a wealth of resources and a rich history of discussions. Before asking questions, explore the knowledge base, including the discussion history in both Discord and Telegram, read the wiki, and use the search function.
 
