@@ -37,6 +37,9 @@ cp v4_boot.bin /media/yoursdcard/
 ```
 Eject the card, put it in the camera, turn it on and wait two minutes, then follow the [[Wifi Portal Setup Process|Configuring-Wi‐Fi-Access#captive-portal]].
 
+## Wansview W6 / T21
+- Coming soon
+
 ## Information about other cameras that support a No Tool Install
 
 > [!WARNING]  
