@@ -33,7 +33,7 @@ Once you have your device, there are several methods to create a full backup and
 
 **d. Install via U-Boot/SD-Card:**
    - Some cameras can be flashed via SD Card from the stock UBoot bootloader prompt.  This method requires that you access and then
-    interrupt the stock firmware's boot process via the [[UART console|UART-Connection]], load the image from the SD Card, and
+    interrupt the stock firmware's boot process via the [[UART console|Installation#from-an-sd-card]], load the image from the SD Card, and
     flash it via UBoot's flash write commands.
 
 ### How to Access Your Camera Running Thingino
