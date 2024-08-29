@@ -14,6 +14,9 @@ When selecting a device to use with Thingino, consider the following factors:
 **c. Choosing Your Own Ingenic-Based Device:**
    - If you choose to use a device that isn’t listed on Thingino.com, ensure it features an Ingenic SoC, as Thingino will work only on cameras that use Ingenic-based SoCs that power many affordable IP cameras. Before making a purchase, review the device’s specifications (if possible) or consult the [[community|Resources-and-Links#information]] to verify compatibility with our [[supported hardware|Tech-Info-‐-Supported-Hardware]]. Be prepared to undertake tasks such as disassembling the device, photographing and documenting the PCB, [[connecting to UART ports|UART-Connection]] to access boot logs, and dumping the firmware. For detailed instructions, refer to the [[porting guide.|Porting-Guide]]
 
+**d. Performance Specifications:**
+   - We recommend selecting a device with an Ingenic X series SoC, such as the T20X, T30X, or T31X/ZX/A, because these SoCs come equipped with 128MB of onboard RAM. Additionally, look for a device with a flash chip of at least 16MB, as this will enhance the device’s longevity. Insufficient RAM can lead to performance limitations, and low storage capacity will severely restrict the addition of new features.
+
 ### Determining How to Install Thingino
 
 > [!WARNING]  
