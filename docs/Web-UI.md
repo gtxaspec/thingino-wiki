@@ -1,23 +1,36 @@
-Thingino Web User Interface is available on port 80. 
+### Accessing the Web UI
 
-The default credentials for accessing the Web UI are _root_ for username and _root_ for password (or whatever password you set via the captive portal or via ssh).
+Once you have set up your Thingino device, you can access the web UI to configure and manage your device. The web UI can be accessed through the following URLs:
 
-![thingino-webui-preview](https://github.com/themactep/thingino-firmware/assets/37488/51378025-8711-4a24-9056-453777fe8315)In the Thingino Web UI, you can easily control PTZ (Pan-Tilt-Zoom) devices by hovering over the preview image. This action reveals the PTZ controls, allowing you to adjust the camera's position. To reset the camera to its default position, simply double-click the circle in the center of the PTZ controls.
+- **Using the hostname**: `http://hostname.local`
+- **Using the IP address**: `http://192.168.1.100` (replace with your actual IP address)
 
-For night vision settings, hover over the bottom of the preview image to bring up the night vision control bar. This bar provides quick access to adjust the night vision functionality on your device.
+For example, if you set up your device with a hostname of `thingino-device`, you can access the web UI at:
 
-## Infrared Night Vision
+- `http://thingino-device.local`
 
-The day/night tolerance and thresholds help determine when to switch between day and night modes based on the current lighting conditions. These settings are guided by "gain," which measures the difference between the scene's darkness and the preview image's brightness.
+If you prefer to use the IP address or if hostname resolution is not working, you can access the web UI at:
 
-- **Day/Night Trigger Threshold**: This setting defines the light level at which the camera switches modes. If the light drops below this level, it switches to night mode, possibly using infrared light for better visibility. If it's brighter, the camera switches back to day mode.
+- `http://192.168.1.100` (replace `192.168.1.100` with the actual IP address assigned to your Thingino device)
 
-- **Day/Night Tolerance**: This acts as a buffer to prevent the camera from frequently switching modes due to minor changes in lighting. It requires a more noticeable change in light before the camera switches modes, ensuring stability even when using IR light at night.
+![thingino-webui-preview](https://github.com/themactep/thingino-firmware/assets/37488/51378025-8711-4a24-9056-453777fe8315)
 
-Additionally, the WebUI displays the current gain with a sun icon, making it easy to visually gauge and adjust the camera's light sensitivity settings for optimal performance under varying light conditions. This helps to fine-tune the camera's responsiveness to ensure consistent surveillance quality.
+### PTZ Controls
 
-## Controls  
+In the Thingino Web UI:
 
-- In the Thingino Web UI, you can easily control PTZ (Pan-Tilt-Zoom) devices by hovering over the preview image. This action reveals the PTZ controls, allowing you to adjust the camera's position. To reset the camera to its default position, simply double-click the circle in the center of the PTZ controls.
+- **PTZ (Pan-Tilt-Zoom) Control**: Hover over the preview image to reveal PTZ controls. Adjust the camera's position as needed. To reset the camera to its default position, double-click the circle in the center of the PTZ controls.
 
-- For night vision settings, hover over the bottom of the preview image to bring up the night vision control bar. This bar provides quick access to adjust the night vision functionality on your device.
+### Night Vision Settings
+
+For adjusting night vision:
+
+- **Night Vision Control**: Hover over the bottom of the preview image to bring up the night vision control bar. This bar allows you to adjust night vision settings.
+
+### Infrared Night Vision Configuration
+
+- **Day/Night Trigger Threshold**: Sets the light level at which the camera switches between day and night modes. If the light drops below this level, the camera switches to night mode, potentially using infrared light. When light increases, it switches back to day mode.
+
+- **Day/Night Tolerance**: Acts as a buffer to prevent frequent mode switching due to minor lighting changes. It ensures the camera remains stable even with minor variations in light.
+
+The WebUI also displays the current gain with a sun icon, allowing you to gauge and adjust the camera's light sensitivity for optimal performance.

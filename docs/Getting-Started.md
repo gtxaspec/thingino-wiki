@@ -39,17 +39,35 @@ Once you have your device, there are several methods to create a full backup and
     interrupt the stock firmware's boot process via the [[UART console|Installation#from-an-sd-card]], load the image from the SD Card, and
     flash it via UBoot's flash write commands.
 
-### How to Access Your Camera Running Thingino
+### Accessing Your Camera Running Thingino
 
-After successfully installing Thingino, you can access your camera through various [media endpoints](https://github.com/themactep/thingino-firmware/wiki/Video-Streaming) after completing [Network Setup](https://github.com/themactep/thingino-firmware/wiki/Configuring-Wi%E2%80%90Fi-Access):
+After successfully installing Thingino and completing network setup, you can access your camera through various methods:
 
-**a. Via RTSP:**
-   - Thingino supports RTSP (Real-Time Streaming Protocol), allowing you to stream video from your camera to any RTSP-compatible player or software. The RTSP stream URL can be found in the camera's preview page after installation.
+#### Accessing via Web UI
 
-**b. Via Built-in Web-UI Preview Page:**
-   - Thingino includes a built-in web interface that allows you to preview your camera’s video feed directly in a web browser in [MJPEG](https://en.wikipedia.org/wiki/Motion_JPEG) format. This is a quick and convenient way to check the camera's output without additional software, but it's more consumes more bandwidth and provides lower framerates than the H.264/H.265 streams provided via RTSP.  See the [[Web-UI|Web-UI]] entry for more information.
+- **Hostname**: `http://hostname.local`
+- **IP Address**: `http://192.168.1.100` (replace with your actual IP address)
 
-**c. Via ONVIF:**
-   - For users integrating their camera into a larger security system, Thingino supports ONVIF (Open Network Video Interface Forum) protocol. This allows your camera to be detected and managed by ONVIF-compatible network video recorders (NVRs) and software.  It is enabled by default.
+For detailed instructions on using the Web UI, see the [[Web UI|Web-UI]] article.
+
+#### Accessing via SSH
+
+For advanced configuration, connect via SSH:
+- **SSH Access**: `ssh root@192.168.1.100` (replace with your device’s IP address)
+
+#### Accessing via RTSP
+
+- **RTSP Stream URL**: Found on the camera's preview page after installation. RTSP provides better performance and lower bandwidth usage. 
+ 
+  - See the [[Video Streaming Endpoints|Video-Streaming]] article for more information.
+
+#### Accessing via Built-in Web-UI Preview Page
+
+- **Preview Page**: Allows you to view the camera feed in MJPEG format directly in a web browser. Note that this method provides lower framerates compared to RTSP.
+  - See the [[Web UI|Web-UI]] article for more information.
+
+#### Accessing via ONVIF
+
+- **ONVIF Support**: Enables integration with ONVIF-compatible NVRs and software. This feature is enabled by default.
 
 Once your device is up and running with Thingino, consider giving back to the community by [[contributing|Contributions]]. Whether it's through sharing your knowledge, improving the code, updating documentation, or simply spreading the word about Thingino, your contributions help make the project better for everyone. By getting involved, you can help shape the future of Thingino and support other users in their journey. Every contribution, no matter the size, makes a difference!
