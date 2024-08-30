@@ -1,6 +1,7 @@
-> [!WARNING]
+> [!CAUTION]
 > WORK IN PROGRESS
-> USE AT YOUR OWN RISK
+> USE AT YOUR OWN RISK  
+> DEVELOPMENT ONLY
 
 ### Booting U-Boot from NFS: A Step-by-Step Guide
 
