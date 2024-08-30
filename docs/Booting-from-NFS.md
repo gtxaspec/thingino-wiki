@@ -90,4 +90,4 @@ To retain the setup across reboots, save the environment variables by running `s
 - Replace the IP addresses and paths with your actual network configuration and server paths.
 - For documentation purposes, the IP ranges and paths used are within the private range specified for examples.
 
-This guide should help you boot your device using U-Boot over NFS, whether you're loading just the rootfs or both the rootfs and kernel.
+This guide should help you boot your device for rapid development using U-Boot over NFS, whether you're loading just the rootfs or both the rootfs and kernel.
