@@ -22,7 +22,7 @@ The Thingino Wiki is a comprehensive collection of in-depth, technical material 
 
 While our wiki aims to be user-friendly, some sections may involve technical details that could seem a bit complex. We acknowledge that certain aspects of the project might be challenging due to their technical nature.
 
-Whether you're just starting out or diving into more advanced topics, you'll find step-by-step guides, detailed explanations, and helpful resources throughout the wiki. Our goal is to provide you with the support and information you need to confidently work with your Thingino device.
+Whether you're just starting out or diving into more advanced topics, you'll find step-by-step guides, detailed explanations, and helpful resources throughout the wiki. Our goal is to provide you with the information you need to confidently work with your Thingino device.
 
 We’re constantly improving our content and welcome your contributions to the wiki to help enhance the experience for everyone.
 
