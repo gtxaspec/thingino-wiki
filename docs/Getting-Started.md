@@ -1,6 +1,14 @@
+### Introduction to Thingino
+
+Welcome to Thingino! Whether you're a seasoned DIY enthusiast or someone just starting out, Thingino is designed to help you get the most out of your devices. At its core, Thingino is about taking control of your device by replacing its original factory firmware—essentially the operating system—with our custom-built firmware. This process allows you to unlock new features, improve performance, and gain more control over how your device works.
+
+In simple terms, what you'll be doing is erasing the manufacturer's software and installing Thingino instead. It might sound a bit intimidating, but don't worry! We've created detailed guides and tools to make the process as straightforward as possible, even for those who are new to this kind of project.
+
+Our goal is to empower you to customize your device to suit your needs, all while ensuring that the process is safe, reliable, and as easy as possible. So, if you're ready to dive in, we're here to support you every step of the way. Let's get started on transforming your device with Thingino!
+
 ### How to Choose a Compatible Device for Thingino
 
-> [!IMPORTANT]
+> [!WARNING]
 > Thingino is a DIY project that may require disassembly and some advanced computer skills. While the developers strive to ensure that all procedures and software are safe, reliable, and as user-friendly as possible, users should be prepared for the technical nature of the project. It’s important to be aware that, in rare cases, unforeseen circumstances could lead to device damage or corruption. As such, users should proceed with caution and be prepared for potential challenges.
 
 When selecting a device to use with Thingino, consider the following factors:
