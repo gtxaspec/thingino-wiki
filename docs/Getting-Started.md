@@ -4,7 +4,13 @@ Welcome to Thingino! Thingino is designed to help you get the most out of your d
 
 In simple terms, you'll be erasing the manufacturer's software and installing Thingino instead. While this might sound a bit intimidating, we've created detailed guides and tools to make the process as straightforward as possible, even for those new to this kind of project. Our goal is to empower you to customize your device safely, reliably, and easily.
 
-If you're ready to dive in, you'll find great information from our wiki. Let's get started on transforming your device with Thingino!
+If you're ready to dive in, you'll find great information throughout our wiki. Let's get started on transforming your device with Thingino!
+
+### Thingino and Linux: What You Need to Know
+
+Thingino is built on the Linux operating system. This means that installing and working with Thingino requires a foundational understanding of Linux. Basic Linux skills, such as navigating the command line, understanding file system structure, and performing simple commands, are essential for a successful installation and smooth operation of your Thingino device. If you're new to Linux, don’t worry—there are plenty of helpful guides available on the web that can help you get up to speed before you begin.
+
+Mastering these basic Linux skills will not only help you install Thingino but also empower you to fully harness its capabilities, giving you greater control and customization options for your device.
 
 ### How to Choose a Compatible Device for Thingino
 
