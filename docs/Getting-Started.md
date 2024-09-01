@@ -1,6 +1,9 @@
+> [!WARNING]
+> Thingino is a DIY project that may require disassembly and some advanced computer skills. While the developers strive to ensure that all procedures and software are safe, reliable, and as user-friendly as possible, users should be prepared for the technical nature of the project. It’s important to be aware that, in rare cases, unforeseen circumstances could lead to device damage or corruption. As such, users should proceed with caution and be prepared for potential challenges.
+
 ### Introduction to Thingino
 
-Welcome to Thingino! Thingino is designed to help you get the most out of your devices. At its core, Thingino involves replacing your device's original factory firmware—essentially its operating system—with our custom-built Thingino firmware. This process unlocks new features, improves performance, and gives you greater control over how your device functions.
+Welcome to Thingino! Thingino is designed to help you get the most out of your devices. At its core, Thingino involves replacing your device's original factory firmware—essentially its operating system—with our custom-built firmware. This process unlocks new features, improves performance, and gives you greater control over how your device functions.
 
 In simple terms, you'll be erasing the manufacturer's software and installing Thingino instead. While this might sound a bit intimidating, we've created detailed guides and tools to make the process as straightforward as possible, even for those new to this kind of project. Our goal is to empower you to customize your device safely, reliably, and easily.
 
@@ -13,9 +16,6 @@ Thingino is built on the Linux operating system. This means that installing and 
 Mastering these basic Linux skills will not only help you install Thingino but also empower you to fully harness its capabilities, giving you greater control and customization options for your device.
 
 ### How to Choose a Compatible Device for Thingino
-
-> [!WARNING]
-> Thingino is a DIY project that may require disassembly and some advanced computer skills. While the developers strive to ensure that all procedures and software are safe, reliable, and as user-friendly as possible, users should be prepared for the technical nature of the project. It’s important to be aware that, in rare cases, unforeseen circumstances could lead to device damage or corruption. As such, users should proceed with caution and be prepared for potential challenges.
 
 When selecting a device to use with Thingino, consider the following factors:
 
