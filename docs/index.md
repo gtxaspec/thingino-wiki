@@ -18,9 +18,9 @@ New users can begin by visiting the [[Getting Started|getting-started]] entry.
 
 ### About the Wiki
 
-The Thingino Wiki is a comprehensive collection of in-depth, technical material designed to support both novices and experienced users alike. We strive to present information in a clear, simple, and accessible way to make it easy for you to understand and use, no matter your level of expertise.
+The Thingino Wiki is a comprehensive collection of in-depth, technical material designed to support both novices and experienced users alike. We strive to present information in a clear, simple, and accessible way to make it easy for you to understand and use.
 
-While our wiki aims to be user-friendly, some sections may involve technical details that could seem a bit complex. We acknowledge that certain aspects of the project might be challenging due to their technical nature.
+While our wiki aims to be user-friendly, most sections involve technical details that could seem a bit complex. We acknowledge that certain aspects of the project might be challenging due to their technical nature.
 
 Whether you're just starting out or diving into more advanced topics, you'll find helpful resources throughout the wiki. Our goal is to provide you with the information you need to confidently work with your Thingino device.
 
