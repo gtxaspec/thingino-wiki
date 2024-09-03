@@ -75,6 +75,15 @@ setenv bootcmd 'setenv loadaddr ${baseaddr};nfs ${loadaddr} ${serverip}:${kernel
 
 boot
 ```
+
+#### 5. **Loading Both Kernel and Root Filesystem from NFS, via USB Ethernet**
+If you have a device with an ASIX supported USB Ethernet adapter, you can use the previous steps with this modification, add `usb start` to `bootcmd`:  
+
+```bash
+setenv bootcmd 'usb start;setenv loadaddr ${baseaddr};nfs ${loadaddr} ${serverip}:${kernel_image};setenv setargs setenv bootargs ${bootargs};run setargs;bootm ${baseaddr};'
+```
+
+
 This setup ensures both the kernel and the root filesystem are loaded over NFS.
 
 ### Saving Configuration
