@@ -37,7 +37,7 @@ Alternatively, you may need to gain access to the stock Linux firmware to read t
 
 ### Stock Firmware Hijacking
 
-Try to patch the stock firmware dump with our [Hijacker](https://gist.github.com/themactep/237d98ce45b9fe71d794b20edaa15baa/edit) script to replace the unknown password hash with a known one or with a passwordless access, flash it on the camera and gain access to the system.
+Try to patch the stock firmware dump with our [Hijacker](https://github.com/themactep/thingino-firmware/blob/master/scripts/hijacker.sh) script to replace the unknown password hash with a known one or with a passwordless access, flash it on the camera and gain access to the system.
 
 Once inside, run the following command and save the result.
 ```
