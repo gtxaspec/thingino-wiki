@@ -150,3 +150,23 @@ Carefully follow these steps to ensure the Cloner application is set up correctl
 Refer to the vendor documentation for additional in-depth information.  
 
 [Quick Guide PDF](https://thingino.com/dl/USBCloner_The_Burn_tool_Quick_Guide.pdf)
+
+## Tips and tricks
+
+To initiate a Cloner session from a running system, you need to damage the bootloader to force SoC to expose USB connection on boot.
+
+> [!CAUTION]
+> This action is irreversible, so you need to know what you are doing, and be ready to revive a possible brick!
+
+To erase bootloder from U-Boot shell, run
+```
+sf probe; sf erase 0 +1; reset
+```
+
+To erase bootloder rom Linux shell, run
+```
+flash_eraseall /dev/mtd0 && restart -f
+```
+
+Obviously, you only want to do that for flashing a new firmware. For making a backup of the existing firmware,
+short pins 5 and 6 on the flash chip as described above.
