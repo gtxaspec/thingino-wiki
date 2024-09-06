@@ -12,11 +12,6 @@ Thingino has great support for the Wyze Cam V2 and Wyze Cam V3.
 1. Configure the camera with the following settings to best mimic stock behavior by editing ``/etc/prudynt.conf`` and rebooting:
    * Motion Settings:
      * sensitivity: 8
-   * Audio Settings:
-     * input_vol: 120;
-     * input_gain: 31;
-     * input_alc_gain: 7;
-     * input_noise_suppression: 1;
 
 Alternatively, we have personally tested the following devices and can confirm their functionality. The documentation provided below is for reference:
 
