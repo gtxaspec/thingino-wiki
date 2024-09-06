@@ -119,6 +119,7 @@
 - MOSI - Master Output Slave Input
 - MPLL - Multipurpose Phase-Locked Loop
 - MSC - MultiMediaCard/SD Card Interface
+- MTD - Memory Technology Device
 - MXU - Matrix Multiplication Unit
 
 ### N
