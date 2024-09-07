@@ -57,6 +57,8 @@ Once you have your device, there are several methods to create a full backup and
 
 After successfully installing Thingino and completing network setup, you can access your camera through various methods:
 
+- Default Credentials: `root/root`
+
 #### Accessing via Web UI
 
 - **Hostname**: `http://hostname.local`
