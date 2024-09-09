@@ -1,5 +1,6 @@
 > [!WARNING]
 > Thingino is a DIY project that may require disassembly and some advanced computer skills. While the developers strive to ensure that all procedures and software are safe, reliable, and as user-friendly as possible, users should be prepared for the technical nature of the project. It’s important to be aware that, in rare cases, unforeseen circumstances could lead to device damage or corruption. As such, users should proceed with caution and be prepared for potential challenges.
+        git submodule update --depth 1 --recursive
 
 ### Introduction to Thingino
 
@@ -57,7 +58,7 @@ Once you have your device, there are several methods to create a full backup and
 
 After successfully installing Thingino and completing network setup, you can access your camera through various methods:
 
-- Default Credentials: `root/root`
+- **Default Credentials**: `root/root`
 
 #### Accessing via Web UI
 
