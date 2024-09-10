@@ -10,8 +10,8 @@ This guide provides step-by-step instructions for completing a full backup and w
 
 Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.
 
-- [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-ubuntu_alpha_thingino.tar.gz)
-- [Ingenic Cloner for Windows](https://thingino.com/dl/cloner-2.5.43-windows_alpha_thingino.zip)
+- [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-thingino.tar.xz)
+- ~~Ingenic Cloner for Windows~~
 
 Navigate to the `cloner-2.5.xx-ubuntu_alpha` directory, with "xx" indicating your downloaded version of Cloner.
 
