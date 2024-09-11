@@ -1,6 +1,5 @@
 > [!WARNING]
 > Thingino is a DIY project that may require disassembly and some advanced computer skills. While the developers strive to ensure that all procedures and software are safe, reliable, and as user-friendly as possible, users should be prepared for the technical nature of the project. It’s important to be aware that, in rare cases, unforeseen circumstances could lead to device damage or corruption. As such, users should proceed with caution and be prepared for potential challenges.
-        git submodule update --depth 1 --recursive
 
 ### Introduction to Thingino
 
@@ -88,3 +87,19 @@ For advanced configuration, connect via SSH:
 - **ONVIF Support**: Enables integration with ONVIF-compatible NVRs and software. This feature is enabled by default.
 
 Once your device is up and running with Thingino, consider giving back to the community by [[contributing|Contributions]]. Whether it's through sharing your knowledge, improving the code, updating documentation, or simply spreading the word about Thingino, your contributions help make the project better for everyone. By getting involved, you can help shape the future of Thingino and support other users in their journey. Every contribution, no matter the size, makes a difference!
+
+### Updating Thingino Firmware
+
+To update your Thingino device, you can use the `sysupgrade` command directly from the device via SSH:
+
+- **Partial upgrade (recommended)**: Preserves settings like Wi-Fi and passwords.
+  ```bash
+  sysupgrade -p
+  ```
+
+- **Full upgrade**: Resets the device, including bootloader and settings.
+  ```bash
+  sysupgrade -f
+  ```
+
+For more details on updating, visit the [Updating Firmware](https://github.com/themactep/thingino-firmware/wiki/Updating-Firmware) article in the wiki.
