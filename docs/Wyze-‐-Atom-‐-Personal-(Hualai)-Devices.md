@@ -1,6 +1,11 @@
 Thingino supports a variety of Wyze / Atom / Personal branded Hualai based ODM devices. 
 
-## Supported Devices
+## Supported Features
+
+- **Spotlight Control**: Supported (Note: This is specifically for the spotlight, not the floodlight)
+- **Doorbell Chime**: Supported
+- **Garage Door Controller**: Not supported yet
+- **Floodlight**: Not supported yet
 
 > [!CAUTION]
 > Beginning with the Wyze Cam Pan 3, Wyze has implemented secure boot on their SoC chips. For more details, please refer to the [Secure Boot](https://github.com/themactep/thingino-firmware/wiki/Supported-Cameras#secure-boot-and-camera-soc-security) section.  
