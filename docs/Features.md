@@ -1,11 +1,11 @@
 Thingino is packed with features that make it a versatile and powerful platform for managing your devices. Below is a comprehensive list of the key features that Thingino offers:
 
-#### Standard Embedded Linux Environment
+#### Linux Environment
 - **SSH Server**: Securely access your device via SSH for command-line control and configuration.
 - **Mosquitto MQTT Client Built-In**: Communicate with MQTT brokers for IoT integration and real-time messaging.
 - **Telegram Bot**: Control your camera interactively through Telegram messages, offering a convenient way to manage your device remotely.
 
-#### Interactive Web UI
+#### Web UI
 - **Resource Monitoring**: Track your device's resource usage directly from the web interface.
 - **File Manager**: Manage files on your device easily with the built-in web-based file manager.
 - **Recording Support**: Record video directly to an SD card or NFS share for easy storage and access.
@@ -13,7 +13,7 @@ Thingino is packed with features that make it a versatile and powerful platform 
 - **Diagnostics**: View diagnostics and system information directly from the UI for easy troubleshooting.
 - **Pan/Tilt Support**: Control pan and tilt functions directly through the web UI.
 
-#### Device Management and Advanced Features
+#### Video Streaming Features
 - **Prudynt Video Daemon**: RTSP streaming support via the Prudynt video daemon.
 - **Video Codec Support**: Supports multiple video codecs, including H.264, MJPEG, and H.265 (T30/T31 only).
 - **Customizable On-Screen Display (OSD)**: Personalize your camera's OSD with customizable text, time, and fonts.

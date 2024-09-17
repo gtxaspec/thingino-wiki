@@ -7,11 +7,14 @@ Thingino supports a variety of Wyze / Atom / Personal branded Hualai based ODM d
 - **Garage Door Controller**: Not supported yet
 - **Floodlight**: Not supported yet
 
-> [!CAUTION]
+> [!IMPORTANT]
 > Beginning with the Wyze Cam Pan 3, Wyze has implemented secure boot on their SoC chips. For more details, please refer to the [Secure Boot](https://github.com/themactep/thingino-firmware/wiki/Supported-Cameras#secure-boot-and-camera-soc-security) section.  
 
 ### Installation
 Thingino has great support for the Wyze Cam V2 and Wyze Cam V3.
+
+> [!CAUTION]
+> If you don't perform a full backup of your camera's flash storage, installation on Wyze devices is a one-way process. Without a backup, you won't be able to restore Wyze services on the device, ever. The flash storage holds your unique information needed to connect to the Wyze cloud.
 
 1. Follow the steps in [Getting Started](https://github.com/themactep/thingino-firmware/wiki/Getting-Started) to install Thingino.
 1. Configure the camera with the following settings to best mimic stock behavior by editing ``/etc/prudynt.conf`` and rebooting:
