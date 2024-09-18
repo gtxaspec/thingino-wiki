@@ -56,9 +56,12 @@ After entering the password in the previous step, the **Config** button should n
 
 ![](https://thingino.com/a/cloner-0-5.png)
 
-In the **Config** window, under the **INFO** tab, access various configuration menus.
+In the **Config** window, under the **INFO** tab, you have various configuration menus available:
 
 In the **Platform** dropdown menu, select **_T_**. Choose the appropriate SOC version for your device next to **_Platform T_**.
+
+> [!IMPORTANT]  
+> Selecting the correct SOC for your device is crucial. If you choose incorrectly, the cloner program won't recognize your device, halting the process. Be sure to accurately identify and select the appropriate version (e.g., t20, t21, t23, t30, t31) for your specific hardware. This step is essential for the cloner to function properly and allow you to proceed with the operation.
 
 ![](https://thingino.com/a/cloner-0-6.png)
 
