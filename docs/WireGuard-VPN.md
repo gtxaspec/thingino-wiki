@@ -23,11 +23,13 @@ Lists of addresses, networks, or CIDRs may be separated by commas or spaces; `19
 
 ## WebUI
 
-There is a panel in the WebUI for configuring the WireGuard subsystem; it can display the configuration variables as stored in the firmware environment, and allows those variable to be set. The correct values are site-specific and can be obtained from the WireGuard server, the exact details of the process depend on the server (eg. OpenWRT, vendor-skinned OpenWRT, pfSense, OpnSense)
+There is a panel in the WebUI for configuring the WireGuard subsystem; it can display the configuration variables as stored in the firmware environment, and allows those variable to be set. The correct values are site-specific and can be obtained from the WireGuard server, the exact details of the process depend on the server (eg. OpenWRT, vendor-skinned OpenWRT, pfSense, OpnSense).
 
-![wg_gui](https://github.com/user-attachments/assets/e31d409c-28fc-4c99-9de5-44e79aff784b)
+The panel can also display the state of the tunnel if the interface is up, and allows the VPN to be started or stopped on demand.
 
-Once WireGuard has been configured, reboot the camera to apply the changes.
+![wg_gui2](https://github.com/user-attachments/assets/ac77a78c-0380-40a1-9e68-4b9ef37d064a)
+
+Once WireGuard has been configured, reboot the camera to apply the changes or use the red button to start or stop the VPN immediately. Use caution when configuring remote devices as VPN changes may lead to loss of connectivity.
 
 ## CLI
 
