@@ -61,6 +61,7 @@ Copy the file to an SD card, insert the card into your camera and reboot.
 
 #### Wireless networking
 
+- `disable_wlan` - Disable WLAN
 - `gpio_wlan` - GPIO pin to control power to wireless card
 - `wlanbus` - Wireless card bus type, can be `usb` or `sdio`
 - `wlandev` - Wireless card driver
