@@ -1,6 +1,4 @@
-### USB Networking with Thingino
-
-**Thingino** supports USB networking out of the box, making it easy to connect and configure network adapters for various devices. Here's a guide on using USB networking with Thingino and the types of adapters supported.
+**Thingino** supports USB networking out of the box, making it easy to connect and configure network adapters for various devices. Here's some quick information on using USB networking with Thingino and the types of adapters supported.
 
 #### Supported USB Adapters
 
@@ -13,7 +11,7 @@ The necessary drivers for these adapters are pre-enabled in all Thingino builds 
 
 #### Using USB Networking
 
-To use a USB network adapter with Thingino, simply plug it into the USB OTG port of your device. The adapter should be recognized automatically if it's one of the supported types. You can then proceed to configure the network settings, or in many cases, the connection will work out of the box.
+To use a USB network adapter with Thingino, simply plug it into the device. The ethernet adapter should be recognized automatically if it's one of the supported types. You can then proceed to configure the network settings, or in many cases, the connection will work out of the box.
 
 #### Important Note on Compatibility
 
