@@ -19,11 +19,28 @@ fw_setenv ethaddr 12:34:56:78:AB:CD
 fw_setenv wlanmac 12:34:56:78:AB:EF
 ```
 
+### How to update only bootloader?
+
+Download a full image for your camera from [thignino releases page](https://github.com/themactep/thingino-firmware/releases/tag/firmware).
+ on GitHub.
+
+Extract first 256KB of bootloader partition into a separate file:
+```
+dd if=thingino-full.bin bs=256K count=1 of=bootloader.bin
+```
+
+Upload that file to the camera and flash it into the bootloader partition:
+```
+scp -O bootloader.bin root@192.168.1.10:/tmp/
+ssh root@192.168.1.10 flashcp -v /tmp/bootloader.bin /dev/mtd0
+````
+
 ### Do you have a mobile app to view/control the camera?
 
 We recommend to use [tinyCam Monitor Pro](https://tinycammonitor.com/).
 
 ![Screenshot_2024-06-01-00-50-52-704_com alexvas dvr pro](https://github.com/themactep/thingino-firmware/assets/37488/58b1a981-31b8-499a-b416-a7f885d947a3)
+
 
 ### Can Thingino run on this unsupported camera?
 
@@ -35,12 +52,14 @@ Visit the [[Porting Guide|Porting-Guide]] on information on porting a new device
 
 See our complete table of [[Supported Hardware|Tech-Info-‐-Supported-Hardware]].
 
+
 ### Is Thingino a fork of OpenIPC?
 
 Thingino was influenced by the ideas of the OpenIPC project, and core developers even collaborated
 with OpenIPC for a while, but then the differences became too deep and thingino was born.
 
 While there are some similarities, there are also significant differences between these two projects.
+
 
 ### Is My Data Safe? Do You Collect Data Metrics or Telemetry?
 
