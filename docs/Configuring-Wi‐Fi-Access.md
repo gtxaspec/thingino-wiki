@@ -28,7 +28,15 @@ The camera will reboot and register with your wireless network using the informa
 Check the DHCP leases on your router to find the IP address assigned to the camera.
 
 
-### Wireless Credentials on an SD Card
+## WiFi setup from Linux shell
+
+If you have access to Linux shell over UART or Ethernet, you can set up Wireless connection running `wlansetup`.
+Follow the prompts and then reboot the camera afterwards.
+ 
+![image](https://github.com/user-attachments/assets/6417820a-214f-4cec-bed4-1da9bf6af6b1)
+
+
+## WiFi setup via SD card
 
 Create an `uenv.txt` file on a blank FAT formatted SD card with the following content
 
@@ -39,3 +47,8 @@ wlanpass=yourwirelessnetworkpass
 
 Reboot the camera with the card inserted. The information provided will be added to the environment and reused to log on to the wireless network.
 
+
+## Camera Reset
+
+Hold down the reset button for 10 seconds while powering the camera up. This will reset the unit.
+Repeat the configuration from the beginning using proper wireless network credentials.
