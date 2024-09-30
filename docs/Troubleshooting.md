@@ -2,6 +2,10 @@
 
 Don't.
 
+### RTSP is choppy and/or wifi connection seems worse.
+
+ssh into the camera and check `iwconfig` for "Link Quality".  
+
 ### SD card is not recognized at boot
 
 There are two factors that can affect SD card detection during the boot sequence.
@@ -95,3 +99,11 @@ Read the values from the environment and then save them in the reverse order as 
 25 26
 [root@wyze-v3-test ~]# fw_saveenv gpio_ircut 26 25
 ```
+
+### Collecting logs from thingino:
+`thingino-diag`
+
+### Collecting logs from prudynt:
+You need to stop prudynt as a daemon and run it in foreground in console. Logging will go directly to the console. Level of logging is set in /etc/prudynt.cfg.  
+Look for the loglevel line.
+Valid options can be found on here: https://github.com/gtxaspec/prudynt-t/raw/master/prudynt.cfg.example
