@@ -5,7 +5,7 @@ After flashing a fresh Thingino firmware image on a supported camera with a wire
 > [!NOTE]
 > Dual interface devices (those with both ethernet __and__ Wi-Fi) will not broadcast an Access Point.  Instead, connect to the IP or hostname to begin setup.
 
-You can either provide your [wireless network credentials on an SD card](https://github.com/themactep/thingino-firmware/wiki/Configuring-Wi%E2%80%90Fi-Access#wireless-credentials-on-an-sd-card) or use our versatile built-in portal.
+You can either provide your [wireless network credentials on an SD card](https://github.com/themactep/thingino-firmware/wiki/Configuring-Wi%E2%80%90Fi-Access#wifi-setup-via-sd-card) or use our versatile built-in portal.
 
 After you turn on the camera without network credentials, it will set up a temporary access point and create a public network called THINGINO-XXXX, where XXXX is the last four characters of the camera's MAC address.
 
