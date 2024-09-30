@@ -54,3 +54,13 @@
 - 0xef4017 0xef4018 0xef4019
 - 0xef6017
 - 0xf83217
+
+
+Ordering replacement chips:
+You can order any type-25 16mb chip: search for 25Q128 NOR flash chip.
+25 is the type, 128 is the size in megabits (128/8=12 megabytes).
+You can solder a 16mb chip on even the original is only 8mb.  
+You may also want to get yourself a 208-mil socket for this kind of chips to put them into a programmer.
+
+SOP8, 208-mil
+![cnv](https://github.com/user-attachments/assets/eb97ef0b-9c34-4c1e-9493-67b111c00621)

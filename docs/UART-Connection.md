@@ -49,3 +49,14 @@ If you opt for a GUI terminal, namely [PuTTY](https://www.putty.org/), this is h
 ![PuTTY connection screen](https://user-images.githubusercontent.com/29582865/209340268-e34a010c-d455-4343-ae83-0866f0f0af15.png)
 
 [1]: https://www.aliexpress.com/w/wholesale-usb-to-ttl-uart.html
+
+
+
+
+
+Jooan A6M TX-RX Pinout:
+
+
+![jooan-a6m](https://github.com/user-attachments/assets/af52c554-9f64-491a-becc-11c9ddad78d1)
+
+![unknown-T23](https://github.com/user-attachments/assets/15669ca8-8995-410f-b9ca-9aded561fc45)
