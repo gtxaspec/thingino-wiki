@@ -13,26 +13,26 @@ Use programming clip on the flash chip on the board and re-program in place (req
 
 # Specifications
 
-* Type: outdoor camera 
+* Type: waterproof IP65 outdoor camera 
 * CPU: Ingenic T23, 1188MHz
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
 * Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter
 * IR cut: Yes, switchable mechanical shutter with solenoid
 * Optical resolution: vertical 420 TVL, horizontal 550 TVL
-* WIFI module, variant 1: Altobeam ATBM6012BX, 802.11n 20MHz only, 2.4GHz only, BLE
-* WIFI module, variant 2: SSV6355
-* Microphone
-* Speaker
-* SD card slot
-* reset button
+* WIFI module, variant 1: SSV6355
+* WIFI module, variant 2: Altobeam ATBM6012BX, 802.11n 20MHz only, 2.4GHz only, BLE
+* Microphone: Yes
+* Speaker: Yes
+* SD card slot: Yes
+* reset button: Yes
 * Illumination: 2x white LEDs + 2x IR 850nm LEDs
 * Power consumption: 5V 2A 7.5W (claimed on the box) or 5V 1.5A (supplied adapter in the box)
-* FCC ID: 2BBQ4-A6M-U
-* Pan and Tilt motor: No
+* FCC ID: 2BBQ4-A6M-U [fcc.report](https://fcc.report/FCC-ID/2BBQ4-A6M-U)
+* Pan and Tilt motors: No
 * Ethernet interface: No
 * IR940 LED: No
-* USB port: No
+* USB port: Power only, no Data lines
 
 # Pictures
 
@@ -45,6 +45,9 @@ Use programming clip on the flash chip on the board and re-program in place (req
 <img src="https://github.com/user-attachments/assets/2d791426-e71d-4029-9106-1959756b1994" width="400">
 
 <img src="https://github.com/user-attachments/assets/5e51bc3a-8cd7-4be3-b281-b354d7a31b0c" width="400">
+
+### SSV6355 Variant
+<img src="https://github.com/user-attachments/assets/68ef5fa4-dd7a-41e7-a948-2ba1c92269a4" width="400">
 
 # Serial UART
 
