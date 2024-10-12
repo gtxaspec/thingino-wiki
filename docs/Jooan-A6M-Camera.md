@@ -15,7 +15,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 
 * Type: outdoor camera
 * Environment: IP65 (claimed)
-* CPU: Ingenic T23, 1188MHz
+* CPU: Ingenic T23N, 1.2GHz
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
 * Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter
