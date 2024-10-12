@@ -6,7 +6,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 ## Alternative methods
 
 * Desolder the flash chip and reprogram it in a programmer.
-* Use a [No Tool Installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method. Doesn't exists for this camera
+* Use a [No Tool Installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method. Doesn't exist for this camera
 * Use SD cart and replace firmware from vendor U-Boot shell. Not possible, vendor uboot is password locked.
 * Use [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) and reprogram via USB port. USB data lines not available for this camera.
 * Get access to the linux shell from UART. Not possible: UART is disabled on vendor linux
