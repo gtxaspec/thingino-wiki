@@ -19,7 +19,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
 * Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter
-* IR cut: Yes, switchable mechanical shutter with solenoid
+* IR cut: Yes, mechanical shutter with solenoid, connected to GPIO
 * Optical resolution: vertical 420 TVL, horizontal 550 TVL
 * WIFI module, variant 1: SV6355
 * WIFI module, variant 2: Altobeam ATBM6012BX, 802.11n 20MHz only, 2.4GHz only, BLE
@@ -27,7 +27,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 * Speaker: Yes
 * SD card slot: Yes
 * reset button: Yes
-* Illumination: 2x white LEDs + 2x IR 850nm LEDs
+* Illumination: 2x white LEDs + 2x IR 850nm LEDs, connected to GPIO/PWM
 * Power consumption: 5V 2A 7.5W (claimed on the box) or 5V 1.5A (supplied adapter in the box)
 * FCC ID: 2BBQ4-A6M-U [fcc.report](https://fcc.report/FCC-ID/2BBQ4-A6M-U)
 * Pan and Tilt motors: No
