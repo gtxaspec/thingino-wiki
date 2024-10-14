@@ -13,12 +13,12 @@ Use programming clip on the flash chip on the board and re-program in place (req
 
 # Specifications
 
-* Type: outdoor camera
+* Type: fixed outdoor camera
 * Environment: IP65 (claimed)
 * CPU: Ingenic T23, 1.2GHz
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
-* Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter
+* Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter, 1/4.5", 3.48mm x 1.96mm, 4mm diag
 * IR cut: Yes, mechanical shutter with solenoid, connected to GPIO
 * Optical resolution: vertical 420 TVL, horizontal 550 TVL
 * WIFI module, variant 1: SV6355
@@ -30,7 +30,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 * Illumination: 2x white LEDs + 2x IR 850nm LEDs, connected to GPIO/PWM
 * Power consumption: 5V 2A 7.5W (claimed on the box) or 5V 1.5A (supplied adapter in the box)
 * FCC ID: 2BBQ4-A6M-U [fcc.report](https://fcc.report/FCC-ID/2BBQ4-A6M-U)
-* Pan and Tilt motors: No
+* Pan / Tilt / Zoom motors: No
 * Ethernet interface: No
 * IR940 LED: No
 * USB: Yes, USB type C, Power only, no data lines
