@@ -19,8 +19,10 @@ Use programming clip on the flash chip on the board and re-program in place (req
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
 * Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter, 1/4.5", 3.48mm x 1.96mm, 4mm diag
-* IR cut: Yes, mechanical shutter with solenoid, connected to GPIO
+* Lens: 3.6mm (approx), M12 mount, total length (sensor to lens edge): ~23mm
+* Field of View: Horizontal 51 degrees, Vertical 30 (approx)
 * Optical resolution: vertical 420 TVL, horizontal 550 TVL
+* IR cut: Yes, mechanical shutter with solenoid, connected to GPIO
 * WIFI module, variant 1: SV6355
 * WIFI module, variant 2: Altobeam ATBM6012BX, 802.11n 20MHz only, 2.4GHz only, BLE
 * Microphone: Yes
