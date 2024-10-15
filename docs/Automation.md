@@ -19,7 +19,7 @@ Create such a file in the following format:
 parameter1=value
 parameter2=multiword value
 parameter3='complex value using %{variable} data'
-parameter4'
+parameter4=
 ```
 
 Insert the card and reboot the camera. New values will be imported into the bootloader environment, adding to or overwriting existing parameters in it. Values without a definition will be unset (removed) from the bootloader environment.
