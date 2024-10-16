@@ -1,7 +1,14 @@
 # Installation
 
 ## Recommended method
-Use programming clip on the flash chip on the board and re-program in place (requires a programmer and a clip).
+Use programming clip on the flash chip on the board and re-program in place (requires a CH341A programmer and a clip).
+
+1. On linux, install https://github.com/Droid-MAX/SNANDer
+
+2. Optional step: backup original firmware: `snander -r backup1 && snander -r backup2 && md5sum backup1 backup2`. If the checksums match, the firmware is probably saved correctly. If they don't, check your setup and repeat the process until you get two identical files.
+
+3. Download firmware from thingino.com, Use `snander -e && snander -w <filename> -v` to erase the flash chip clean and write a new firmware to it with verification of the result.
+
 
 ## Alternative methods
 
@@ -13,7 +20,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 
 # Specifications
 
-* Type: fixed outdoor camera
+* Type: outdoor camera
 * Environment: IP65 (claimed)
 * CPU: Ingenic T23, 1.2GHz
 * RAM: 64MB
