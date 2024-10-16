@@ -66,6 +66,7 @@ Copy the file to an SD card, insert the card into your camera and reboot.
 - `wlanbus` - Wireless card bus type, can be `usb` or `sdio`
 - `wlandev` - Wireless card driver
 - `wlandevopts` - Arguments to pass to wireless driver
+- `wlanmac` - MAC address for wireless interface
 - `wlanssid` - Wireless network name
 - `wlanpass` - wireless network password
 
