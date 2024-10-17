@@ -2,7 +2,7 @@
 
 The default login is _root_ with the password _root_. 
 
-The default streaming user is _thingino_ with the password _thingino_. This can be changed in `/etc/prudynt.cfg`.
+The default streaming user is _thingino_ with the password _thingino_. This can be changed via web interface.
 
 
 ### How to reset the root password?
