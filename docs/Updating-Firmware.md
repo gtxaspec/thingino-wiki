@@ -90,3 +90,8 @@ The `sysupgrade` script automatically downloads the latest precompiled build for
    Replace `https://example.com/firmware.bin` with the actual URL of the firmware binary. This command will download the firmware from the URL and perform the upgrade.
 
 - Updating your Thingino device is straightforward with the `sysupgrade` command. Most users will find the `-p` option sufficient for keeping their device up to date while preserving their settings. Reserve the `-f` option for situations where a complete system update, including the bootloader, is required.
+
+
+### Switching between camera models
+
+If you happen to flash the wrong version of thingino, you can switch to another image from within the system. Change `IMAGE_ID` in `/etc/-os-release` to the one you want to install and run `sysupgrade -p`.
