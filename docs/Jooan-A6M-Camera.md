@@ -25,7 +25,8 @@ Use programming clip on the flash chip on the board and re-program in place (req
 * CPU: Ingenic T23, 1.2GHz
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
-* Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter, 1/4.5", 3.48mm x 1.96mm, 4mm diag
+* Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter
+* Sensor optical format: 1/4.5", active area: 3.48mm x 1.96mm, 4mm diag
 * Lens: 3.6mm, M12 mount, total length (sensor to lens edge): ~23mm
 * Field of View: Horizontal 51 degrees, Vertical 30, Diagonal ~58
 * Optical resolution: vertical 420 TVL, horizontal 550 TVL
@@ -36,12 +37,14 @@ Use programming clip on the flash chip on the board and re-program in place (req
 * Speaker: Yes
 * SD card slot: Yes
 * reset button: Yes
-* Illumination: 2x white LEDs + 2x IR 850nm LEDs, connected to GPIO/PWM
+* Illumination:
+* White LEDs: Yes, 2x, connected to GPIO/PWM
+* IR 850nm LEDs: Yes, 2x, connected to GPIO/PWM
+* IR 940nm LEDs: No
 * Power consumption: 5V 2A 7.5W (claimed on the box) or 5V 1.5A (supplied adapter in the box)
 * FCC ID: 2BBQ4-A6M-U [fcc.report](https://fcc.report/FCC-ID/2BBQ4-A6M-U)
 * Pan / Tilt / Zoom motors: No
 * Ethernet interface: No
-* IR940 LED: No
 * USB: Yes, USB type C, Power only, no data lines
 
 # Pictures
