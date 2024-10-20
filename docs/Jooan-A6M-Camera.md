@@ -46,6 +46,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 * Pan / Tilt / Zoom motors: No
 * Ethernet interface: No
 * USB: Yes, USB type C, Power only, no data lines
+* Vendor app: [CAM720](https://play.google.com/store/apps/details?id=com.jooan.qiaoanzhilian.fmr.gp) (not compatible with thingino)
 
 # Pictures
 
