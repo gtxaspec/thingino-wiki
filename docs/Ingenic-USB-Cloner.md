@@ -10,10 +10,10 @@ This guide provides step-by-step instructions for completing a full backup and w
 
 Download the Cloner application for your operating system using the links below. Extract the program to a working directory on your computer.
 
-- [Ingenic Cloner for Linux](https://thingino.com/dl/cloner-2.5.43-thingino.tar.xz)
-- ~~Ingenic Cloner for Windows~~
+- [Ingenic Cloner for Linux](https://github.com/gtxaspec/ingenic-cloner-profiles/releases/download/latest/cloner-2.5.50-ubuntu_thingino.tar.xz)
+- [Ingenic Cloner for Windows](https://github.com/gtxaspec/ingenic-cloner-profiles/releases/download/latest/cloner-2.5.50-windows_thingino.7z)
 
-Navigate to the `cloner-2.5.xx-ubuntu_alpha` directory, with "xx" indicating your downloaded version of Cloner.
+Navigate to the `cloner-2.5.xx-yyyyy_thingino` directory, with "xx" indicating your downloaded version of Cloner and "yy" is your OS.
 
 > [!IMPORTANT]  
 > Windows users may need to install additional drivers for support.  See the [[Vendor Documentation|Ingenic-USB-Cloner#vendor-documentation]] PDF Guide for additional details.
@@ -23,9 +23,9 @@ Create a folder named `0_Firmware_Root` inside the Cloner directory.
 ![](https://github.com/user-attachments/assets/28584a28-394c-47ac-9fd7-14b8e9120be3)
 
 > [!CAUTION]
-> The `0_Firmware_Root` directory **MUST** be created and correctly named to ensure backups are completed successfully. Backup operations will **fail** if this directory is missing.
+> The `0_Firmware_Root` directory **MUST** exist to ensure backups are completed successfully. Backup operations will **fail** if this directory is missing.
 
-Open the Cloner application. Ensure you are using version 2.5.43 for compatibility.
+Open the Cloner application.
 
 ![](https://thingino.com/a/cloner-0-1.png)
 
