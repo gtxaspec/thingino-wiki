@@ -156,6 +156,15 @@ Refer to the vendor documentation for additional in-depth information.
 
 ## Tips and tricks
 
+### Borrow USB port from the WiFi
+
+If your camera is equipped with a USB wireless module, the USB port will most likely not be OTG compatible and therefore cannot be used for Cloner. However, you can still make a makeshift connection by borrowing the USB data wires from the wireless module. Locate the `DP/D+` and `DN/D-` pads on the USB wireless module and solder the data wires from a stripped USB cable to them like shown below.
+
+![usb_from_wifi](https://github.com/user-attachments/assets/3ba22645-a9c4-408d-97aa-b475774d5568)
+
+
+### Force the system to go into cloner mode
+
 To initiate a Cloner session from a running system, you need to damage the bootloader to force SoC to expose USB connection on boot.
 
 > [!CAUTION]
