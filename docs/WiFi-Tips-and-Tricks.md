@@ -15,12 +15,17 @@
 To find the signal strength on devices with an Altobeam chipset, use the following command:
 
 ```
-find /sys/module/ -name 'atbm_cmd' -exec sh -c 'echo ap_info > {}; cat {}' \;
+$ iwpriv wlan0 common get_rssi
+
+wlan0     common:
+rssi=-25
 ```
 
-#### Example Result:
+More info:
 
 ```
+$ find /sys/module/ -name 'atbm_cmd' -exec sh -c 'echo ap_info > {}; cat {}' \;
+
 ifname[wlan0] mac[e0:ff:ff:ff:be:ef] ssid[test] ssid_len[11] channel[11] channel_type[0] signal[-53] avg_signal[-53] rxbytes[102899858] txbytes[863243530] toprate[10406312]
 ap_info[OK]
 ```
