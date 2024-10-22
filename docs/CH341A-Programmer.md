@@ -10,6 +10,8 @@ There are several versions of the popular, inexpensive, and versatile 24/25 seri
 
 Older model, the black one with the gold edge (rarely green with a silver edge), is the cheapest. But it has a nasty hardware quirk which [must be fixed](#fixing-higher-than-needed-dataline-voltage-bug) before you can use the programmer with any 3.3V flash chip.
 
+[![CH341A programmer](https://img.youtube.com/vi/qXLmrmb0BJc/0.jpg)](https://youtu.be/qXLmrmb0BJc)
+
 
 Software
 --------
@@ -45,6 +47,19 @@ If the checksums match, the firmware is saved correctly. If they don't, check yo
 
 Use `snander -e && snander -w <filename> -v` to erase the flash chip clean and write a new firmware to it with verification of the result.
 
+Tutorials
+---------
+
+Programming Jooan A6M with a clip, part 1
+
+[![Programming Jooan A6M with a clip, part 1](https://img.youtube.com/vi/lDzk7r3xyGE/0.jpg)](https://youtu.be/lDzk7r3xyGE)
+
+
+Programming Jooan A6M with a clip, part 2
+
+[![Programming Jooan A6M with a clip, part 2](https://img.youtube.com/vi/zWBrI0DF35U/0.jpg)](https://youtu.be/zWBrI0DF35U)
+
+
 
 Troubleshooting
 ---------------
@@ -54,14 +69,6 @@ To make the CH341A work on a Raspberry PI, you must add these to `/boot/cmdline.
 ```
 dwc_otg.fiq_enable=0 dwc_otg.fiq_fsm_enable=0
 ```
-
-
-Resources
----------
-
-- [DIY BCQ CH341A forum](http://www.diybcq.com/thread-144131-1-1.html) (Chinese, use Chrome automatic translation)
-- [CH341A Programmer](https://4pda.to/forum/index.php?showtopic=884713) (Russian, use Chrome automatic translation)
-
 
 Fixing higher than needed dataline voltage bug
 ----------------------------------------------
@@ -88,3 +95,10 @@ Connect the 3.3V output leg of the voltage regulator to pin 9 of the CH341A IC b
 Restore power to the chip by re-routing the 3.3V voltage from the 3v3 pin to pin 28 of the CH341A IC through the 5V pin connector on the header.
 
 ![image](https://github.com/user-attachments/assets/310e4b82-d7ac-4e03-a6fc-9222b21d6108)
+
+
+Resources
+---------
+
+- [DIY BCQ CH341A forum](http://www.diybcq.com/thread-144131-1-1.html) (Chinese, use Chrome automatic translation)
+- [CH341A Programmer](https://4pda.to/forum/index.php?showtopic=884713) (Russian, use Chrome automatic translation)
