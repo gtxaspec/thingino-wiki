@@ -1,7 +1,7 @@
 # Installation
 
 ## Recommended method
-Use programming clip on the flash chip on the board and re-program in place (requires a CH341A programmer and a clip).
+Use programming clip on the flash chip on the board and re-program in place (requires a CH341A programmer and a clip). See videos below:
 
 1. On linux, install https://github.com/Droid-MAX/SNANDer
 
@@ -9,6 +9,23 @@ Use programming clip on the flash chip on the board and re-program in place (req
 
 3. Download firmware from thingino.com, Use `snander -e && snander -w <filename> -v` to erase the flash chip clean and write a new firmware to it with verification of the result.
 
+### Programming Jooan A6M with a clip, pt.1
+
+Youtube:
+
+[![Programming Jooan A6M with a clip, pt.1](http://img.youtube.com/vi/lDzk7r3xyGE/0.jpg)](http://www.youtube.com/watch?v=lDzk7r3xyGE "Programming Jooan A6M with a clip, pt.1")
+
+### CH341a programmer, pt. 1.5
+
+Youtube:
+
+[![CH341a programmer](http://img.youtube.com/vi/qXLmrmb0BJc/0.jpg)](http://www.youtube.com/watch?v=qXLmrmb0BJc "CH341a programmer")
+
+### Programming Jooan A6M with a clip, pt.2
+
+Youtube:
+
+[![Programming Jooan A6M with a clip, pt.2](http://img.youtube.com/vi/zWBrI0DF35U/0.jpg)](http://www.youtube.com/watch?v=zWBrI0DF35U "Programming Jooan A6M with a clip, pt.2")
 
 ## Alternative methods
 
@@ -20,6 +37,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 
 # Specifications
 
+* Model: Jooan A6M-U
 * Type: outdoor camera
 * Environment: IP65 (claimed)
 * CPU: Ingenic T23, 1.2GHz
@@ -42,7 +60,7 @@ Use programming clip on the flash chip on the board and re-program in place (req
 * IR 850nm LEDs: Yes, 2x, connected to GPIO/PWM
 * IR 940nm LEDs: No
 * Power consumption: 5V 2A 7.5W (claimed on the box) or 5V 1.5A (supplied adapter in the box)
-* FCC ID: 2BBQ4-A6M-U [fcc.report](https://fcc.report/FCC-ID/2BBQ4-A6M-U)
+* FCC ID: 2BBQ4-A6M-U [fcc.report](https://fcc.report/FCC-ID/2BBQ4-A6M-U) (PDF manual, pictures, test report)
 * Pan / Tilt / Zoom motors: No
 * Ethernet interface: No
 * USB: Yes, USB type C, Power only, no data lines

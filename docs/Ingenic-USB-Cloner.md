@@ -18,31 +18,16 @@ Navigate to the `cloner-2.5.xx-yyyyy_thingino` directory, with "xx" indicating y
 > [!IMPORTANT]  
 > Windows users may need to install additional drivers for support.  See the [[Vendor Documentation|Ingenic-USB-Cloner#vendor-documentation]] PDF Guide for additional details.
 
-Create a folder named `0_Firmware_Root` inside the Cloner directory.
-
-![](https://github.com/user-attachments/assets/28584a28-394c-47ac-9fd7-14b8e9120be3)
-
-> [!CAUTION]
-> The `0_Firmware_Root` directory **MUST** exist to ensure backups are completed successfully. Backup operations will **fail** if this directory is missing.
-
 Open the Cloner application.
 
 ![](https://thingino.com/a/cloner-0-1.png)
 
-## Installing configuration bundle 
-
-- Download the latest configuration bundle [from here](https://github.com/gtxaspec/ingenic-cloner-profiles/releases/download/latest/cloner_profiles.ingenic).
-
-Click **Load Image** and select the downloaded `cloner_profiles.ingenic` file.
- 
-![](https://thingino.com/a/cloner-0-2.png)
-
 > [!IMPORTANT]  
-> The options described in the screenshots will not match if you did not load the `cloner_profiles.ingenic` bundle as outlined in the previous steps.
+> The options described in the screenshots will not match if you did not load the `cloner` bundle as outlined in the previous steps.
 
 ## Enable configuration mode  
 
-Change the **Lock Level** from **2**, to **0**
+If the **Lock Level** is not 0, change the **Lock Level** from **2**, to **0**
 
 ![](https://thingino.com/a/cloner-0-3.png)
 
