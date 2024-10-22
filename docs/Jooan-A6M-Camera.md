@@ -15,7 +15,9 @@ Youtube:
 
 [![Programming Jooan A6M with a clip, pt.1](http://img.youtube.com/vi/lDzk7r3xyGE/0.jpg)](http://www.youtube.com/watch?v=lDzk7r3xyGE "Programming Jooan A6M with a clip, pt.1")
 
-### CH341a programmer, pt. 1.5
+### CH341a programmer modification, pt. 1.5
+
+For in-place programming, it is necessary to cut pin 8 of the programming adapter:
 
 Youtube:
 
