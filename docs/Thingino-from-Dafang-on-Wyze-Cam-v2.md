@@ -59,8 +59,8 @@ To do that, in a shell:
 
 ```bash
 cd /system/sdcard
-chmod u+x uniflaser.sh
-./uniflasher thingino-wyze_c2_jxf23.bin
+chmod u+x uniflasher.sh
+./uniflasher.sh thingino-wyze_c2_jxf23.bin
 ```
 
 If that works you should see:
