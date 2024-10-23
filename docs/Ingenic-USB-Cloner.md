@@ -20,7 +20,9 @@ Navigate to the `cloner-2.5.xx-yyyyy_thingino` directory, with "xx" indicating y
 
 Open the Cloner application.
 
-![](https://thingino.com/a/cloner-0-1.png)
+<a href="https://github.com/user-attachments/assets/4b187183-f176-405c-81b8-ae7f616f3075">
+  <img src="https://github.com/user-attachments/assets/4b187183-f176-405c-81b8-ae7f616f3075" width="720" alt="Cloner Main Window">
+</a>
 
 > [!IMPORTANT]  
 > The options described in the screenshots will not match if you did not load the `cloner` bundle as outlined in the previous steps.
@@ -29,7 +31,9 @@ Open the Cloner application.
 
 If the **Lock Level** is not 0, change the **Lock Level** from **2**, to **0**
 
-![](https://thingino.com/a/cloner-0-3.png)
+<a href="https://github.com/user-attachments/assets/3e67b890-d8ab-46a4-b60d-48f26ae1e645">
+  <img src="https://github.com/user-attachments/assets/3e67b890-d8ab-46a4-b60d-48f26ae1e645" width="720" alt="Cloner Main Window Lock Menu">
+</a>
 
 Enter **_!@#_** (_exclamation mark_, _"at" symbol_, _number sign_) as the password.  Click OK.
 
@@ -39,7 +43,9 @@ Enter **_!@#_** (_exclamation mark_, _"at" symbol_, _number sign_) as the passwo
 
 After entering the password in the previous step, the **Config** button should now appear in the main screen. Click the **Config** button in the top-right corner.
 
-![](https://thingino.com/a/cloner-0-5.png)
+<a href="https://github.com/user-attachments/assets/b7316719-9cfe-4d43-9eb8-f17a12630a3a">
+  <img src="https://github.com/user-attachments/assets/b7316719-9cfe-4d43-9eb8-f17a12630a3a" width="720" alt="Cloner Main Window Lock Menu">
+</a>
 
 In the **Config** window, under the **INFO** tab, you have various configuration menus available:
 
@@ -48,7 +54,9 @@ In the **Platform** dropdown menu, select **_T_**. Choose the appropriate SOC ve
 > [!IMPORTANT]  
 > Selecting the correct SOC for your device is crucial. If you choose incorrectly, the cloner program won't recognize your device, halting the process. Be sure to accurately identify and select the appropriate version (e.g., t20, t21, t23, t30, t31) for your specific hardware. This step is essential for the cloner to function properly and allow you to proceed with the operation.
 
-![](https://thingino.com/a/cloner-0-6.png)
+<a href="https://github.com/user-attachments/assets/156a1275-5642-44c3-b010-f50e5d40abce">
+  <img src="https://github.com/user-attachments/assets/156a1275-5642-44c3-b010-f50e5d40abce" width="720" alt="Cloner SOC Selection Menu">
+</a>
 
 Next, you can proceed with either performing a [[backup|Ingenic-USB-Cloner#backup]] or [[writing firmware|Ingenic-USB-Cloner#writing-firmware]].
 
@@ -62,12 +70,15 @@ Next, you can proceed with either performing a [[backup|Ingenic-USB-Cloner#backu
 In the **Board** dropdown menu, choose the appropriate _**reader**_ operation based on your device's flash chip size. The available options are 8MB, 16MB, and 32MB.
 
 For the example below, we will select: _sfc_nor_reader_16M.cfg_ for the specific SoC.
-
-![](https://github.com/user-attachments/assets/ced87cec-5ae5-407f-ad43-a4f5d89bcf0f)
+<a href="https://github.com/user-attachments/assets/e8c5c62f-560c-4a2b-8efd-43aa8e7fc975">
+  <img src="https://github.com/user-attachments/assets/e8c5c62f-560c-4a2b-8efd-43aa8e7fc975" width="720" alt="Cloner Board Selecttion Menu">
+</a>
 
 Click the **Save** button to save your choice and return to the main menu.
 
-![](https://github.com/user-attachments/assets/a5db14c8-b688-4f52-a3b2-af1fb63d9b14)
+<a href="https://github.com/user-attachments/assets/4691e59d-c97a-483d-9737-96412a4b67c7">
+  <img src="https://github.com/user-attachments/assets/4691e59d-c97a-483d-9737-96412a4b67c7" width="720" alt="Cloner Main Menu">
+</a>
 
 You may now begin [[the backup operation.|ingenic-usb-cloner#starting-cloner-operations]]
 
