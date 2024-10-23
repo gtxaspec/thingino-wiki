@@ -67,7 +67,7 @@ Next, you can proceed with either performing a [[backup|Ingenic-USB-Cloner#backu
 > [!WARNING]  
 > We **strongly recommend** using Cloner to create a **full backup** of the existing stock firmware. This is an essential step if you ever need to restore the original functionality or analyze the stock firmware for compatibility.
 
-In the **Board** dropdown menu, choose the appropriate _**reader**_ operation based on your device's flash chip size. The available options are 8MB, 16MB, and 32MB.
+In the **Board** dropdown menu, choose the appropriate _**reader**_ operation based on your device's SoC submodel (t31a, t31nl, t31x for example) and flash chip size. The available options are 8MB, 16MB, and 32MB.
 
 For the example below, we will select: _sfc_nor_reader_16M.cfg_ for the specific SoC.
 <a href="https://github.com/user-attachments/assets/e8c5c62f-560c-4a2b-8efd-43aa8e7fc975">
@@ -84,24 +84,29 @@ You may now begin [[the backup operation.|ingenic-usb-cloner#starting-cloner-ope
 
 ### Writing Firmware
 
-In the **Board** dropdown menu, select the appropriate _**writer**_ operation based on your specific needs. The available options are:
+In the **Board** dropdown menu, select the appropriate _**writer**_ operation based on your device's SoC submodel (t31a, t31nl, t31x for example) and specific needs. The available options are:
 
 - **_sfc_nor_writer.cfg**: for writing individual partitions  
 - **_sfc_nor_writer_full.cfg**: for writing full firmware images
 
-![cloner writer full profile](https://thingino.com/a/cloner-0-7.png)
+<a href="https://github.com/user-attachments/assets/d97a57f8-41e4-4423-b5ab-e43a635df577">
+  <img src="https://github.com/user-attachments/assets/d97a57f8-41e4-4423-b5ab-e43a635df577" width="720" alt="Cloner Board Selection Menu">
+</a>
 
 Find and click on the **POLICY** tab, then click **...** (_three dot_) button in the setting column to open the file selection dialog.
 
-![](https://thingino.com/a/cloner-0-8.png)
+<a href="https://github.com/user-attachments/assets/7ba05397-ae87-4dbe-9f48-ec86029eec22">
+  <img src="https://github.com/user-attachments/assets/7ba05397-ae87-4dbe-9f48-ec86029eec22" width="720" alt="Cloner Policy Firmware File Select Button">
+</a>
 
-Select the firmware image file you want to write, and click Open.
+Select the firmware image file you want to write, and click Open.  
 
-![](https://thingino.com/a/cloner-0-9.png)
-
+![image](https://camo.githubusercontent.com/6693f348a02a45c5ec826867e415febfb0542fd7ca6698c6635f73511c6d1a5f/68747470733a2f2f7468696e67696e6f2e636f6d2f612f636c6f6e65722d302d392e706e67)  
 Once you have selected your firmware image file for writiing, click the **Save** button to return to the main screen.
 
-![](https://thingino.com/a/cloner-0-10.png)
+<a href="https://github.com/user-attachments/assets/73ad4ded-7ab4-42ca-bcfb-e7965d7c42db">
+  <img src="https://github.com/user-attachments/assets/73ad4ded-7ab4-42ca-bcfb-e7965d7c42db" width="720" alt="Cloner Policy Firmware File Select Button">
+</a>  
 
 ### Starting Cloner Operations
 
@@ -156,8 +161,9 @@ Refer to the vendor documentation for additional in-depth information.
 
 If your camera is equipped with a USB wireless module, the USB port will most likely not be OTG compatible and therefore cannot be used for Cloner. However, you can still make a makeshift connection by borrowing the USB data wires from the wireless module. Locate the `DP/D+` and `DN/D-` pads on the USB wireless module and solder the data wires from a stripped USB cable to them like shown below.
 
-![usb_from_wifi](https://github.com/user-attachments/assets/3ba22645-a9c4-408d-97aa-b475774d5568)
-
+<a href="https://github.com/user-attachments/assets/3ba22645-a9c4-408d-97aa-b475774d5568">
+  <img src="https://github.com/user-attachments/assets/3ba22645-a9c4-408d-97aa-b475774d5568" width="320" alt="USB wifi module pins">
+</a>
 
 ### Force the system to go into cloner mode
 
