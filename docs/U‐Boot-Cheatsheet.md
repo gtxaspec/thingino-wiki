@@ -191,7 +191,7 @@ sf probe 0; sf erase 0x0 ${flashsize};
 sf write ${baseaddr} 0x0 ${filesize}
 ```
 
-### Burn 16MB firmware image via serial connection
+### Burn 16MB firmware image via serial upload
 
 To upload a file over a serial connection by name only, the file should be
 located in the user's home directory, or use the full path to the file instead.
@@ -232,7 +232,7 @@ sf probe 0; sf erase 0x0 ${bootsize};
 sf write ${baseaddr} 0x0 ${filesize}
 ```
 
-### Burn only bootloader via serial connection
+### Burn only bootloader via serial upload
 
 ```
 setenv baseaddr 0x82000000;
