@@ -3,7 +3,7 @@ Installation
 
 ### Recommended method
 
-Use programming clip on the flash chip on the board and re-program in place (requires a CH341A programmer and a clip). See videos below:
+Use programming clip on the flash chip on the board and re-program in place (requires a modified CH341A programmer and a clip). See videos below:
 
 1. On linux, install https://github.com/Droid-MAX/SNANDer
 
@@ -43,7 +43,7 @@ Specifications
 
 * Model: Jooan A6M-U
 * Type: outdoor camera
-* Environment: IP65 (claimed)
+* Weather resistance: IP65 (claimed)
 * CPU: Ingenic T23, 1.2GHz
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
