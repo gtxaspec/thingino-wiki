@@ -1,6 +1,8 @@
-# Installation
+Installation
+------------
 
-## Recommended method
+### Recommended method
+
 Use programming clip on the flash chip on the board and re-program in place (requires a CH341A programmer and a clip). See videos below:
 
 1. On linux, install https://github.com/Droid-MAX/SNANDer
@@ -9,27 +11,22 @@ Use programming clip on the flash chip on the board and re-program in place (req
 
 3. Download firmware from thingino.com, Use `snander -e && snander -w <filename> -v` to erase the flash chip clean and write a new firmware to it with verification of the result.
 
-### Programming Jooan A6M with a clip, pt.1
-
-Youtube:
+Programming Jooan A6M with a clip, pt.1
 
 [![Programming Jooan A6M with a clip, pt.1](http://img.youtube.com/vi/lDzk7r3xyGE/0.jpg)](http://www.youtube.com/watch?v=lDzk7r3xyGE "Programming Jooan A6M with a clip, pt.1")
 
-### CH341a programmer modification, pt. 1.5
-
-For in-place programming, it is necessary to cut pin 8 of the programming adapter:
-
-Youtube:
-
-[![CH341a programmer](http://img.youtube.com/vi/qXLmrmb0BJc/0.jpg)](http://www.youtube.com/watch?v=qXLmrmb0BJc "CH341a programmer")
-
-### Programming Jooan A6M with a clip, pt.2
-
-Youtube:
+Programming Jooan A6M with a clip, pt.2
 
 [![Programming Jooan A6M with a clip, pt.2](http://img.youtube.com/vi/zWBrI0DF35U/0.jpg)](http://www.youtube.com/watch?v=zWBrI0DF35U "Programming Jooan A6M with a clip, pt.2")
 
-## Alternative methods
+CH341a programmer modification, pt. 1.5
+
+For in-place programming, it is necessary to cut pin 8 of the programming adapter:
+
+[![CH341a programmer](http://img.youtube.com/vi/qXLmrmb0BJc/0.jpg)](http://www.youtube.com/watch?v=qXLmrmb0BJc "CH341a programmer")
+
+
+### Alternative methods
 
 * Desolder the flash chip and reprogram it in a programmer.
 * Use a [No Tool Installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method. Doesn't exist for this camera
@@ -37,7 +34,9 @@ Youtube:
 * Use [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) and reprogram via USB port. USB data lines not available for this camera.
 * Get access to the linux shell from UART. Not possible: UART is disabled on vendor linux
 
-# Specifications
+
+Specifications
+--------------
 
 * Model: Jooan A6M-U
 * Type: outdoor camera
@@ -68,7 +67,8 @@ Youtube:
 * USB: Yes, USB type C, Power only, no data lines
 * Vendor app: [CAM720](https://play.google.com/store/apps/details?id=com.jooan.qiaoanzhilian.fmr.gp) (not compatible with thingino)
 
-# Pictures
+Pictures
+--------
 
 <img src="https://github.com/user-attachments/assets/fb1c4480-971f-4291-b4ff-86693097bb1c" width="400">
 
@@ -80,18 +80,24 @@ Youtube:
 
 <img src="https://github.com/user-attachments/assets/5e51bc3a-8cd7-4be3-b281-b354d7a31b0c" width="400">
 
-### SV6355 Variant
+**SV6355 Variant**
+
 <img src="https://github.com/user-attachments/assets/68ef5fa4-dd7a-41e7-a948-2ba1c92269a4" width="400">
 
-# Serial UART
+### Serial UART
 
 115200 baud, 3.3V
 
 <img src="https://github.com/user-attachments/assets/9a6e8be6-7fcd-47e5-9981-fa0878d46bcd" width="400">
 
-# Logs
+### Jooan A6M TX-RX Pinout:
 
-## Vendor uart log
+![jooan-a6m](https://github.com/user-attachments/assets/af52c554-9f64-491a-becc-11c9ddad78d1)
+
+Logs
+----
+
+### Vendor uart log
 
 ```
 U-Boot SPL 2013.07-svn4700 (Dec 28 2023 - 19:36:40)

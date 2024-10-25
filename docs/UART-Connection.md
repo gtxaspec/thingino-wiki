@@ -1,21 +1,23 @@
-Open the camera case.
+To connect to the UART port, you will need to use a [serial port adapter][1] to connect to your PC.
 
-Get a [USB to TTL UART adapter][1].
+> [!CAUTION]
+> Before you connect that adapter to you camera, make sure that it's working voltage is set to 3.3 volt!
 
-__Before you connect that adapter to you camera, make sure that it's working voltage is set to 3.3 volt!__
+Set the adapter's operating voltage to 3.3 volts before connecting it to the camera. Sometimes this is as simple as moving a jumper.Sometimes you have to solder or connect with a solder dab. Some adapters only support 5 volts: add a logic level converter between the adapter and the camera's UART port. 
 
-Connect ground (GND) contact on the adapter to ground contact on the camera.
+One of the pads you need to connect your adapter to is GND (ground). This is easy to find with a multimeter in continuity mode. 
+Place one of the leads on a known exposed ground pad.These are usually large open copper contact areas around mounting screw holes, USB port casings, SD card slot metal walls. Use another wire to lightly touch control pads until you see or hear a message from your multimeter that the circuit is closed. This means you have found the ground. Now you need to find two more: `RX` and `TX`, both used to receive and transmit data, respectively. Start with `TX`. It sends a string of characters and is easy to spot.
 
-Connect RX contact of the adapter to TX contact of the camera.
+Be aware that you are looking for a contact with 3.3V potential between it and ground. Test possible connection points with a multimeter and mark the ones that show 3.3 volts. This way you don't have to test everything and you save yourself from hitting, say, a 12 volt connector intended for an infrared LED array or whatever.
 
-Connect TX contact of the adapter to RX contact of the camera.
+Connect the `GND` pin of your camera to the `GND` pad of the adapter, connect the USB connector of the adapter to a USB port on your PC, start a terminal emulator application and connect to your adapter. Set your terminal settings to 115200 bps baud rate, 8 bits, no parity, 1 stop bit, no flow control.
 
-**Do not connect VCC contact!** Power the camera with its standard power adapter.
+> [!CAUTION]
+> Do not connect VCC contact! Power the camera with its standard power adapter.
 
-Set your terminal settings to 115,200 bps baudrate, 8 bits, no parity, 1 stopbit, no flow control. You should start seeing booting log in your terminal window.
+You should start seeing booting log in your terminal window.
 
-
-### Commands for various terminal programs with session logging
+Here are some command lines for various terminal programs with session logging. Pick your poison.
 
 #### screen
 
@@ -49,14 +51,3 @@ If you opt for a GUI terminal, namely [PuTTY](https://www.putty.org/), this is h
 ![PuTTY connection screen](https://user-images.githubusercontent.com/29582865/209340268-e34a010c-d455-4343-ae83-0866f0f0af15.png)
 
 [1]: https://www.aliexpress.com/w/wholesale-usb-to-ttl-uart.html
-
-
-
-
-
-Jooan A6M TX-RX Pinout:
-
-
-![jooan-a6m](https://github.com/user-attachments/assets/af52c554-9f64-491a-becc-11c9ddad78d1)
-
-![unknown-T23](https://github.com/user-attachments/assets/15669ca8-8995-410f-b9ca-9aded561fc45)
