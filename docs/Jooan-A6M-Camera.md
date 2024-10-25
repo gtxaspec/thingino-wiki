@@ -11,15 +11,18 @@ Use programming clip on the flash chip on the board and re-program in place (req
 
 3. Download firmware from thingino.com, Use `snander -e && snander -w <filename> -v` to erase the flash chip clean and write a new firmware to it with verification of the result.
 
-Programming Jooan A6M with a clip, pt.1
+
+[Programming Jooan A6M with a clip, pt.1](http://www.youtube.com/watch?v=lDzk7r3xyGE):
 
 [![Programming Jooan A6M with a clip, pt.1](http://img.youtube.com/vi/lDzk7r3xyGE/0.jpg)](http://www.youtube.com/watch?v=lDzk7r3xyGE "Programming Jooan A6M with a clip, pt.1")
 
-Programming Jooan A6M with a clip, pt.2
+
+[Programming Jooan A6M with a clip, pt.2](http://www.youtube.com/watch?v=zWBrI0DF35U):
 
 [![Programming Jooan A6M with a clip, pt.2](http://img.youtube.com/vi/zWBrI0DF35U/0.jpg)](http://www.youtube.com/watch?v=zWBrI0DF35U "Programming Jooan A6M with a clip, pt.2")
 
-CH341a programmer modification, pt. 1.5
+
+[CH341a programmer modification, pt. 1.5](http://www.youtube.com/watch?v=qXLmrmb0BJc):
 
 For in-place programming, it is necessary to cut pin 8 of the programming adapter:
 
