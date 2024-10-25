@@ -154,4 +154,8 @@ SF: 1572864 bytes @ 0x48000 Read: OK
    Uncompressing Kernel Image ... OK
 
 Starting kernel ...
+
+Kernel command line: console=null mem=46080K@0x0 rmem=19456K@0x2d00000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock3 rw
+ mtdparts=jz_sfc:256k(boot),32k(bootenv),1472k(kernel),2880k(rootfs),3136k(appfs),384k(config),32k(confbak)
+ ja_version=01.23N.20231228.19 HWUbootGpioSet=60(0) CpuType=T23N HWKernelGpio=61(SdCd) SDKMem=19456
 ```
