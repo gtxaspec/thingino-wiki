@@ -49,7 +49,7 @@ Specifications
 * Lens: 3.6mm, M12 mount, total length (sensor to lens edge): ~23mm
 * Field of View: Horizontal 51 degrees, Vertical 30, Diagonal ~58
 * Optical resolution: vertical 420 TVL, horizontal 550 TVL
-* IR cut: Yes, mechanical shutter with solenoid, connected to GPIO
+* IR cut filter: Yes, mechanical shutter with solenoid, controlled by GPIO
 * WIFI module, variant 1: SV6355
 * WIFI module, variant 2: Altobeam ATBM6012BX, 802.11n 20MHz only, 2.4GHz only, BLE
 * Microphone: Yes
@@ -57,8 +57,8 @@ Specifications
 * SD card slot: Yes
 * reset button: Yes
 * Illumination:
-* White LEDs: Yes, 2x, connected to GPIO/PWM
-* IR 850nm LEDs: Yes, 2x, connected to GPIO/PWM
+* White LEDs: Yes, 2x, controlled by GPIO/PWM
+* IR 850nm LEDs: Yes, 2x, controlled by GPIO/PWM
 * IR 940nm LEDs: No
 * Power consumption: 5V 2A 7.5W (claimed on the box) or 5V 1.5A (supplied adapter in the box)
 * FCC ID: 2BBQ4-A6M-U [fcc.report](https://fcc.report/FCC-ID/2BBQ4-A6M-U) (PDF manual, pictures, test report)
@@ -155,7 +155,8 @@ SF: 1572864 bytes @ 0x48000 Read: OK
 
 Starting kernel ...
 
-Kernel command line: console=null mem=46080K@0x0 rmem=19456K@0x2d00000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock3 rw
+Vendor kernel command line (extracted):
+console=null mem=46080K@0x0 rmem=19456K@0x2d00000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock3 rw
  mtdparts=jz_sfc:256k(boot),32k(bootenv),1472k(kernel),2880k(rootfs),3136k(appfs),384k(config),32k(confbak)
  ja_version=01.23N.20231228.19 HWUbootGpioSet=60(0) CpuType=T23N HWKernelGpio=61(SdCd) SDKMem=19456
 ```
