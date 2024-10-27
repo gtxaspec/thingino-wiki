@@ -160,7 +160,12 @@ setenv baseaddr 0x82000000;
 setenv flashsize 0x800000;
 mw.b ${baseaddr} 0xff ${flashsize}
 loady
-# press "Ctrl-a" followed by ":", then type `exec !! sz --ymodem autoupdate-full.bin;`
+```
+
+Press `Ctrl-a` followed by `:`, then type `exec !! sz --ymodem autoupdate-full.bin`
+When the upload is complete, continue:
+
+```
 sf probe 0; sf erase 0x0 ${flashsize};
 sf write ${baseaddr} 0x0 ${filesize}
 ```
@@ -201,7 +206,12 @@ setenv baseaddr 0x82000000;
 setenv flashsize 0x1000000;
 mw.b ${baseaddr} 0xff ${flashsize}
 loady
-# press "Ctrl-a" followed by ":", then type `exec !! sz --ymodem autoupdate-full.bin;`
+```
+
+Press `Ctrl-a` followed by `:`, then type `exec !! sz --ymodem autoupdate-full.bin`
+When the upload is complete, continue:
+
+```
 sf probe 0; sf erase 0x0 ${flashsize};
 sf write ${baseaddr} 0x0 ${filesize}
 ```
@@ -239,7 +249,12 @@ setenv baseaddr 0x82000000;
 setenv bootsize 0x50000;
 mw.b ${baseaddr} 0xff ${bootsize}
 loady
-# press "Ctrl-a" followed by ":", then type `exec !! sz --ymodem autoupdate-uboot.bin`
+```
+
+Press `Ctrl-a` followed by `:`, then type `exec !! sz --ymodem autoupdate-uboot.bin`
+When the upload is complete, continue:
+
+```
 sf probe 0; sf erase 0x0 ${bootsize};
 sf write ${baseaddr} 0x0 ${filesize}
 ```
