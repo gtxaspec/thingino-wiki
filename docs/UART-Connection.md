@@ -10,7 +10,7 @@ Place one of the leads on a known exposed ground pad.These are usually large ope
 
 Be aware that you are looking for a contact with 3.3V potential between it and ground. Test possible connection points with a multimeter and mark the ones that show 3.3 volts. This way you don't have to test everything and you save yourself from hitting, say, a 12 volt connector intended for an infrared LED array or whatever.
 
-Connect the `GND` pin of your camera to the `GND` pad of the adapter, connect the USB connector of the adapter to a USB port on your PC, start a terminal emulator application and connect to your adapter. Set your terminal settings to 115200 bps baud rate, 8 bits, no parity, 1 stop bit, no flow control.
+Connect the `GND` pin of your camera to the `GND` pad of the adapter, connect `RX` contact of the adapter to `TX` contact of the camera, and connect `TX` contact of the adapter to `RX` contact of the camera. Then connect the USB connector of the adapter to a USB port on your PC, start a terminal emulator application and connect to your adapter. Set your terminal settings to 115200 bps baud rate, 8 bits, no parity, 1 stop bit, no flow control.
 
 > [!CAUTION]
 > Do not connect VCC contact! Power the camera with its standard power adapter.
