@@ -92,3 +92,8 @@
 | PC18  | GPIO         | PWM1      | -             | I2S_SDTO         | Pulldown,Schmitt | VDDIO2        | P14               | N.A.              |
 | PC19  | GPIO         | PWM2      | -             | I2S_ADC_BCLK     | Z, Schmitt     | VDDIO2        | P15               | N.A.              |
 | PC20  | GPIO         | PWM3      | DMIC_CLK      | I2S_ADC_LRCK     | Z, Schmitt     | VDDIO2        | R13               | N.A.              |
+
+---
+
+SDIO Module Map  
+![image](https://github.com/user-attachments/assets/61df0ec5-5026-4541-8b6c-a91e42bc2a9f)
