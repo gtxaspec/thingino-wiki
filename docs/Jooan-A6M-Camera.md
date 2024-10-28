@@ -47,10 +47,10 @@ Specifications
 * CPU: Ingenic T23, 1.2GHz
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
-* Sensor: SmartSens SC1A4T, 1280 x 720p, 15FPS only, RGGB Bayer filter
-* Sensor optical format: 1/4.5", active area: 3.48mm x 1.96mm, 4mm diag
+* Sensor: SmartSens SC1A4T, 1280H x 720V @ 15FPS, RGGB Bayer filter
+* Sensor optical format: 1/4.6", active area: 3.392mm x 1.908mm, pixel: 2.65um x 2.65um
 * Lens: 3.6mm, M12 mount, total length (sensor to lens edge): ~23mm
-* Field of View: Horizontal 51 degrees, Vertical 30, Diagonal ~58
+* Field of View: Horizontal ~51 degrees, Vertical ~30, Diagonal ~58 degrees
 * Optical resolution: vertical 420 TVL, horizontal 550 TVL
 * IR cut filter: Yes, mechanical shutter with solenoid, controlled by GPIO
 * WIFI module, variant 1: SV6355
