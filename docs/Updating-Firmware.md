@@ -95,3 +95,38 @@ The `sysupgrade` script automatically downloads the latest precompiled build for
 ### Switching between camera models
 
 If you happen to flash the wrong version of thingino, you can switch to another image from within the system. Change `IMAGE_ID` in `/etc/-os-release` to the one you want to install and run `sysupgrade -p`.
+
+
+### Troubleshooting
+
+Cameras like Xiaomi MJSXJ03HL with low-end SoC, large sensor resolution, and large flash memory (16MB) can have issues trying to install an update:
+
+```
+   \\   _______ _     _ _____ __   _  ______ _____ __   _  _____
+   )\\     |    |_____|   |   | \  | |  ____   |   | \  | |     |
+  (  /     |    |     | __|__ |  \_| |_____| __|__ |  \_| |_____|
+  / /
+        xiaomi_mjsxj03hl_t31n_jxq03p
+        master+8b67c2e, 2024-10-02 00:02:24 -0400
+
+root@ing-xiaomi-mjsxj03hl-8a0a ~# sysupgrade -p
+Partial upgrade from GitHub
+Upgrading from GitHub
+Not enough free space to download firmware: 16449536 > 13631488
+```
+
+To upgrade such a camera from Linux, you first need to change the memory mapping to give the system more space:
+
+```
+fw_setenv osmem 52M@0x0
+fw_setenv rmem 12M@0x3400000
+reboot
+```
+
+Then do the upgrade and reset the memory mapping back:
+
+```
+fw_setenv osmem 32M@0x0
+fw_setenv rmem 32M@0x2000000
+reboot
+```
