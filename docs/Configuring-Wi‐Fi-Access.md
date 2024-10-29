@@ -14,6 +14,7 @@ Connect to this network, either using a mobile device (smartphone or tablet) or 
 ![portal1](https://github.com/user-attachments/assets/d0bcd753-c2e5-4694-8db8-bc086dfdc672)
 
 Fill in the form with the current information and click the "Save Credentials" button at the bottom.
+Note that the SSID is case-sensitive, so you must type it exactly as it is.
 
 ![portal2](https://github.com/user-attachments/assets/8ac87448-702e-4eb1-9ecc-08d62179bfa4)
 
