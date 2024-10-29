@@ -26,3 +26,9 @@ echo 5 > /tmp/onvif.debug
 ```
 
 Three last calls will be saved to `/tmp/onvif.log`
+
+### Links
+
+Further details available here:
+https://github.com/roleoroleo/onvif_simple_server/blob/master/README.md
+
