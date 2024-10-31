@@ -19,13 +19,20 @@ Test the server with the "official" ONVIF tools:
 
 ### Debugging
 
-To enable debugging run 
+**To debugging ONVIF**
+
+Run
 
 ```
 echo 5 > /tmp/onvif.debug
 ```
 
 Three last calls will be saved to `/tmp/onvif.log`
+
+**To debug WSD daemon**
+
+Add `-d 5` to its command line then check `/tmp/wsd.log` file for debug ouput.
+
 
 ### Links
 
