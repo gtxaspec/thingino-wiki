@@ -86,6 +86,26 @@ Copy the file to an SD card, insert the card into your camera and reboot.
 - `devip` - IP address of developer's workstation
 - `debug` - Debug mode
 
+### Configuring via SSH
+If your camera is already connected to a wireless network, you can access an SSH shell using the same credentials as the WebUI (`root` / whatever password you've set).
+
+Modifications to `/etc/prudent.cfg` should be made using the `/bin/prudyntcfg` script.
+
+Example:
+```
+/bin/prudyntcfg set stream1.bitrate 900
+/bin/prudyntcfg set stream2.fps 5
+/bin/prudyntcfg set stream2.bitrate 900
+```
+
+The script will exit with code `0` if the modification was successful.
+
+The "default" configuration for Prudynt is located at `/rom/etc/prudynt.cfg`, so you can revert easily by running:
+```
+rm /etc/prudynt.cfg && cp /rom/etc/prudynt.cfg /etc/prudynt.cfg
+```
+NOTE: Removing `/etc/prudynt.cfg` is only really necessary if you're using an idempotent configuration manager (like Ansible) to reset the configuration when no changes have been made since flashing the firmware due to the overlay filesystem.  Failure to remove a the stock file may result in the error: `cp: '/rom/etc/prudynt.cfg' and '/etc/prudynt.cfg' are the same file`
+
 
 ## DEPRECATED
 
