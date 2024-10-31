@@ -200,3 +200,61 @@ To stop gdbserver, run `monitor exit` in the client, then exit the client with `
 [2]: https://buildroot.org/docs.html
 [3]: https://github.com/buildroot/buildroot/compare/master...themactep:buildroot:master
 [4]: https://github.com/themactep/thingino-firmware
+
+---
+
+## Source Code Repositories
+
+**Thingino** is a powerful, open-source solution that integrates multiple systems and programs to transform your camera into a versatile, feature-rich device. With a range of source code repositories contributing to its functionality, Thingino provides a collaborative platform for developers eager to contribute to an open-source camera ecosystem.
+
+If you're interested in helping out, dive into the sources below and explore the components that make up Thingino!
+
+### Core Repositories
+
+Here are the primary repositories that form the core of Thingino:
+
+- **Main Thingino Firmware Repository**: The central hub of Thingino's firmware.
+  - [Thingino Firmware Repository](https://github.com/themactep/thingino-firmware)
+
+- **U-Boot**: Bootloader for Ingenic-based Thingino devices.
+  - [U-Boot Repository](https://github.com/gtxaspec/u-boot-ingenic)
+  
+- **Kernel**: Custom Linux kernel for Thingino devices.
+  - [Thingino Linux Kernel](https://github.com/gtxaspec/thingino-linux)
+
+- **Prudynt (Streamer)**: Handles the streaming functionalities.
+  - [Prudynt Repository](https://github.com/gtxaspec/prudynt-t/)
+
+- **Motor Daemon/Client**: User-space daemon and client for motor controls.
+  - [Ingenic Motor Control](https://github.com/gtxaspec/ingenic-motor/blob/master/motor.c)
+
+- **libimp-control**: Library for interfacing with the Ingenic IMP platform.
+  - [libimp-control](https://github.com/gtxaspec/libimp-control)
+
+- **Ingenic Audio Daemon**: Manages audio functionalities on Ingenic devices.
+  - [Ingenic Audio Daemon](https://github.com/gtxaspec/ingenic-audiodaemon)
+
+- **LED Daemon**: Manages LED indicators.
+  - [Thingino LED Daemon](https://github.com/gtxaspec/thingino-ledd)
+
+- **GPIO Diagnostic Utility**: Tool for GPIO diagnostics.
+  - [GPIO Diagnostic Tools](https://github.com/gtxaspec/jz-diag-tools)
+
+- **Button Daemon**: Handles input from device buttons.
+  - [Thingino Button Daemon](https://github.com/gtxaspec/thingino-button)
+
+- **Ingenic SDK Musl Shim**: Musl-compatible shim for the Ingenic SDK libraries.
+  - [Ingenic SDK Musl Shim](https://github.com/gtxaspec/ingenic-musl)
+
+### Additional Useful Repositories
+
+These repositories contain supplementary resources and tools beneficial to Thingino development:
+
+- **Vendor Precompiled Kernel Module Archive**: Contains precompiled kernel modules.
+  - [Kernel Module Archive](https://github.com/gtxaspec/ingenic-module-repo)
+
+- **Ingenic SDK Headers**: Essential headers for Ingenic SDK development.
+  - [SDK Headers](https://github.com/gtxaspec/ingenic-headers)
+
+- **Ingenic SDK Samples for Musl**: Sample projects and examples for the Musl-based SDK.
+  - [SDK Samples for Musl](https://github.com/gtxaspec/libimp-samples-musl)
