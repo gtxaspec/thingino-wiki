@@ -44,8 +44,8 @@ Eject the card, put it in the camera, turn it on and wait two minutes, then foll
 
 Josh from [WLTechBlog](https://www.youtube.com/@wltechblog) published a number of videos describing the process for multiple cameras:
 
-- [Wyze Cam V2](https://www.youtube.com/watch?v=1pSx_jaXfoE)
-- [Wyze Cam V3](https://www.youtube.com/watch?v=SX637mrp0R0)
-- [Wansview W7](https://www.youtube.com/watch?v=jCRiIljSWlw)
-- [WUUK Y0510](https://www.youtube.com/watch?v=PhXbeY-PBgg)
+- [Wyze Cam V2](https://www.youtube.com/watch?v=1pSx_jaXfoE) Docs: https://github.com/wltechblog/thingino-installers/tree/main/wyze-cam-2
+- [Wyze Cam V3](https://www.youtube.com/watch?v=SX637mrp0R0) Docs: https://github.com/wltechblog/thingino-installers/tree/main/wyze-cam-3
+- [Wansview W7](https://www.youtube.com/watch?v=jCRiIljSWlw) Docs: https://github.com/wltechblog/thingino-installers/tree/main/wansview-w7
+- [WUUK Y0510](https://www.youtube.com/watch?v=PhXbeY-PBgg) Docs: https://gist.github.com/wltechblog/bcc30aca647ee8eac5cb80c6b7368b98
 - [Cinnado D1](https://www.youtube.com/watch?v=40MUbIXVBNI)
