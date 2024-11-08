@@ -2,6 +2,7 @@
 
 ### Don't:
 - Use 40 MHz channels on the 2.4 GHz band.
+- Use WPA2/WPA3 mixed mode. Stick to WPA2 only.
 
 ### Do:
 - Stick to channels 1, 6, and 11 (or 13 if permitted in your region).
