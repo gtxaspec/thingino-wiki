@@ -2,7 +2,7 @@
 
 Choose between:
 1. Quick installation method, which doesn't require dismantling the camera, and doesn't backup the original firmware
-2. Safe installation, which requires camera dismantling and allows full backup of original firmware
+2. Safe installation, which requires camera dismantling. Allows full backup of original firmware, and recovery from corrupted flash
 
 ### Quick method
 
