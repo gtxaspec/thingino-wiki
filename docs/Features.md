@@ -13,10 +13,10 @@ Thingino is packed with features that make it a versatile and powerful platform 
 - **Self Hosted AP Mode**: Allow the device to function without an internet connection, broadcasts a wireless access point for connectivity.
 
 #### Web UI
+- **Point-and-Click Configuration**: Configure your camera settings through an intuitive web interface.
 - **Resource Monitoring**: Track your device's resource usage directly from the web interface.
 - **File Manager**: Manage files on your device easily with the built-in web-based file manager.
 - **Recording Support**: Record video directly to an SD card or NFS share for easy storage and access.
-- **Point-and-Click Configuration**: Configure your camera settings through an intuitive web interface.
 - **Diagnostics**: View diagnostics and system information directly from the UI for easy troubleshooting.
 - **Pan/Tilt Support**: Control pan and tilt functions directly through the web UI.
 
