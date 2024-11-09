@@ -22,6 +22,9 @@ While most adapters work well, some devices may encounter issues due to hardware
 - Some OTG adapters or Ethernet adapters with micro USB connectors may exhibit connectivity issues or generate errors when plugged into a worn socket.
 - These problems are not due to the adapter or Thingino but are a result of physical wear on the WYZE camera's USB socket.
 
----
-
 For reliable USB networking on Thingino, ASIX AX88772-based adapters and CDC-Ethernet adapters are highly recommended. Be aware of potential hardware issues on devices like the WYZE Cam V3, where micro USB sockets can become worn and cause connectivity problems.
+
+### Adding Support for Other USB Ethernet Devices
+
+To add support for additional USB Ethernet devices, you can customize the Thingino build using Buildroot. Buildroot allows you to enable drivers for a wide range of USB Ethernet adapters supported by the Linux kernel. By modifying the configuration, you can compile a Thingino image that includes the necessary drivers for your specific adapter, ensuring compatibility with more devices.
+

@@ -8,8 +8,9 @@ Thingino is packed with features that make it a versatile and powerful platform 
 - **WireGuard Built-In**: Securely connect your device to VPNs using WireGuard.
 - **Customizable Crontab**: Schedule and automate tasks with a user-configurable crontab.
 - **NTP Time Sync**: Ensure accurate timekeeping with built-in NTP synchronization.
-- **Wi-Fi Module Support**: Supports various Wi-Fi modules, including SDIO and USB-based options.
-- **USB Ethernet Adapter Support**: Extend network connectivity with external USB Ethernet adapters, including PoE adapter support.
+- **Wi-Fi Module Support**: Supports [various](https://github.com/themactep/thingino-firmware/wiki/Tech-Info-%E2%80%90-Supported-Hardware#wireless-modules) Wi-Fi modules, including SDIO and USB-based options.
+- **USB Ethernet Adapter Support**: Extend network connectivity with external [USB Ethernet Adapters](https://github.com/themactep/thingino-firmware/wiki/USB-Ethernet-Networking), including PoE adapter support.
+- **Self Hosted AP Mode**: Allow the device to function without an internet connection, broadcasts a wireless access point for connectivity.
 
 #### Web UI
 - **Resource Monitoring**: Track your device's resource usage directly from the web interface.
@@ -26,10 +27,11 @@ Thingino is packed with features that make it a versatile and powerful platform 
 - **Motor Control Disable**: Option to disable motor controls when not needed.
 - **ONVIF Server**: Seamlessly integrate with ONVIF-compatible devices and systems.
 - **Real-Time ISP Image Adjustments**: Fine-tune image settings such as contrast, brightness, color temperature, and more in real time.
+- **Timelapse Recording**: Easily capture videos over time to create timelapse footage.
 
 #### Advanced Features
 - **Basic Motion Detection**: Region-based motion detection processed directly on the device.
-- **PWM Illumination Configuration**: Adjust and control PWM-based illumination settings.
+- **PWM Illumination Configuration**: Adjust and control PWM-based lights for advanced dimming control!
 - **LED Indicator Configuration**: Customize LED indicators to suit your needs.
 
 #### Snapshot Sending Options
