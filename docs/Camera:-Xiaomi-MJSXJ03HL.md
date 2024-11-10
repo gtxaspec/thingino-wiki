@@ -17,6 +17,32 @@ First, dismantle camera to access flash chip, then use either cloner or CH341 to
 ## Specifications
 
 * Model: Xiaomi MJSXJ03HL
+* Product name: Mi Camera 2K (Magnetic Mount)
 * Type: indoor camera
-* Weather resistance: no
-* CPU: Ingenic
+* Weather resistance: no IP rating
+* CPU: Ingenic T31L or T31N
+* RAM: 64MB
+* Flash: 16MB
+* Video encoding: H.264, H.265, MJPG
+* Sensor: SOI (Silicon Optronics Inc) JX-Q03P, 2304 x 1296 @ 30FPS, RGGB Bayer filter
+* Sensor optical format: 1/2.7", active area: 5.76 mm x 3.24 mm, pixel: 2.5 um x 2.5 um
+* Lens: unk mm, unk mount, total length (sensor to lens edge): unk mm
+* Field of View: Horizontal 125 degrees
+* Optical resolution: unk TVL
+* IR cut filter: Yes, mechanical shutter with solenoid, controlled by GPIO
+* WIFI module: RTL8189FTV, 802.11n 20/40MHz, 2.4GHz only, 150Mbps
+* Microphone: Yes
+* Speaker: Yes
+* SD card slot: Yes
+* reset button: Yes
+* Illumination:
+* White LEDs: No
+* IR 850nm LEDs: No
+* IR 940nm LEDs: Yes, 6x, controlled by GPIO
+* Power consumption: 5V 1A
+* Operating temperature: -10 C to +50 C
+* FCC ID: unk
+* Pan / Tilt / Zoom motors: No
+* Ethernet interface: No
+* USB: Yes, USB type C, with data lines
+* Vendor app: [Mi Home](https://play.google.com/store/apps/details?id=com.xiaomi.smarthome) (not compatible with thingino)
