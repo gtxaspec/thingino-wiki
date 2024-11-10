@@ -1,13 +1,13 @@
 ## Tips for Improving Wi-Fi Signal
 
 ### Don't:
-- Use 40 MHz channels on the 2.4 GHz band.
-- Use WPA2/WPA3 mixed mode. Stick to WPA2 only.
+- :x: Use 40 MHz channels on the 2.4 GHz band.
+- :x: Use WPA2/WPA3 mixed mode. Stick to WPA2 only.
 
 ### Do:
-- Stick to channels 1, 6, and 11 (or 13 if permitted in your region).
-- Use a Wi-Fi scanner app on your mobile device to identify less congested channels.
-- Opt for a wired connection whenever possible to improve stability and speed.
+- :white_check_mark: Stick to channels 1, 6, and 11 (or 13 if permitted in your region).
+- :white_check_mark: Use a Wi-Fi scanner app on your mobile device to identify less congested channels.
+- :white_check_mark: Opt for a wired connection whenever possible to improve stability and speed.
 
 ---
 
