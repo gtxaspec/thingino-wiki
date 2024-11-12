@@ -1,7 +1,7 @@
 ## Installation
 
 You can choose between:
-1. Quick installation method, which doesn't require dismantling the camera, and doesn't backup the original firmware
+1. Quick installation method, which doesn't require dismantling the camera, but doesn't (fully) backup the original firmware
 2. Safe installation, which requires camera dismantling. Allows full backup of original firmware, and recovery from corrupted flash
 
 ### Quick method
@@ -54,7 +54,7 @@ Then use either cloner or CH341 to backup and reprogram flash:
 
 ## Pictures
 
-<img src="https://github.com/user-attachments/assets/a60d8dbf-feec-497a-a68e-96791b409b19" width="400">
+<img src="https://github.com/user-attachments/assets/7c084fde-ec2e-4ec5-b27d-ad2bd60e4c4f" width="400">
 
 <img src="https://github.com/user-attachments/assets/1f3e9eeb-0532-416f-8578-3aebc807c2b3" width="400">
 
