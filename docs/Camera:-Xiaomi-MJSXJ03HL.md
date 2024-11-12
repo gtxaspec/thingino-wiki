@@ -10,7 +10,12 @@ See: https://github.com/Andrik45719/MJSXJ03HL
 
 ### Safe method
 
-First, dismantle camera to access flash chip, then use either cloner or CH341 to backup and reprogram flash:
+First, dismantle camera to access flash chip:
+- Gently warm up the front of the camera (where the lens is). See pictures below.
+- Using a utility knife or other pointed object, carefully pry off the front part. Remember, there are important wires under the front, don't damage them!
+- After the front part is removed, unscrew 2 screws holding the two halves of the camera together
+
+Then use either cloner or CH341 to backup and reprogram flash:
 - [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) + flash pin short trick and reprogram via USB port (requires a USB OTG port on the camera, USB cable with data lines), or:
 - [CH341 programming clip](https://github.com/themactep/thingino-firmware/wiki/CH341A-Programmer) on the chip on the board and re-program in place (requires a programmer and a clip).
 
@@ -46,6 +51,17 @@ First, dismantle camera to access flash chip, then use either cloner or CH341 to
 * Ethernet interface: No
 * USB: Yes, USB type C, with data lines
 * Vendor app: [Mi Home](https://play.google.com/store/apps/details?id=com.xiaomi.smarthome) (not compatible with thingino)
+
+## Pictures
+
+<img src="https://github.com/user-attachments/assets/a60d8dbf-feec-497a-a68e-96791b409b19" width="400">
+
+<img src="https://github.com/user-attachments/assets/1f3e9eeb-0532-416f-8578-3aebc807c2b3" width="400">
+
+<img src="https://github.com/user-attachments/assets/16f16504-a88d-496c-956b-b540f1ab79bd" width="400">
+
+<img src="https://github.com/user-attachments/assets/83dae7df-befa-4327-b63d-d375b20bdeb1" width="400">
+
 
 ## Logs
 
