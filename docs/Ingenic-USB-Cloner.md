@@ -184,3 +184,8 @@ flash_eraseall /dev/mtd0 && restart -f
 
 Obviously, you only want to do that for flashing a new firmware. For making a backup of the existing firmware,
 short pins 5 and 6 on the flash chip as described above.
+
+### Videos
+
+- [Flashing firmware with Cloner over USB](https://www.youtube.com/watch?v=nqjejNizvC0)
+- [Flashing Wyze V3 witj cloner in realtime](https://www.youtube.com/watch?v=SJgadXkdwzw)
