@@ -26,7 +26,7 @@ The `FCC ID` on the label may be used to identify the correct image.  Full detai
 
 # Troubleshooting
 
-## "Camera is Dead"
+## Scenario: "Camera is Dead"
 
 ### Unknown Case A: (TBD)
 #### Symptoms:
@@ -36,3 +36,19 @@ The `FCC ID` on the label may be used to identify the correct image.  Full detai
 #### Resolution: (TBD)
 * [Re-flash the camera with `autoupdate-full.bin`](https://github.com/themactep/thingino-firmware/wiki/Automation#upgrade-from-binary-images-on-sd-card)
   * Failed
+
+## Remediation: Cloner:
+You generally should not need to use Cloner with the Wyze v3, since a bootloader failure *should* force the camera into Cloner mode.
+
+[Realtime video](https://www.youtube.com/watch?v=SJgadXkdwzw)
+
+1. Identify these pins for shorting
+![image](https://github.com/user-attachments/assets/9d027e16-2eaa-43d2-86e6-d2e50ab5e0bf)
+
+2. Launch Cloner
+  a. Follow the instructions at https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner#writing-firmware
+  b. Should look like:
+![image](https://github.com/user-attachments/assets/32c69808-49a9-4e59-a912-0cdbb238460c)
+
+
+
