@@ -8,6 +8,22 @@ The `FCC ID` on the label may be used to identify the correct image.  Full detai
 * [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner)
   *  [Flashing with Cloner (video)](https://www.youtube.com/watch?v=SJgadXkdwzw)
 * [Camera disassembly (video)](https://www.youtube.com/watch?v=VUTTJREU3mI)
+
+# LED states throughout boot process
+##  Immediately after power
+1. 4 visible IR LEDs illuminate dimly (very short blink)
+2. all LEDs off
+3. 4 visible IR LEDs illuminate brighter (very short blink)
+## After IR LED sequence
+### Boot Failed
+* Solid blue LED
+- possibly corrupt bootloader or system image
+
+### Thingino Booting
+1. All LEDs off (about 5-10 seconds)
+2. Blue LED fast blinking: failsafe mode (about 5-10 seconds)
+3. Blue LED slow blinking: loading init scripts (about 20-30 seconds)
+
 # Troubleshooting
 
 ## "Camera is Dead"
