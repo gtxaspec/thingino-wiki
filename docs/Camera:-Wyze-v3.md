@@ -13,13 +13,24 @@ The `FCC ID` on the label may be used to identify the correct image.  Full detai
 ##  Immediately after power
 1. 4 visible IR LEDs illuminate dimly (very short blink)
 2. all LEDs off
-3. 4 visible IR LEDs illuminate brighter (very short blink)
-## After IR LED sequence
-### Boot Failed
+
+## Bootloader
+Both the Wyze factory image and Thingino use `uBoot` as a bootloader; however, the Wyze factory version is locked-down. 
+[uBoot Cheetsheet](https://github.com/themactep/thingino-firmware/wiki/U%E2%80%90Boot-Cheatsheet)
+
+After initial power-on, the camera may be in one of these states:
+
+### Failed to Enter bootloader
+1. all LEDs off (in Cloner mode)
+
+### Entered Bootloader
+1. 4 visible IR LEDs illuminate brighter (very short blink)
+
+### Bootloader failed to load thingino
 * Solid blue LED
 - possibly corrupt bootloader or system image
 
-### Thingino Booting
+## Thingino Booting
 1. All LEDs off (about 5-10 seconds)
 2. Blue LED fast blinking: failsafe mode (about 5-10 seconds)
 3. Blue LED slow blinking: loading init scripts (about 20-30 seconds)
