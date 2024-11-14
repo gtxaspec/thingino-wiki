@@ -20,15 +20,17 @@ Both the Wyze factory image and Thingino use `uBoot` as a bootloader; however, t
 
 After initial power-on, the camera may be in one of these states:
 
-### Failed to Enter bootloader
-1. all LEDs off (in Cloner mode)
-
 ### Entered Bootloader
 1. 4 visible IR LEDs illuminate brighter (very short blink)
+2. After blink, LEDs are off and control passes to thingino
+
+### Failed to Enter bootloader
+1. all LEDs off (in Cloner mode)
 
 ### Bootloader failed to load thingino
 * Solid blue LED
 - possibly corrupt bootloader or system image
+
 
 ## Thingino Booting
 1. All LEDs off (about 5-10 seconds)
