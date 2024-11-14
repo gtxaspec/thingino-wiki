@@ -7,12 +7,16 @@ The `FCC ID` on the label may be used to identify the correct image.  Full detai
 * [Sample camera breakdown](https://github.com/themactep/thingino-firmware/wiki/Hardware-Identification)
 * [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner)
   *  [Flashing with Cloner (video)](https://www.youtube.com/watch?v=SJgadXkdwzw)
-
+* [Camera disassembly (video)](https://www.youtube.com/watch?v=VUTTJREU3mI)
 # Troubleshooting
 
 ## "Camera is Dead"
 
-### Unknown Case A (TBD)
-Symptoms:
+### Unknown Case A: (TBD)
+#### Symptoms:
 * IR LEDs illuminate immediately at boot
 * Blue LED remains illuminated solidly 
+
+#### Resolution: (TBD)
+* [Re-flash the camera with `autoupdate-full.bin`](https://github.com/themactep/thingino-firmware/wiki/Automation#upgrade-from-binary-images-on-sd-card)
+  * Failed
