@@ -18,6 +18,9 @@ Change it in bootloader environment with `fw_setenv` command. Use `ethaddr` para
 fw_setenv ethaddr 12:34:56:78:AB:CD
 fw_setenv wlanmac 12:34:56:78:AB:EF
 ```
+This method to set the MAC should survive future firmware updates done using the `sysupgrade -p` method.   
+
+Separately, if you were worried about the MAC address change, the new MAC address that Thingino uses is generated based on the serial # of the camera's CPU, so it should never change after the initial install process.
 
 ### How to update only bootloader?
 
