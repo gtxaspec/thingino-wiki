@@ -177,7 +177,7 @@ To erase bootloder from U-Boot shell, run
 sf probe; sf erase 0 +1; reset
 ```
 
-To erase bootloder rom Linux shell, run
+To erase bootloder from Linux shell, run
 ```
 flash_eraseall /dev/mtd0 && restart -f
 ```
