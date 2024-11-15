@@ -34,7 +34,7 @@ For in-place programming, it is necessary to cut pin 8 of the programming adapte
 * Desolder the flash chip and reprogram it in a programmer.
 * Use a [No Tool Installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method. Doesn't exist for this camera
 * Use SD cart and replace firmware from vendor U-Boot shell. Not possible, vendor uboot is password locked.
-* Use [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) and reprogram via USB port. USB data lines not available for this camera.
+* Use [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) and reprogram via USB port. USB data lines not easily accessible for this camera.
 * Get access to the linux shell from UART. Not possible: UART is disabled on vendor linux
 
 
@@ -47,7 +47,7 @@ Specifications
 * CPU: Ingenic T23, 1.2GHz
 * RAM: 64MB
 * Flash: 8MB, chip: Z 25V064CSJG
-* Sensor: SmartSens SC1A4T, 1280H x 720V @ 15FPS, RGGB Bayer filter, related to [SC1346 Product Flyer](https://smartsens.oss-cn-beijing.aliyuncs.com/web/img/1642675887829478304.pdf)
+* Sensor: SmartSens SC1A4T, 1280H x 720V @ 15FPS, RGGB Bayer filter, related to [SC1346](https://smartsens.oss-cn-beijing.aliyuncs.com/web/img/1642675887829478304.pdf)
 * Sensor optical format: 1/4.6", active area: 3.392mm x 1.908mm, pixel: 2.65um x 2.65um
 * Lens: 3.6mm, M12 mount, total length (sensor to lens edge): ~23mm
 * Field of View: Horizontal ~51 degrees, Vertical ~30, Diagonal ~58 degrees
