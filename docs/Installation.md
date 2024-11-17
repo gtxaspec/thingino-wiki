@@ -19,16 +19,6 @@ This document outlines several methods of installation, each tailored to accommo
 
 If your camera has a USB port, there is a good chance that you can install the firmware using [Ingenic USB Cloner](Ingenic-USB-Cloner).
 
-### From an SD card
-
-1. Compile or [download][1] the firmware file for your camera,
-2. Get an SD card and format it to FAT.
-3. Place the firmware file on the SD card as autoupdate-full.bin.
-4. Reboot the camera with the SD card inserted.
-5. If your camera already had the Thingino bootloader installed, it should flash the new firmware automatically.
-
-If the auto-update fails, you can reflash the firmware manually from the bootloader shell.
-
 ### From the U-Boot Shell
 
 1. Follow steps 1-4 from the previous chapter.
