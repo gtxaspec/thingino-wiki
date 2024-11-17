@@ -1,7 +1,8 @@
 # Hardware Identification
 The Wyze v3 camera has multiple "flavors" of hardware; each with its own image.  
 
-The `FCC ID` on the label may be used to identify the correct image.  Full detail list here: https://github.com/OpenIPC/wiki/blob/master/en/device-wyze-integration.md#wyze-integration
+The `FCC ID` on the label may be used to identify the correct image.  Full detail list here: 
+https://github.com/themactep/thingino-firmware/wiki/Camera:-Hualai-(Wyze,-Atom,-Neos,-Personal)#device-info  )  
 
 # General Tooling and Resources
 * [Sample camera breakdown](https://github.com/themactep/thingino-firmware/wiki/Hardware-Identification)
