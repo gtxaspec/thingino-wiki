@@ -94,6 +94,15 @@ The sequence I observed was as follows:
 
 When I had an unsuccessful flash (due to using a GPT formatted SD card I would observe slowly flashing blue lights (I had never paired the camera to the Wuuk app or services)
 
+With a successful flashing process, the following files should be present on your SD card, with the creation of two new files, `u-boot-t31x.bin` and `autoupdate-full.done`
+```
+├── autoupdate-full.bin
+├── autoupdate-full.done
+├── FACTORY
+│   └── firmware_install.sh
+└── u-boot-t31x.bin
+```
+
 ## Accessing the camera
 
 You should now see a wireless access point available with the format:
@@ -394,9 +403,11 @@ cameras:
       hwaccel_args: preset-vaapi #Change appropriate to your host hardware
       inputs:
         - path: rtsp://thingino:thingino@IP-ADDRESS-OF-WUUK:554/ch0
+          input_args: preset-rtsp-udp
           roles:
             - record
         - path: rtsp://thingino:thingino@IP-ADDRESS-OF-WUUK:554/ch1
+          input_args: preset-rtsp-udp
           roles:
             - detect
       output_args:
