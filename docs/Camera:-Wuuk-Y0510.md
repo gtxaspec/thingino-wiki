@@ -1,4 +1,12 @@
-The Wuuk Y0510 is an inexpensive camera with a great price point for the quality of the camera.  It's currently seen with two different sensors, either the original, SC4336p or the less common SC401AI. 
+The Wuuk Y0510 is an inexpensive camera with a great price point for the quality of the camera.  It's currently seen with two different sensors, either the original, SC4336p or the less common SC401AI.
+
+# Video guide
+
+There is an awesome video from WLTechBlog on the Wuuk which got me started on my Wuuk flashing journey, and it's well worth a watch.  The below written guide is based off the video and details the process used to flash a Wuuk Y0510
+
+
+[![Awesome video from 
+WLTechBlog](https://img.youtube.com/vi/PhXbeY-PBgg/0.jpg)](https://www.youtube.com/watch?v=PhXbeY-PBgg)
 
 # Flashing the device
 
