@@ -1,0 +1,1 @@
+Yandex Disk can be used as a storage for snapshots.
