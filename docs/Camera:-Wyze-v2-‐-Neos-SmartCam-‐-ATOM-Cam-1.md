@@ -25,7 +25,8 @@ There are 2 image sensors used in these cameras ([JXF23](https://github.com/them
 
 ## Installation from stock firmware using "No Tools" method
 This method leverages the vendor's firmware update process without requiring tools to open the device. Be aware that this process may be changed by the vendor, so there's no guarantee that this method will continue to work.
-[This page ](https://github.com/wltechblog/thingino-installers/tree/main/wyze-cam-2)has instructions for these cams.
+* Written instructions [here](https://github.com/wltechblog/thingino-installers/tree/main/wyze-cam-2)
+* Video of process [here](https://www.youtube.com/watch?v=ifXObp2jhO0&start=0)
 
 ## Installation from stock firmware using cloner (Optional, not normally required method)
 In order to use this tool, you'll need to open the camera. This usually breaks the seals, so it's possible the camera won't be "exterior proof" anymore.
