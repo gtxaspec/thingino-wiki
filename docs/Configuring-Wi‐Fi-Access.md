@@ -11,20 +11,20 @@ After you turn on the camera without network credentials, it will set up a tempo
 
 Connect to this network, either using a mobile device (smartphone or tablet) or from a PC, and navigate your browser to http://thingino.local/. You should see the form for entering initial settings for the camera:
 
-![portal1](https://github.com/user-attachments/assets/d0bcd753-c2e5-4694-8db8-bc086dfdc672)
+![portal-1](https://github.com/user-attachments/assets/5adb3b2b-6ee4-4ac3-8478-b0e77f94c83d)
 
 Fill in the form with the current information and click the "Save Credentials" button at the bottom.
 Note that the SSID is case-sensitive, so you must type it exactly as it is.
 
-![portal2](https://github.com/user-attachments/assets/8ac87448-702e-4eb1-9ecc-08d62179bfa4)
+![portal-2](https://github.com/user-attachments/assets/b81c4cea-5862-4039-a068-122f5b4875a1)
 
 On the next page, review the information and correct it if you find an error. Otherwise, click the "Proceed with Reboot" button.
 
-![portal3](https://github.com/user-attachments/assets/15d0b12a-679d-45d2-a7d3-c71db9a159ab)
+![portal-3](https://github.com/user-attachments/assets/75f389e4-b040-4d1f-a99b-c5da00285491)
 
 The camera will reboot and register with your wireless network using the information provided.
 
-![portal4](https://github.com/user-attachments/assets/70dbeca8-f2e3-4c55-af06-d82148c61adf)
+![portal-4](https://github.com/user-attachments/assets/86047aaa-f570-43f6-ad38-183d1c6a2b3b)
 
 Check the DHCP leases on your router to find the IP address assigned to the camera.
 
