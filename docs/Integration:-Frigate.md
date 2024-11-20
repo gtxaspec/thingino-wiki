@@ -13,10 +13,10 @@ This guide explains how to set up the Thingino open-source camera firmware to wo
 
 1. Set AAC Audio on the Thingino Camera
    1. Access the Thingino camera's web interface or configuration tool.
-   1. Confirm the RTSP server is enabled.
    1. Set the audio codec to AAC.
       - This is a mandatory requirement for compatibility with go2rtc.
       - Ensure that both the main stream (ch0) and substream (ch1) have AAC audio enabled.
+   1. Confirm the RTSP server is enabled and working.
 1. Note the RTSP endpoints and Camera IP address of each camera:
    1. Main stream: rtsp://thingino:thingino@[CAMERA_IP]/ch0
    1. Substream: rtsp://thingino:thingino@[CAMERA_IP]/ch1
