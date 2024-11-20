@@ -30,8 +30,13 @@ This method leverages the vendor's firmware update process without requiring too
 ## Installation from stock firmware using cloner (Optional, not normally required method)
 In order to use this tool, you'll need to open the camera. This usually breaks the seals, so it's possible the camera won't be "exterior proof" anymore.
 
-Please note that you will need a USB-A to USB-A cable to use cloner to flash this camera.  You can either [make your own](https://www.instructables.com/Male-to-Male-A-to-A-USB-Cable/) or buy them online for cheap. Then follow the instructions on the [generic tutorial](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) or if you want a video tutorial instead, [watch this](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner).
+If you want a video tutorial to watch before you start, you can [watch this](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner).
 
-The SPI flash chip is located on the underside of the main board, and you'll need to bridge its 5th and 6th pins while powering the camera up, as shown here (note where the mark is for pin 1 for proper orientation):
+To install Thingino firmware with this method, it's recommended you flash following the detailed instructions on the [generic tutorial](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) 
 
-[<img src="https://github.com/user-attachments/assets/1729af3b-43a1-4152-9cb5-1d9a4ea02d0d" width="200">](https://github.com/user-attachments/assets/1729af3b-43a1-4152-9cb5-1d9a4ea02d0d)
+Things to note about the process specific to this camera:
+1. You will need a USB-A to USB-A cable to use cloner to flash this camera.  The regular micro-usb cable that powers your camera will not work.  You can either [make your own](https://www.instructables.com/Male-to-Male-A-to-A-USB-Cable/) or buy them online for cheap. 
+
+2. The SPI flash chip is located on the underside of the main board, and you'll need to bridge its 5th and 6th pins while powering the camera up, as shown here (note where the mark is for pin 1 for proper orientation):
+
+[<img src="https://github.com/user-attachments/assets/1729af3b-43a1-4152-9cb5-1d9a4ea02d0d" width="200">](https://github.com/user-attachments/assets/1729af3b-43a1-4152-9cb5-1d9a4ea02d0d) <img src="https://camo.githubusercontent.com/851273986d66f0f08eedf08a68ab25da4d4acacd14912a5995d5a90dd0bae7b5/68747470733a2f2f7468696e67696e6f2e636f6d2f612f666c6173682d636869702d73686f72742e706e67" width="200">
