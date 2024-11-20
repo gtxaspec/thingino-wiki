@@ -26,8 +26,11 @@ The camera will reboot and register with your wireless network using the informa
 
 ![portal-4](https://github.com/user-attachments/assets/86047aaa-f570-43f6-ad38-183d1c6a2b3b)
 
-Check the DHCP leases on your router to find the IP address assigned to the camera.
+Press RESET button or check the DHCP leases on your router to find the IP address assigned to the camera.
 
+[Wyze Cam 2 telling its IP address](https://youtu.be/eOA8-_QJyAw):
+
+[![Wyze Cam 2 telling its IP address](http://img.youtube.com/vi/eOA8-_QJyAw/0.jpg)](https://youtu.be/eOA8-_QJyAw "Wyze Cam 2 telling its IP address")
 
 ## WiFi setup from Linux shell
 
