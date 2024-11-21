@@ -28,13 +28,10 @@ After initial power-on, the camera may be in one of these states:
 ### Failed to Enter bootloader
 1. all LEDs off (in Cloner mode)
 
-### Bootloader failed to load thingino
-* Solid blue LED
-- possibly corrupt bootloader or system image
-
-### Unknown (bootloader)
-Repeating pattern:
-* Solid blue led for 15 seconds
+### Bootloader Errors
+* Solid blue led 
+  *  15 seconds - SD card inserted (with or without `autoupdate-full.bin`)
+  *  22 seconds - No SD card inserted
 * Off for ~0.5 second
 
 ## Thingino Booting
