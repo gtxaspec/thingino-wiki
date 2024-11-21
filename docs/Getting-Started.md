@@ -53,6 +53,13 @@ Once you have your device, there are several methods to create a full backup and
     interrupt the stock firmware's boot process via the [[UART console|Installation#from-an-sd-card]], load the image from the SD Card, and
     flash it via UBoot's flash write commands.
 
+### Initial Setup After Installing Thingino
+After you get the Thingino firmware installed on your camera, you should see a new WiFi access point.  
+* Use your phone/laptop/etc and view the available wireless networks.  Your camera will show up as an access point before you configure it to connect to your wireless network.
+* Connect to the WiFi network that looks something like `THINGINO-xxxx`
+* Congratulations, the installation was successful! Now continue to the [Configuring WiFi Access](https://github.com/themactep/thingino-firmware/wiki/Configuring-Wi%E2%80%90Fi-Access#captive-portal) wiki article to get the new camera on your wireless network.
+
+
 ### Accessing Your Camera Running Thingino
 
 After successfully installing Thingino and completing network setup, you can access your camera through various methods:
