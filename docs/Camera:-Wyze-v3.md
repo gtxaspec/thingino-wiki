@@ -32,6 +32,10 @@ After initial power-on, the camera may be in one of these states:
 * Solid blue LED
 - possibly corrupt bootloader or system image
 
+### Unknown (bootloader)
+Repeating pattern:
+* Solid blue led for 15 seconds
+* Off for ~0.5 second
 
 ## Thingino Booting
 1. All LEDs off (about 5-10 seconds)
