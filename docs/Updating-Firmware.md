@@ -126,5 +126,3 @@ Then do the upgrade and reset the memory mapping back:
 ```
 fw_setenv osmem 32M@0x0; fw_setenv rmem 32M@0x2000000; reboot
 ```
-
-Alternative: Upgrade from a focal file on sd card: 1. mount sd card to /mnt/mmc... 2. copy/download firmware to /mnt/mmc.../file 3. sysupgrade /mnt/mmc.../file
