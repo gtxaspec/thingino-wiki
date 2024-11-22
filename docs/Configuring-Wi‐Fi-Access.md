@@ -3,7 +3,8 @@
 After flashing a fresh Thingino firmware image on a supported camera with a wireless module, the camera will not have any information about your wireless network and will not be able to connect to it automatically.
 
 > [!NOTE]
-> Dual interface devices (those with both ethernet __and__ Wi-Fi) will not broadcast an Access Point.  Instead, connect to the IP or hostname to begin setup.
+> Dual interface devices (those with both ethernet __and__ Wi-Fi) will not broadcast an Access Point.
+> Instead, connect to the IP or hostname to begin setup.
 
 You can either provide your [wireless network credentials on an SD card](https://github.com/themactep/thingino-firmware/wiki/Configuring-Wi%E2%80%90Fi-Access#wifi-setup-via-sd-card) or use our versatile built-in portal.
 
@@ -15,6 +16,9 @@ Connect to this network, either using a mobile device (smartphone or tablet) or 
 
 Fill in the form with the current information and click the "Save Credentials" button at the bottom.
 Note that the SSID is case-sensitive, so you must type it exactly as it is.
+
+> [!NOTE]
+> Make sure your wireless network uses 2.4GHz band!
 
 ![portal-2](https://github.com/user-attachments/assets/b81c4cea-5862-4039-a068-122f5b4875a1)
 
