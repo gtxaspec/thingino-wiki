@@ -35,7 +35,7 @@ When the camera is installed at its final location, the firmware can be upgraded
 To use the `sysupgrade` command, you can run it with one of the following options:
 
 ```sh
-sysupgrade <filename> | [-f | -p] | <URL>
+sysupgrade [-x] [-f | -p | <file> | <URL>]
 ```
 
 #### Options
@@ -44,9 +44,11 @@ sysupgrade <filename> | [-f | -p] | <URL>
 
 - **`-p`**: Perform a partial upgrade. This is the recommended option for most users as it upgrades the system while preserving the U-Boot environment. Your Wi-Fi SSID, password, and root password will remain intact.
 
-- **`<filename>`**: Perform a full or partial upgrade using a local file. This option is useful if you have already downloaded the firmware binary and want to upgrade without fetching it from a remote source.
+- **`<filename>`**: Perform a full upgrade using a local file. This option is useful if you have already downloaded the firmware binary and want to upgrade without fetching it from a remote source.
 
-- **`<URL>`**: Perform a full or partial upgrade using a URL. This option allows you to specify a direct URL to the firmware binary for the upgrade.
+- **`<URL>`**: Perform a full upgrade using a URL. This option allows you to specify a direct URL to the firmware binary for the upgrade.
+
+- **`-x`**: Do not update the script. (?)
 
 - **`-h`**: Display help information for the `sysupgrade` command.
 
@@ -81,13 +83,13 @@ The `sysupgrade` script automatically downloads the latest precompiled build for
    ```sh
    sysupgrade /path/to/firmware.bin
    ```
-   Replace `/path/to/firmware.bin` with the actual path to your firmware file. This command will perform the upgrade using the specified file.
+   Replace `/path/to/firmware.bin` with the actual path to your firmware file. This command will perform a full upgrade using the specified file.
 
 4. **Upgrade from a URL:**
    ```sh
    sysupgrade https://example.com/firmware.bin
    ```
-   Replace `https://example.com/firmware.bin` with the actual URL of the firmware binary. This command will download the firmware from the URL and perform the upgrade.
+   Replace `https://example.com/firmware.bin` with the actual URL of the firmware binary. This command will download the firmware from the URL and perform a full upgrade.
 
 - Updating your Thingino device is straightforward with the `sysupgrade` command. Most users will find the `-p` option sufficient for keeping their device up to date while preserving their settings. Reserve the `-f` option for situations where a complete system update, including the bootloader, is required.
 
