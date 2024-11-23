@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> If you are trying to upgrade thingino from a really old build, you might need to update the upgrading script first.
+> Run the following command on the camera:
+> `curl -sL -o /sbin/sysupgrade https://raw.githubusercontent.com/themactep/thingino-firmware/refs/heads/master/overlay/lower/usr/sbin/sysupgrade && chmod +x /sbin/sysupgrade`
+> then run `sysupgrade -p` as usual.
+
 ## Updating Thingino Firmware
 
 When it comes to installing a newer version of the firmware, there are several ways to do it. Some methods are easier than others, and some are more appropriate for different situations.
