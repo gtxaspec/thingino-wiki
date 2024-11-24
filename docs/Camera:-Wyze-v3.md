@@ -5,6 +5,7 @@ The `FCC ID` on the label may be used to identify the correct image.  Full detai
 https://github.com/themactep/thingino-firmware/wiki/Camera:-Hualai-(Wyze,-Atom,-Neos,-Personal)#device-info  )  
 
 # General Tooling and Resources
+* [Non-Intrusive Installer](https://thingino.com/wyze-c3)
 * [Sample camera breakdown](https://github.com/themactep/thingino-firmware/wiki/Hardware-Identification)
 * [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner)
   *  [Flashing with Cloner (video)](https://www.youtube.com/watch?v=SJgadXkdwzw)
