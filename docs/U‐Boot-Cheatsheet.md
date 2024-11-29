@@ -1,6 +1,7 @@
 ### Save 8MB firmware image to SD card
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 mmc dev 0;
 mmc erase 0x10 0x4000;
@@ -17,6 +18,7 @@ where `/dev/sdb` is the SD card device.
 ### Save 16MB firmware image to SD card
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 mmc dev 0;
 mmc erase 0x10 0x8000;
@@ -33,6 +35,7 @@ where `/dev/sdb` is the SD card device.
 ### Save 8MB firmware image to TFTP server
 
 ```
+watchdog 0;
 setenv ipaddr 192.168.1.10;
 setenv netmask 255.255.255.0;
 setenv gatewayip 192.168.1.1;
@@ -53,6 +56,7 @@ tftp ${baseaddr} backup-${soc}-nor8m.bin ${flashsize}
 ### Save 16MB firmware image to TFTP server
 
 ```
+watchdog 0;
 setenv ipaddr 192.168.1.10;
 setenv netmask 255.255.255.0;
 setenv gatewayip 192.168.1.1;
@@ -94,6 +98,7 @@ setenv flashsize 0x1000000
 then dump the memory contents to the console
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 mw.b ${baseaddr} 0xff ${flashsize};
 sf probe 0; sf read ${baseaddr} 0x0 ${flashsize};
@@ -127,6 +132,7 @@ Use [binwalk](https://github.com/ReFirmLabs/binwalk) to unpack the binary file.
 ### Burn 8MB firmware image from SD card
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 setenv flashsize 0x800000;
 mw.b ${baseaddr} 0xff ${flashsize};
@@ -138,6 +144,7 @@ sf write ${baseaddr} 0x0 ${filesize}
 ### Burn 8MB firmware image from TFTP server
 
 ```
+watchdog 0;
 setenv ipaddr 192.168.1.10;
 setenv netmask 255.255.255.0;
 setenv gatewayip 192.168.1.1;
@@ -156,6 +163,7 @@ To upload a file over a serial connection by name only, the file should be
 located in the user's home directory, or use the full path to the file instead.
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 setenv flashsize 0x800000;
 mw.b ${baseaddr} 0xff ${flashsize}
@@ -173,6 +181,7 @@ sf write ${baseaddr} 0x0 ${filesize}
 ### Burn 16MB firmware image from SD card
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 setenv flashsize 0x1000000;
 mw.b ${baseaddr} 0xff ${flashsize};
@@ -184,6 +193,7 @@ sf write ${baseaddr} 0x0 ${filesize}
 ### Burn 16MB firmware image from TFTP server
 
 ```
+watchdog 0;
 setenv ipaddr 192.168.1.10;
 setenv netmask 255.255.255.0;
 setenv gatewayip 192.168.1.1;
@@ -202,6 +212,7 @@ To upload a file over a serial connection by name only, the file should be
 located in the user's home directory, or use the full path to the file instead.
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 setenv flashsize 0x1000000;
 mw.b ${baseaddr} 0xff ${flashsize}
@@ -219,6 +230,7 @@ sf write ${baseaddr} 0x0 ${filesize}
 ### Burn only bootloader from SD card
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 setenv bootsize 0x50000;
 mw.b ${baseaddr} 0xff ${bootsize};
@@ -230,6 +242,7 @@ sf write ${baseaddr} 0x0 ${filesize}
 ### Burn only bootloader from TFTP server
 
 ```
+watchdog 0;
 setenv ipaddr 192.168.1.10;
 setenv netmask 255.255.255.0;
 setenv gatewayip 192.168.1.1;
@@ -245,6 +258,7 @@ sf write ${baseaddr} 0x0 ${filesize}
 ### Burn only bootloader via serial upload
 
 ```
+watchdog 0;
 setenv baseaddr 0x82000000;
 setenv bootsize 0x50000;
 mw.b ${baseaddr} 0xff ${bootsize}
