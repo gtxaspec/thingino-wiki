@@ -187,5 +187,11 @@ short pins 5 and 6 on the flash chip as described above.
 
 ### Videos
 
-- [Flashing firmware with Cloner over USB](https://www.youtube.com/watch?v=nqjejNizvC0)
-- [Flashing Wyze V3 witj cloner in realtime](https://www.youtube.com/watch?v=SJgadXkdwzw)
+#### Flashing firmware with Cloner over USB
+
+[![Flashing firmware with Cloner over USB](https://img.youtube.com/vi/nqjejNizvC0/0.jpg)](https://youtu.be/nqjejNizvC0)  
+
+#### Flashing Wyze V3 with cloner in realtime 
+
+[![Flashing Wyze V3 with cloner in realtime](https://img.youtube.com/vi/SJgadXkdwzw/0.jpg)](https://youtu.be/SJgadXkdwzw)  
+    

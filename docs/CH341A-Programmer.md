@@ -10,6 +10,8 @@ There are several versions of the popular, inexpensive, and versatile 24/25 seri
 
 Older model, the black one with the gold edge (rarely green with a silver edge), is the cheapest. But it has a nasty hardware quirk which [must be fixed](#fixing-higher-than-needed-dataline-voltage-bug) before you can use the programmer with any 3.3V flash chip.
 
+#### CH341A programmer
+
 [![CH341A programmer](https://img.youtube.com/vi/qXLmrmb0BJc/0.jpg)](https://youtu.be/qXLmrmb0BJc)
 
 
@@ -50,12 +52,12 @@ Use `snander -e && snander -w <filename> -v` to erase the flash chip clean and w
 Tutorials
 ---------
 
-Programming Jooan A6M with a clip, part 1
+#### Programming Jooan A6M with a clip, part 1
 
 [![Programming Jooan A6M with a clip, part 1](https://img.youtube.com/vi/lDzk7r3xyGE/0.jpg)](https://youtu.be/lDzk7r3xyGE)
 
 
-Programming Jooan A6M with a clip, part 2
+#### Programming Jooan A6M with a clip, part 2
 
 [![Programming Jooan A6M with a clip, part 2](https://img.youtube.com/vi/zWBrI0DF35U/0.jpg)](https://youtu.be/zWBrI0DF35U)
 
