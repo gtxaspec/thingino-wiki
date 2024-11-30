@@ -3,19 +3,24 @@
 After flashing a fresh Thingino firmware image on a supported camera with a wireless module, the camera will not have any information about your wireless network and will not be able to connect to it automatically.
 
 > [!NOTE]
-> Dual interface devices (those with both ethernet __and__ Wi-Fi) will not broadcast an Access Point.
+> Dual interface devices (those with both Ethernet __and__ Wi-Fi) will not broadcast an Access Point.
 > Instead, connect to the IP or hostname to begin setup.
 
 You can either provide your [wireless network credentials on an SD card](https://github.com/themactep/thingino-firmware/wiki/Configuring-Wi%E2%80%90Fi-Access#wifi-setup-via-sd-card) or use our versatile built-in portal.
 
 After you turn on the camera without network credentials, it will set up a temporary access point and create a public network called THINGINO-XXXX, where XXXX is the last four characters of the camera's MAC address.
 
-Connect to this network, either using a mobile device (smartphone or tablet) or from a PC, and navigate your browser to http://thingino.local/. You should see the form for entering initial settings for the camera:
+Connect to this network, either using a mobile device (smartphone or tablet) or from a PC, and navigate your browser to http://thingino.local/.
+If that address does not work for you, try to open the camera by its IP address http://172.16.0.1/.
+Make sure you use HTTP, not HTTPS protocol to access these addresses.
+Disabling mobile data temporarily on the phone may help, too.
+
+After you've reached the camera, you should see the form for entering initial settings:
 
 ![portal-1](https://github.com/user-attachments/assets/5adb3b2b-6ee4-4ac3-8478-b0e77f94c83d)
 
 Fill in the form with the current information and click the "Save Credentials" button at the bottom.
-Note that the SSID is case-sensitive, so you must type it exactly as it is.
+Note that both SSID and password are case-sensitive, so you must type them exactly as they are.
 
 > [!NOTE]
 > Make sure your wireless network uses 2.4GHz band!
