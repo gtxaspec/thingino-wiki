@@ -1,17 +1,73 @@
-## Installation
+Installation Methods
+--------------------
 
-Installing software on hardware devices can vary widely between different vendors and hardware designs.
+There are lots of ways to install firmware on hardware devices, and different vendors and hardware designs have different approaches.
+Below is a list of methods to replace the stock firmware on your camera, listed from the most reliable to the easiest:
 
-Off the top of my head, I can think of the following methods to replace the stock firmware on your camera:
+### Programming with CH341A, off-board
 
-- Desolder the flash chip and reprogram it in a programmer (requires a soldering station, programmer with adapter, soldering skills).
-- Use [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) and reprogram via USB port (requires a USB OTG port on the camera, USB cable with data lines).
-- Use programming clip on the chip on the board and re-program in place (requires a programmer and a clip).
-- Use SD cart and replace firmware from U-Boot shell (requires SD card slot, UART connection, access to U-Boot shell).
-- Use a [No Tool Installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method if it exists for your camera. Check the list at [Thingino Installers](https://github.com/wltechblog/thingino-installers).
-- Use [wz_mini_hacks](https://github.com/gtxaspec/wz_mini_hacks) and get creative (requires SD card slot).
-- Break the stock Linux password and get access to the shell (requires a UART connection)
-- ... maybe something else
+![image](https://github.com/user-attachments/assets/5b0b5470-ec2c-4fe5-8b6d-f8205caf3be0)
+
+This method requires desoldering the flash chip and reprogramming it in a programmer. 
+
+Requirements:
+- Soldering station
+- CH341a programmer
+- SOIC8 chip adapter
+- Soldering skills
+
+### Programming with CH341A, in-place
+
+![image](https://github.com/user-attachments/assets/a693e83b-32e4-4d26-bcf6-75c1496ed923)
+
+This method requires a programmer with a programming clip.
+
+Requirements:
+- CH341a programmer
+- SOIC8 programming clip
+
+### Programming via serial connection
+
+![image](https://github.com/user-attachments/assets/655ce958-8113-4fdf-9a8a-fa14e81487d8)
+
+This method requires a serial connection and access to U-Boot shell.
+The firmware image can be read from an SD card, or downloaded from a TFTP server over an Ethernet connection, or uploaded over serial link using a modem protocol.
+
+Requirements:
+- UART adapter
+
+### Programming over USB port with Cloner tool
+
+![image](https://github.com/user-attachments/assets/72679ba5-ea0e-4a59-b5e9-20332cc280a0)
+
+This method requires a USB OTG port on the camera and [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) tool.
+
+Requirements:
+- USB cable with data lines
+
+![image](https://github.com/user-attachments/assets/87368bb1-34ea-407f-8f5c-02ae5b0e764b)
+
+### Programming from an SD card with a magic filename
+
+![image](https://github.com/user-attachments/assets/b38cf862-43da-43f5-b5bc-db5aef27df93)
+
+Please check [No Tool Installation](https://github.com/themactep/thingino-firmware/wiki/No-Tool-Installation) method if that method exists for your camera. Check the list at [Thingino Installers](https://github.com/wltechblog/thingino-installers).
+
+Requirements:
+- SD card
+
+### Programming from a sideloaded system
+
+Try [wz_mini_hacks](https://github.com/gtxaspec/wz_mini_hacks) and get creative (requires SD card slot).
+
+### Programming from within the stock system
+
+Break the stock Linux password and get access to the shell (requires a UART connection)
+
+... maybe something else
+
+In Details
+----------
 
 This document outlines several methods of installation, each tailored to accommodate the unique characteristics of various devices. Some installation methods are straightforward and do not require the user to open the device, such as using USB recovery methods or SD card installations. However, other methods may necessitate physically opening the device to access interfaces like UART. The following sections provide detailed instructions for each method, ensuring you can successfully install the software on your device regardless of its design or vendor.
 
