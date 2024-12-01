@@ -51,5 +51,8 @@ https://www.aliexpress.com/item/1005005445051845.html
 Resources
 ---------
 
-https://github.com/poptix/seeeasynvr
+[Firmware analysis](https://github.com/poptix/seeeasynvr)
 
+### 3D-Printed Shell
+
+![image](https://github.com/user-attachments/assets/bf639f4b-febf-4d0a-b042-c191c088aaa0)
