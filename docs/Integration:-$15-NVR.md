@@ -56,3 +56,5 @@ Resources
 ### 3D-Printed Shell
 
 ![image](https://github.com/user-attachments/assets/bf639f4b-febf-4d0a-b042-c191c088aaa0)
+
+<https://www.printables.com/model/1094266-ingenic-a1-nvr-case>
