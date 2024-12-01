@@ -47,3 +47,9 @@ Where to buy
 ------------
 
 https://www.aliexpress.com/item/1005005445051845.html
+
+Resources
+---------
+
+https://github.com/poptix/seeeasynvr
+
