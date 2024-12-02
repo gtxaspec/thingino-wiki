@@ -46,18 +46,17 @@ $15 NVR can play up to four channels simultaneously on the same screen.
 Where to buy
 ------------
 
-#### Bare module
-
-[![image](https://github.com/user-attachments/assets/e5e3da82-a172-4865-99d9-7905a107765c)](https://www.aliexpress.com/item/1005005445051845.html)
-
-https://www.aliexpress.com/item/1005005445051845.html
-
-
 #### Retail NVR
 
 [![image](https://github.com/user-attachments/assets/ad99e40a-2ef4-491a-82f5-7d847404e637)](https://www.aliexpress.com/item/1005006224516280.html)
 
 https://www.aliexpress.com/item/1005006224516280.html
+
+#### Bare module
+
+[![image](https://github.com/user-attachments/assets/e5e3da82-a172-4865-99d9-7905a107765c)](https://www.aliexpress.com/item/1005005445051845.html)
+
+https://www.aliexpress.com/item/1005005445051845.html
 
 
 Resources
