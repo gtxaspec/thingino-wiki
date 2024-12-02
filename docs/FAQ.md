@@ -22,6 +22,7 @@ This method to set the MAC should survive future firmware updates done using the
 
 Separately, if you were worried about the MAC address change, the new MAC address that Thingino uses is generated based on the serial # of the camera's CPU, so it should never change after the initial install process.
 
+
 ### How to update only bootloader?
 
 **From the PC:** Download a full image for your camera from [thignino releases page](https://github.com/themactep/thingino-firmware/releases/tag/firmware) on GitHub. Extract first 256KB of bootloader partition into a separate file. Upload that file to the camera and flash it into the bootloader partition:
@@ -60,16 +61,13 @@ Visit the [[Porting Guide|Porting-Guide]] on information on porting a new device
 See our complete table of [[Supported Hardware|Tech-Info-‐-Supported-Hardware]].
 
 
-### Is Thingino a fork of OpenIPC?
+### Is my data safe? Do you collect data, metrics or telemetry?
 
-Thingino was influenced by the ideas of the OpenIPC project, and core developers even collaborated
-with OpenIPC for a while, but then the differences became too deep and thingino was born.
-
-While there are some similarities, there are also significant differences between these two projects.
-
-
-### Is My Data Safe? Do You Collect Data Metrics or Telemetry?
-
-Thingino does not collect any data metrics or telemetry, ensuring your data remains solely on your device and entirely under your control. Being fully open source, Thingino allows you to audit the code and verify its operations, providing full transparency and peace of mind.  
+Thingino does not collect any data, metrics, or telemetry, ensuring your data remains solely on your device and entirely under your control. Being fully open source, Thingino allows you to audit the code and verify its operations, providing full transparency and peace of mind.  
 
 :no_entry_sign:**_We Don't Want Your Data!_**:no_entry_sign:
+
+
+### How to revert camera back to stock firmware?
+
+Place the original stock firmware backup file on an SD card and name as autoupdate-full.bin. Insert the card with the file into the camera and reboot.
