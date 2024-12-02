@@ -25,10 +25,11 @@ Separately, if you were worried about the MAC address change, the new MAC addres
 
 ### How to update only bootloader?
 
-**From the PC:** Download a full image for your camera from [thignino releases page](https://github.com/themactep/thingino-firmware/releases/tag/firmware) on GitHub. Extract first 256KB of bootloader partition into a separate file. Upload that file to the camera and flash it into the bootloader partition:
+**From the PC:** Download a full image for your camera from [thignino releases page](https://github.com/themactep/thingino-firmware/releases/tag/firmware) on GitHub. Extract first 256KB of bootloader partition into a separate file. Upload that file to the camera and flash it into the bootloader partition.  Heres an example:
 
 ```
-wget https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-teacup.bin
+
+wget https://github.com/themactep/thingino-firmware/releases/latest/download/thingino-teacup.bin
 dd if=thingino-teacup.bin bs=256K count=1 of=bootloader.bin
 scp -O bootloader.bin root@192.168.1.10:/tmp/
 ssh root@192.168.1.10 flashcp -v /tmp/bootloader.bin /dev/mtd0
@@ -37,7 +38,7 @@ ssh root@192.168.1.10 flashcp -v /tmp/bootloader.bin /dev/mtd0
 Alternatively, you can do that directly on the camera:
 ```
 cd /tmp
-curl -LJO https://github.com/themactep/thingino-firmware/releases/download/firmware/thingino-teacup.bin
+curl -LJO https://github.com/themactep/thingino-firmware/releases/latest/download/thingino-teacup.bin
 truncate -s 256K thingino-teacup.bin
 flashcp ./thingino-teacup.bin /dev/mtd0
 ```
@@ -70,4 +71,4 @@ Thingino does not collect any data, metrics, or telemetry, ensuring your data re
 
 ### How to revert camera back to stock firmware?
 
-Place the original stock firmware backup file on an SD card and name as autoupdate-full.bin. Insert the card with the file into the camera and reboot.
+Place the original stock firmware backup file on an SD card and name as `autoupdate-full.bin`. Insert the card with the file into the camera and reboot.
