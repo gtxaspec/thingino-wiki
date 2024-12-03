@@ -43,3 +43,18 @@ Things to note about the process specific to this camera:
 [<img src="https://github.com/user-attachments/assets/1729af3b-43a1-4152-9cb5-1d9a4ea02d0d" width="200">](https://github.com/user-attachments/assets/1729af3b-43a1-4152-9cb5-1d9a4ea02d0d) <img src="https://camo.githubusercontent.com/851273986d66f0f08eedf08a68ab25da4d4acacd14912a5995d5a90dd0bae7b5/68747470733a2f2f7468696e67696e6f2e636f6d2f612f666c6173682d636869702d73686f72742e706e67" width="200">
 
 It should be noted that the Platform type is _t20_ when using the _usbcloner_, with _board _option _t20_sfc_nor_write_full.cfg_. Furthermore the _ops_ setting under the policy tab should be _SRC_NOR_.
+
+Videos
+------
+
+#### NEOS/Wyze V2 "No Tools" Installer Thanksgiving Update - Faster, easier, more reliable!
+
+[![NEOS/Wyze V2 "No Tools" Installer Thanksgiving Update - Faster, easier, more reliable!](https://img.youtube.com/vi/Ax6usUOjxkY/0.jpg)](https://youtu.be/Ax6usUOjxkY)
+
+#### Neos SmartCam - Continue using this camera after they shut it down! ONVIF & Home Assistant support!
+
+[![Neos SmartCam - Continue using this camera after they shut it down! ONVIF & Home Assistant support!](https://img.youtube.com/vi/YTFl2VkCLbM/0.jpg)](https://youtu.be/YTFl2VkCLbM)
+
+#### Neos SmartCam - firmware free upgrade to open source Thingino
+
+[![Neos SmartCam - firmware free upgrade to open source Thingino](https://img.youtube.com/vi/RkxzdsKsP8M/0.jpg)](https://youtu.be/RkxzdsKsP8M)
