@@ -64,6 +64,8 @@ Resources
 
 [Firmware analysis](https://github.com/poptix/seeeasynvr)
 
+[User Manual](https://pro5356451b-pic11.ysjianzhan.cn/upload/IVR6_0UserManuel20240228.pdf)
+
 ### 3D-Printed Shell
 
 ![image](https://github.com/user-attachments/assets/bf639f4b-febf-4d0a-b042-c191c088aaa0)
