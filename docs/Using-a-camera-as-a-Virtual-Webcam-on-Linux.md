@@ -27,6 +27,11 @@ This needs to keep running in the background to read the RTSP pipeline into the 
 
 ---
 
+accelerated :
+```
+gst-launch-1.0 rtspsrc location=rtsp://thingino:thingino@172.16.0.1/ch0 latency=0 buffer-mode=none ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=YUY2 ! v4l2sink device=/dev/video10 sync=false
+```
+
 ### Advanced configuration with audio
 
 ```
