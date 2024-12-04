@@ -79,6 +79,8 @@ The `sysupgrade` script automatically downloads the latest precompiled build for
    ```
    This command will fetch the latest partial upgrade from the GitHub repository and apply it, preserving your U-Boot environment.
 
+   -p wipes /overlay during an upgrade,  only settings in the environment (fw_printenv) are currently preserved 
+
 2. **Full Upgrade:**
    ```sh
    sysupgrade -f
