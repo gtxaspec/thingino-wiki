@@ -215,7 +215,7 @@ Note: Not all sensors supported on all SOC models
 **Atheros**  
 3. ATH9k  
 
-**Altobeam**  
+**Altobeam** [Vendor: 0x007a]  
 4. ATBM6011B  
 4. ATBM6012B  
 4. ATBM6012BX  
@@ -238,7 +238,7 @@ Note: Not all sensors supported on all SOC models
 **Mediatek**  
 9. MT7601  
 
-**Realtek**  
+**Realtek**  [Vendor: 0x024c]  
 10. RTL8188EU  
 11. RTL8188FTV  
 12. RTL8189ES  
