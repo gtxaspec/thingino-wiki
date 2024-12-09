@@ -5,7 +5,7 @@ Hardware
 --------
 
 - SoC: Ingenic A1
-- Connection: Etherenet RJ45
+- Connection: Ethernet RJ45
 - Output: HDMI and VGA
 - 2 USB ports
 - 3.5mm audio jack
