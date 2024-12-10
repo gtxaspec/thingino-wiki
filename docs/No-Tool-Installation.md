@@ -20,7 +20,7 @@ To verify which of the known SoCs was used in the Cinnado D1 the case needs to b
 
 ### Update Process
 
-The [Cinnado D1](https://www.cinnado.com/D1) stock bootloader will look for a file `v4_all.bin` which if present, will be used to replace the device's firmware.
+The [Cinnado D1](https://www.cinnado.com/D1) and [AOQEE C1](https://www.aoqee.com/C11pack) stock bootloaders will look for a file `v4_all.bin` which if present, will be used to replace the device's firmware.
 
 The steps would be as follows:
 
