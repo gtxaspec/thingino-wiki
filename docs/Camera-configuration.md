@@ -40,10 +40,15 @@ Copy the file to an SD card, insert the card into your camera and reboot.
 
 #### Night Mode
 
-- `day_night_min` - Gain value to switch to day mode
-- `day_night_max` - Gain value to switch to night mode
+- `day_night_min` - Gain value to switch to day mode, defaults to `15000`
+- `day_night_max` - Gain value to switch to night mode, defaults to `500`
+- `day_night_color` - Whether to enable black & white colors on night mode and disable on day mode, defaults to `false`
+- `day_night_ir850` - Whether to enable the 850nm IR LEDs on night mode and disable on day mode, defaults to `false`
+- `day_night_ir940` - Whether to enable the 940nm IR LEDs on night mode and disable on day mode, defaults to `false`
+- `day_night_ircut` - Whether to enable IRCUT on night mode and disable on day mode, defaults to `false`
+- `day_night_white` - Whether to enable the white light LED on night mode and disable on day mode, defaults to `false`
 - `gpio_ircut` - GPIO pins for IRCUT driver, can be one or two pins, depending on drive type
-- `gpio_ir850` - GPIO pin for 850nm IR LEDs 
+- `gpio_ir850` - GPIO pin for 850nm IR LEDs
 - `gpio_ir940` - GPIO pin for 940nm IR LEDs
 - `gpio_white` - GPIO pin for white light LEDs
 - `pwm_ch_ir850` - PWM Channel of 850nm IR LED
