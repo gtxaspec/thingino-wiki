@@ -35,7 +35,7 @@ unit capable of handling up to 16 IP cameras.
 - Device information: _<empty>_
 - Network type: _UDP_ or _TCP_
 - User name: _thingino_
-- Password: ## _thingino_ (or what you have changed it to)
+- Password: _thingino_ (or what you have changed it to)
 
 ## Playback
 
