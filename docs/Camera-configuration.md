@@ -40,8 +40,8 @@ Copy the file to an SD card, insert the card into your camera and reboot.
 
 #### Night Mode
 
-- `day_night_min` - Gain value to switch to day mode, defaults to `15000`
-- `day_night_max` - Gain value to switch to night mode, defaults to `500`
+- `day_night_min` - Gain value to switch to day mode, defaults to `500`
+- `day_night_max` - Gain value to switch to night mode, defaults to `15000`
 - `day_night_color` - Whether to enable black & white colors on night mode and disable on day mode, defaults to `false`
 - `day_night_ir850` - Whether to enable the 850nm IR LEDs on night mode and disable on day mode, defaults to `false`
 - `day_night_ir940` - Whether to enable the 940nm IR LEDs on night mode and disable on day mode, defaults to `false`
