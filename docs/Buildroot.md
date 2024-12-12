@@ -26,7 +26,7 @@ To recreate the `.config` file from the original camera configuration file and i
 
 ## local.fragment and local.mk
 
-We provide a file for local changes to a shared configuration. The `config/fragments/local.fragment` file can contain settings that should be included in a common config on the developer's machine, but don't go into the upstream repository. You can add additional packages there or override the default settings:
+We provide a file for local changes to a shared configuration. The `local.fragment` file in the root of the firmware directory can contain settings that should be included in a common config on the developer's machine, but don't go into the upstream repository. You can add additional packages there or override the default settings:
 
 ```
 BR2_PACKAGE_NANO=y
