@@ -83,3 +83,4 @@ cameras:
       1. Main RTSP Stream URL: `rtsp://[GO2RTC_IP]:8554/cam1`
       1. Substream RTSP Stream URL: `rtsp://[GO2RTC_IP]:8554/cam1_sub`
 - [Dummy MQTT switches](https://www.reddit.com/r/Scrypted/comments/ycmyyv/how_do_i_add_motion_sensor_trigger_via_mqtt/) can be configured in Scrypted to listen to Frigate MQTT motion events.
+- Adjust the sensor and fps to match a [HKSV supported frame rate](https://github.com/Supereg/secure-video-specification).
