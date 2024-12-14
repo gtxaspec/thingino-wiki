@@ -44,8 +44,16 @@ Things to note about the process specific to this camera:
 
 It should be noted that the Platform type is _t20_ when using the _usbcloner_, with _board _option _t20_sfc_nor_write_full.cfg_. Furthermore the _ops_ setting under the policy tab should be _SRC_NOR_.
 
-Videos
-------
+-----
+### Q & A  
+
+#### Does thingino work with the sensor accessories?
+
+No, not at the moment, they are unsupported as no one that has one has reversed engineered how they work.
+
+-----
+
+### Videos
 
 #### NEOS/Wyze V2 "No Tools" Installer Thanksgiving Update - Faster, easier, more reliable!
 
