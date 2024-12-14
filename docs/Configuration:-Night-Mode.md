@@ -58,7 +58,7 @@ Although infrared rays are abundant and inconvenient during the day, they are st
 
 There are at least two types of sliding mechanisms for moving the filter: a drawer type where the filter moves forward and backward, and a swing type where the filter rotates around a pivot point.
 
-A standard IR cut filter switcher designed for an IP camera operates on a voltage range of 3.3V to 12V DC and sends short pulses of 50 to 100 ms.
+A standard IR cut filter switcher designed for an IP camera operates on a voltage range of 3.3V to 5V DC and sends short pulses of 50 to 100 ms.
 
 The switcher is connected to the board via two wires and reverses direction based on polarity. GPIO pins control the polarity, so it is important to configure the correct pins in the camera settings.
 
@@ -69,7 +69,7 @@ An example of controlling the direction of a switcher with two GPIO pins:
 | GPIO 25     | LOW  | HIGH | HIGH | LOW  |
 | GPIO 26     | LOW  | LOW  | HIGH | HIGH |
 |-------------+------+------+------+------|
-| IRCUT PINS  |  0V  | +12V |   0V | -12V |
+| IRCUT PINS  |  0V  |  +5V |   0V |  -5V |
  ------------- ------ ------ ------ ------ 
 ```
 
