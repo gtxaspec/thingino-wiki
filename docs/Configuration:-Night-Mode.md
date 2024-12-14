@@ -8,7 +8,7 @@ Switching between night and day mode is controlled by the `/sbin/nightmode` scri
 
 The `nightmode` script reads the current gain value from the image sensor and compares it to two threshold values stored in the environment: `day_night_max` and `day_night_min`.
 
-![Screenshot-1731360180](https://github.com/user-attachments/assets/a01407c1-519c-4642-a721-17656b46d36d)
+![image](https://github.com/user-attachments/assets/11cb282d-eab6-47f5-b0c8-ab87dcda18e9)
 
 The gain value is opposite to the brightness of the scene. It is the amount of gain needed to normalize the image.
 
@@ -30,11 +30,17 @@ Night Mode:
 
 Each of the three components can be controlled separately by its own script.
 
+The `daynight` script toggles multiple components at once. You can choose which parameters to leave unchanged.
+For example, a camera placed behind a window will be blinded by IR LEDs reflecting off the glass, so you may want to uncheck the IR LED options in the form below.
+
+![image](https://github.com/user-attachments/assets/4c8c37fe-0f67-40a7-9d7d-e58d191936b3)
+
+
 ### Infrared/White Illumination
 
 The camera can have several illumination groups: IR LEDs of different wavelengths and/or white light LED. Infrared light of 850 nm can be seen with the naked eye, 940 nm is not seen by most people, but you can see it with a cell phone camera.
 
-![Screenshot-1731360972](https://github.com/user-attachments/assets/14800aba-3f1a-4020-96f1-ee2a3fd08e77)
+![image](https://github.com/user-attachments/assets/7728342d-f895-495b-807c-c25bc0dfd06e)
 
 `irled` controls the infrared illumination (IR LED) by setting a corresponding GPIO pin to a high or low state. Different cameras can have different schematics, and the LED can be activated either in high pin state or in low pin state. The correct control variant can be set in the form above with the `active low` checkbox for pins that activate the lighting in low state. If you want the lighting group to be active on boot, check the `lit on boot` checkbox and save the form.
 
@@ -75,7 +81,7 @@ An example of controlling the direction of a switcher with two GPIO pins:
 
 GPIO pins are set in the form below:
 
-![Screenshot-1731362654](https://github.com/user-attachments/assets/89e064a9-c9d9-4d1e-b15d-efa7ba9f161f)
+![image](https://github.com/user-attachments/assets/f3a428b3-9446-4d84-9281-d045ee8438d6)
 
 The voltage applied to the switch is controlled by the opposite states of the GPIO pins. The driver solenoid is a robust but fragile component that converts energy into motion. If the solenoid does not convert energy into motion, it will generate heat and may overheat or even burn.
 
