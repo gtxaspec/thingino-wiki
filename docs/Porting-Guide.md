@@ -87,3 +87,28 @@ where the letters following the pin numbers define the pin's direction and state
 - `i` means _input (both high and low)_
 
 After that, you need to define individual pins and create a configuration file as described on the [Camera Configuration](Camera-configuration) page.
+
+Finding GPIO
+-------------
+
+Sometimes it is impossible to gather information from the stock firmware, and we have to search for GPIO pins on an unknown hardware from withing a running barebone Thingino module image. In this case brute-force scanning is the easiest way to determine many of the pins. This simple one-liner will scan a sequence of pins from 1 to 10, print the pin number, then set the pin to High, and one second later to Low.
+
+```
+for x in $(seq 1 10); do echo $x; gpio set $x 1; sleep 1; gpio set $x 0; done
+```
+
+Using this script you can find IR cut filter, IR LEDs, indicator LEDs, maybe even speaker and Wi-Fi power pins.
+
+> [!CAUTION]  
+> Note that the IR cut filter is usually controlled by a pair of pins. Setting one high while leaving the other low will energize the solenoid that controls the filter movement and it will burn out if left energized for more than a few seconds.
+
+IR LEDs are usually have faint violet glow and almost invisible to a naked human eye. You can utilize a smartphone camera to see the LED lit.
+You can even use the IP camera itself pointing it to a reflective surface and monitoring the feed on the preview page in a web browser, or playing an rtsp stream in a video player.
+
+**IR LEDs in a reflection with the IR cut filter engaged**  
+![color-onircut-onirled-on](https://github.com/user-attachments/assets/8b1b6213-6a12-413b-8e20-e66019bd816c)
+
+**IR LEDs in a reflection without the IR cut filter**  
+![color-onircut-offirled-on](https://github.com/user-attachments/assets/2ec78c82-56ca-41e1-8b27-07b79a90a34b)
+
+
