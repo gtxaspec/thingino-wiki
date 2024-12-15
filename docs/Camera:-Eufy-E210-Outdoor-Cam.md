@@ -7,7 +7,7 @@ FCCID: `2AOKB-T8441`
 | Component      | Details          |
 |----------------|------------------|
 | **SoC**        | Ingenic T31X     |
-| **Sensor**     | SC3336           |
+| **Sensor**     | SC3338           |
 | **Flash**      | 32MB             |
 | **WiFi**       | bcm43438a1       |
 | **Ethernet**   | None             |
@@ -52,4 +52,4 @@ graph TD
 | IR LED ON      | Set (1)  | Set (1)  | Clear (0)| Set (1)  |
 | IR LED OFF     | Clear (0)| Clear (0)| Clear (0)| Clear (0)|
 | Both LEDs ON   | Set (1)  | Set (1)  | Set (1)  | Set (1)  |
-| Both LEDs OFF  | Set (1)  | Set (1)  | Clear (0)| Clear (0)|
+| Both LEDs OFF  | Clear (0)| Clear (0)| Clear (0)| Clear (0)|
