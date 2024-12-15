@@ -187,6 +187,9 @@ short pins 5 and 6 on the flash chip as described above.
 
 ### Videos
 
+#### Setting up Cloner on Windows 
+[![Setting up Cloner on Windows](https://i.ytimg.com/vi/GqStXVXOPWg/0.jpg)](https://youtu.be/GqStXVXOPWg)
+
 #### Flashing firmware with Cloner over USB
 
 [![Flashing firmware with Cloner over USB](https://img.youtube.com/vi/nqjejNizvC0/0.jpg)](https://youtu.be/nqjejNizvC0)  
