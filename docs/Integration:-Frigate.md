@@ -56,6 +56,8 @@ cameras:
           input_args: preset-rtsp-restream
           roles:
             - detect
+    live:
+      stream_name: cam1_sub
 ```
 
 - Ensure the preset-record-generic-audio-copy output argument is used to retain AAC audio.
