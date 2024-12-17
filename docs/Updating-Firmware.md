@@ -16,6 +16,14 @@ First, it’s important to understand the two approaches to updating the camera 
 
 2. **Full Update (upgrade):** This method includes the bootloader and environment, leaving the camera in a pristine state, similar to after a hard factory reset.
 
+### From the Web Interface
+
+Head to the "Tools > Sysupgrade Tool" within the web interface. The sysupgrade tool runs the sysupgrade command (see below) and posts the output of the command in the web page so you can see the progress of the upgrade.  
+
+![image](https://github.com/user-attachments/assets/da45b2d9-6386-422d-87bb-b07b1d0b698a)
+
+
+
 ### From the Development Environment
 
 During development, you may need to update or upgrade your firmware frequently. To make this process easier, two commands have been added to the Thingino makefile: `make update_ota` and `make upgrade_ota`. Both commands require the IP address of the camera as the value of the `IP=` argument. Note that the camera should be online to use this method.
