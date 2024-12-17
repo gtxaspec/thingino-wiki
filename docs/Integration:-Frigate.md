@@ -35,7 +35,7 @@ go2rtc:
 
 - cam1: Points to the primary RTSP stream (ch0).
 - cam1_sub: Points to the substream (ch1).
-- Increase the timeout parameter to ensure reliable connectivity for environments with variable network performance.
+- The default timeout of 5 seconds is not sufficient so 15 seconds is suggested instead. Increase the timeout parameter to ensure reliable connectivity for environments with variable network performance.
 
 ## Configure Frigate to Use go2rtc Streams
 Edit the Frigate configuration file (frigate.yml) to link the go2rtc streams:
