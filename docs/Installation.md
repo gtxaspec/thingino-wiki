@@ -128,7 +128,7 @@ reset
 Download the U-Boot image for your camera from https://github.com/gtxaspec/u-boot-ingenic/releases/, flash it to the first partition (mtd0), wipe the existing environment (mtd1) and reboot.
 
 ```
-root@openipc-t31:~# curl -L -s -o /tmp/uboot.bin https://github.com/gtxaspec/u-boot-ingenic/releases/download/latest/u-boot-t31l.bin
+root@openipc-t31:~# curl -L -s -o /tmp/uboot.bin https://github.com/gtxaspec/u-boot-ingenic/releases/latest/download/u-boot-isvp_t31_sfcnor_lite.bin
 root@openipc-t31:~# flashcp /tmp/uboot.bin /dev/mtd0
 root@openipc-t31:~# flash_eraseall /dev/mtd1
 root@openipc-t31:~# reboot
