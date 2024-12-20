@@ -5,13 +5,14 @@ The `FCC ID` on the label may be used to identify the correct image.  Full detai
 https://github.com/themactep/thingino-firmware/wiki/Camera:-Hualai-(Wyze,-Atom,-Neos,-Personal)#device-info  )  
 
 # General Tooling and Resources
-* [Automatic no-tools installer](https://youtu.be/3ajS7Xzlmis) (video walk through)
+* [wltechblog Automatic no-tools installer](https://youtu.be/3ajS7Xzlmis) (video walk through)
+* [wltechblog Installation Guide](https://github.com/wltechblog/thingino-installers/tree/main/wyze-cam-3)
 * [Non-Intrusive Installer](https://thingino.com/wyze-c3)
 * [Sample camera breakdown](https://github.com/themactep/thingino-firmware/wiki/Hardware-Identification)
 * [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner)
   *  [Flashing with Cloner (video)](https://www.youtube.com/watch?v=SJgadXkdwzw)
 * [Camera disassembly (video)](https://www.youtube.com/watch?v=VUTTJREU3mI)
-* [wltechblog Installation Guide](https://github.com/wltechblog/thingino-installers/tree/main/wyze-cam-3)
+* [WiFi Tips and Tricks](https://github.com/themactep/thingino-firmware/wiki/WiFi-Tips-and-Tricks#my-mac-address-has-changed)
 
 # LED states throughout boot process
 ##  Immediately after power
@@ -43,6 +44,47 @@ After initial power-on, the camera may be in one of these states:
 3. Blue LED slow blinking: loading init scripts (about 20-30 seconds)
 
 # Troubleshooting
+
+## USB NIC Disconnects:
+The Wyze v3 supports USB OTG (On The Go), so hardwired NICs can offer better reliability than 2.4GhZ WiFi.
+However, there have been some cases of USB NICs disconnecting.
+
+An open discussion thread exists for this at: https://github.com/themactep/thingino-firmware/discussions/335
+
+`dmesg` output for this issue will look something like this:
+```
+[49525.142850] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0002
+[49525.142897] hub 1-0:1.0: port 1, status 0000, change 0003, 12 Mb/s
+[49525.142912] usb 1-1: USB disconnect, device number 14
+[49525.142922] usb 1-1: unregistering device
+[49525.142933] usb 1-1: unregistering interface 1-1:1.0
+[49525.143074] asix 1-1:1.0 eth0: unregister 'asix' usb-dwc2-1, ASIX AX88772B USB 2.0 Ethernet
+[49525.178288] usb 1-1: usb_disable_device nuking all URBs
+[49525.344404] hub 1-0:1.0: debounce: port 1: total 100ms stable 100ms status 0x101
+[49525.534383] usb 1-1: new high-speed USB device number 15 using dwc2
+[49525.750682] usb 1-1: default language 0x0409
+[49525.756695] usb 1-1: device 0b95:772b detected via OTG
+[49525.756716] usb 1-1: udev 15, busnum 1, minor = 14
+[49525.756727] usb 1-1: New USB device found, idVendor=0b95, idProduct=772b
+[49525.756737] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[49525.756746] usb 1-1: Product: AX88772C
+[49525.756755] usb 1-1: Manufacturer: ASIX Elec. Corp.
+[49525.756763] usb 1-1: SerialNumber: 078741
+[49525.757257] usb 1-1: usb_probe_device
+[49525.757283] usb 1-1: configuration #1 chosen from 1 choice
+[49525.757849] usb 1-1: adding 1-1:1.0 (config #1, interface 0)
+[49525.760838] asix 1-1:1.0: usb_probe_interface
+[49525.760856] asix 1-1:1.0: usb_probe_interface - got id
+[49526.078384] asix 1-1:1.0 eth0: register 'asix' at usb-dwc2-1, ASIX AX88772B USB 2.0 Ethernet, 00:0e:c6:07:87:41
+[49526.078493] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0002
+[49526.078519] hub 1-0:1.0: port 1 enable change, status 00000503
+[49559.946117] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[49560.965445] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[49562.620497] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[49562.623048] asix 1-1:1.0 eth0: link up, 100Mbps, full-duplex, lpa 0xD1E1
+[50225.415976] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0002
+```
+
 
 ## Scenario: "Camera is Dead"
 
