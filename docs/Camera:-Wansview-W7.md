@@ -22,6 +22,7 @@ The second is:-    [this Galayou-Y4 labelled file](https://github.com/themactep/
 
 Both are 8MB files.  Whichever fie you use, it needs to be loaded onto the SD card as **"autoupdate-full.bin"**.
 
+### Context/Back-Story
 I actually purchased my Wansview W7 from Amazon here in Japan, in mid December 2024.  That camera wouldn't load the thingino-wansview_w7.bin file at all (the camera was left in the blue/red LED flash mode for half an hour).  After trying a couple of different SD cards (I suspected that the loader might not like my big, 64GB one) I did eventually see a change ...the camera would reset itself, the white LEDs would switch on for about 20 seconds and then everything would go dead (no red/blue LED, no captive-portal, nothing).  At this point I thought I'd bricked it.
 
 I hadn't taken any notice of the "Galayou" file on the download page, as my camera was labelled and sold as the Wansview W7 (right!?!), but at that point there was pretty much nothing to lose, so I copied the thingino-galayou_y4_t2n_atbm6062.bin over the autoupdate-full.bin file on my SD card, popped it back into the camera and powered-on.  A few seconds later, the blue/red flash sequence started up again, followed by a blue-only flash.  At this point I finally had a Thingino_XXXX captive-portal pop into my list of available access-points and everything from then was plain sailing.
@@ -29,4 +30,7 @@ I hadn't taken any notice of the "Galayou" file on the download page, as my came
 ### That "autoupdate-full" file
 
 If something goes wrong with your subsequent set-up, or perhaps you fat-fingered the captive-portal settings, all is not lost.  Pull your SD card back out of the camera and mount it on your PC.  You'll find that you have an extra file, named "autoupdate-full.done".  If you simply delete that file and re-insert the card, you get to make a fresh attempt at the install.  This won't help if you still have the wrong autoupdate-full.bin file, but it does help to short-circuit the SD-card re-write loop when you're trying to troubleshoot (and, of course, if the "autoupdate-full.done" file doesn't exist on your SD card, the camera hasn't attempted to do an update, so the card format may be bad, or perhaps one of the files hasn't been copied over correctly).
+
+See the [wiki "Automation" entry](https://github.com/themactep/thingino-firmware/wiki/Automation) for more information.
+
 
