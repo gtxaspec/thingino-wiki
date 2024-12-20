@@ -11,6 +11,7 @@ https://github.com/themactep/thingino-firmware/wiki/Camera:-Hualai-(Wyze,-Atom,-
 * [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner)
   *  [Flashing with Cloner (video)](https://www.youtube.com/watch?v=SJgadXkdwzw)
 * [Camera disassembly (video)](https://www.youtube.com/watch?v=VUTTJREU3mI)
+* [wltechblog Installation Guide](https://github.com/wltechblog/thingino-installers/tree/main/wyze-cam-3)
 
 # LED states throughout boot process
 ##  Immediately after power
