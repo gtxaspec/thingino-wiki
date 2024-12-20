@@ -79,6 +79,9 @@ Logs
 
 ### Vendor uboot log
 
+<details>
+  <summary>Click here</summary>
+
 ```
 U-Boot SPL 2013.07-g8581847-dirty (Aug 09 2021 - 18:07:12)
 Timer init
@@ -245,8 +248,12 @@ SF: 2031616 bytes @ 0x40000 Read: OK
 
 Starting kernel ...
 ```
+</details>
 
 ### Vendor kernel log
+
+<details>
+  <summary>Click here</summary>
 
 ```
 [    0.000000] Initializing cgroup subsys cpu
@@ -540,3 +547,4 @@ wlan0: AP-ENABLED
 [assis]WDG_CMD_FEED_DOG!!!!
 [   91.195015] SPEAKER CTL MODE0 !
 ```
+</details>

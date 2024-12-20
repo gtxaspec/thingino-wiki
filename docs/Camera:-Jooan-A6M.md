@@ -102,6 +102,9 @@ Logs
 
 ### Vendor uboot log
 
+<details>
+  <summary>Click here</summary>
+
 ```
 U-Boot SPL 2013.07-svn4700 (Dec 28 2023 - 19:36:40)
 Board info: T23N
@@ -158,10 +161,14 @@ SF: 1572864 bytes @ 0x48000 Read: OK
 
 Starting kernel ...
 ```
+</details>
 
 ### Vendor kernel log
 
 Change console=null to console=ttyS1,115200n8
+
+<details>
+  <summary>Click here</summary>
 
 ```
 Initializing cgroup subsys cpu
@@ -460,3 +467,4 @@ eth parter connected
  My_watch_dog run ok ======
  jooanipc run ok ======
 ```
+</details>
