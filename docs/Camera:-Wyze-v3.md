@@ -13,6 +13,7 @@ https://github.com/themactep/thingino-firmware/wiki/Camera:-Hualai-(Wyze,-Atom,-
   *  [Flashing with Cloner (video)](https://www.youtube.com/watch?v=SJgadXkdwzw)
 * [Camera disassembly (video)](https://www.youtube.com/watch?v=VUTTJREU3mI)
 * [WiFi Tips and Tricks](https://github.com/themactep/thingino-firmware/wiki/WiFi-Tips-and-Tricks#my-mac-address-has-changed)
+* [Frigate Integration](https://github.com/themactep/thingino-firmware/wiki/Integration:-Frigate)
 
 # LED states throughout boot process
 ##  Immediately after power
