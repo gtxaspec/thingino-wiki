@@ -1,5 +1,34 @@
 <img src="https://github.com/user-attachments/assets/7c084fde-ec2e-4ec5-b27d-ad2bd60e4c4f" width="400">
 
+Installation
+------------
+
+You can choose between:
+1. Quick installation method, which doesn't require dismantling the camera, but doesn't (fully) backup the original firmware
+2. Safe installation, which requires camera dismantling. Allows full backup of original firmware, and recovery from corrupted flash
+
+### Quick method
+
+See: https://github.com/Andrik45719/MJSXJ03HL
+
+### Safe method
+
+First, dismantle camera to access flash chip:
+- Gently warm up the front of the camera (where the lens is). See pictures below.
+- Using a utility knife or other pointed object, carefully pry off the front part. Remember, there are important wires under the front, don't damage them!
+- After the front part is removed, unscrew 2 screws holding the two halves of the camera together
+
+Then use either cloner or CH341 to backup and reprogram flash:
+- [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) + flash pin short trick and reprogram via USB port (requires a USB OTG port on the camera, USB cable with data lines), or:
+- [CH341 programming clip](https://github.com/themactep/thingino-firmware/wiki/CH341A-Programmer) on the chip on the board and re-program in place (requires a programmer and a clip).
+
+Videos
+------
+
+#### Xiaomi 2K IP camera MJSXJ03HL, Part 2 - Firmware Update and Integration with Home Assistant
+
+[![Xiaomi 2K IP camera MJSXJ03HL, Part 2 - Firmware Update and Integration with Home Assistant](https://img.youtube.com/vi/JKiatUTnPgo/0.jpg)](https://youtu.be/JKiatUTnPgo)
+
 Specifications
 --------------
 
@@ -33,36 +62,6 @@ Specifications
 * Ethernet interface: No
 * USB: Yes, USB type C, with data lines
 * Vendor app: [Mi Home](https://play.google.com/store/apps/details?id=com.xiaomi.smarthome) (not compatible with thingino)
-
-Installation
-------------
-
-You can choose between:
-1. Quick installation method, which doesn't require dismantling the camera, but doesn't (fully) backup the original firmware
-2. Safe installation, which requires camera dismantling. Allows full backup of original firmware, and recovery from corrupted flash
-
-### Quick method
-
-See: https://github.com/Andrik45719/MJSXJ03HL
-
-### Safe method
-
-First, dismantle camera to access flash chip:
-- Gently warm up the front of the camera (where the lens is). See pictures below.
-- Using a utility knife or other pointed object, carefully pry off the front part. Remember, there are important wires under the front, don't damage them!
-- After the front part is removed, unscrew 2 screws holding the two halves of the camera together
-
-Then use either cloner or CH341 to backup and reprogram flash:
-- [Ingenic USB Cloner](https://github.com/themactep/thingino-firmware/wiki/Ingenic-USB-Cloner) + flash pin short trick and reprogram via USB port (requires a USB OTG port on the camera, USB cable with data lines), or:
-- [CH341 programming clip](https://github.com/themactep/thingino-firmware/wiki/CH341A-Programmer) on the chip on the board and re-program in place (requires a programmer and a clip).
-
-Videos
-------
-
-#### Xiaomi 2K IP camera MJSXJ03HL, Part 2 - Firmware Update and Integration with Home Assistant
-
-[![Xiaomi 2K IP camera MJSXJ03HL, Part 2 - Firmware Update and Integration with Home Assistant](https://img.youtube.com/vi/JKiatUTnPgo/0.jpg)](https://youtu.be/JKiatUTnPgo)
-
 
 Pictures
 --------
