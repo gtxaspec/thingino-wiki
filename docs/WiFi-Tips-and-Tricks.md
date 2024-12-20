@@ -52,3 +52,9 @@ ap_info[OK]
 ```
 
 This will provide important details such as SSID, signal strength, and network activity.
+
+## My MAC address has changed?
+
+The Wi-Fi MAC address will never match the one printed on the device. Some vendors generate their own MAC addresses using logic tied to their cloud platform and their own OUI (Organizationally Unique Identifier). They don’t program or modify the MAC address burned into the Wi-Fi module (if it’s even programmed, which it sometimes isn’t).
+
+With Thingino, the MAC address is generated based on the serial number programmed into the CPU at the factory during production. This ensures a unique and consistent MAC address for each device. Unlike the vendors, this approach resolves issues where Wi-Fi or Ethernet MAC addresses change after every reboot. Even if you wipe and reinstall Thingino, it will always generate the same fixed MAC addresses.
