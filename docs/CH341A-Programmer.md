@@ -1,14 +1,11 @@
 Hardware
 --------
 
-There are several versions of the popular, inexpensive, and versatile 24/25 series EEPROM programmer.
+The older model CH341A, the black one with the gold edge is the most popular, the cheapest, and versatile 24/25 series EEPROM programmer.
 
 ![image](https://github.com/user-attachments/assets/ab1b6cb5-cccd-44a4-b933-a4b457d69084)
-![image](https://github.com/user-attachments/assets/e2baee8d-3608-408d-b7a2-e13c5eef96c3)
-![image](https://github.com/user-attachments/assets/a3c8fb22-236b-4282-9b92-2dad08301850)
-![image](https://github.com/user-attachments/assets/9282a191-ab3b-4426-a9d5-a32a7c8d57dd)
 
-Older model, the black one with the gold edge (rarely green with a silver edge), is the cheapest. But it has a nasty hardware quirk which [must be fixed](#fixing-higher-than-needed-dataline-voltage-bug) before you can use the programmer with any 3.3V flash chip.
+Most of these units have a nasty hardware quirk which [must be fixed](#fixing-higher-than-needed-dataline-voltage-bug) before you can use the programmer with any 3.3V flash chip.
 
 #### CH341A programmer
 
