@@ -83,7 +83,7 @@ GPIO pins are set in the form below:
 
 ![image](https://github.com/user-attachments/assets/f3a428b3-9446-4d84-9281-d045ee8438d6)
 
-The voltage applied to the switch is controlled by the opposite states of the GPIO pins. The driver solenoid is a robust but fragile component that converts energy into motion. If the solenoid does not convert energy into motion, it will generate heat and may overheat or even burn.
+The voltage applied to the switch is controlled by the opposite states of the GPIO pins. The driver solenoid is a physically robust but electrically fragile component that converts energy into motion. If the solenoid does not convert energy into motion, it will generate heat and may overheat or even burn.
 
 ![ircut-burned](https://github.com/user-attachments/assets/aa5c4c0d-9e25-40db-a03e-36add6505b6a)
 

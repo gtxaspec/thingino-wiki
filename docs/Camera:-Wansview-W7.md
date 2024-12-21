@@ -33,4 +33,8 @@ If something goes wrong with your subsequent set-up, or perhaps you fat-fingered
 
 See the [wiki "Automation" entry](https://github.com/themactep/thingino-firmware/wiki/Automation) for more information.
 
+### See Next
+
+[Configuring WiFi](https://github.com/themactep/thingino-firmware/wiki/Configuring-Wi%E2%80%90Fi-Access)
+
 
