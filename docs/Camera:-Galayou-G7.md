@@ -8,15 +8,13 @@
 
 ## SD Card Preparation
 
-1. Format your Micro SD card following [this guide](https://github.com/themactep/thingino-firmware/wiki/Boot:-MMC-SD)
-
-2. Download and write U-Boot to the SD card:
+1. Download and write U-Boot to the SD card, following [this guide](https://github.com/themactep/thingino-firmware/wiki/Boot:-MMC-SD):
    ```bash
    wget https://github.com/gtxaspec/u-boot-ingenic/releases/download/uboot-xb1-2024-12-19/u-boot-isvp_t23n_msc0_mmc1bit.bin
    dd if=u-boot-isvp_t23n_msc0_mmc1bit.bin of=/dev/sdX bs=512 seek=34
    ```
 
-3. Download the firmware and place it on the SD card:
+2. Download the firmware and place it on the SD card:
    ```bash
    wget https://github.com/themactep/thingino-firmware/releases/download/firmware-2024-12-20/thingino-galayou_g7_t23n_atbm6012bx.bin
    ```
