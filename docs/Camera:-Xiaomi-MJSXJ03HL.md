@@ -7,7 +7,7 @@ You can choose between:
 1. Quick installation method, which doesn't require dismantling the camera, but doesn't (fully) backup the original firmware
 2. Safe installation, which requires camera dismantling. Allows full backup of original firmware, and recovery from corrupted flash
 
-### Quick method
+### Quick method (updated: original bootloader dumps too)
 
 See: https://github.com/Andrik45719/MJSXJ03HL
 
