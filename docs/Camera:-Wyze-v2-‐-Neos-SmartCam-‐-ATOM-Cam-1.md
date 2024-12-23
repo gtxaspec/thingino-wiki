@@ -147,7 +147,7 @@ Now you have the device ready and understand how to short the pins, the driver r
 #### Flashing instructions 
 
 1. Remove the camera from USB. 
-2. Click Start on the USB cloner device, tail the log/window, observe the `start burner` message. (note: the device should not be connected to the computer yet) 
+2. Click Start on the cloner utility, tail the log/window, observe the `start burner` message. (note: the device should not be connected to the computer yet) 
 3. Bridge the pins 5&6 listed above. 
 4. Connect the USB device to the computer. 
 5. Wait 5-10 seconds with the connected pins, Observe the boot progress bar moving 
