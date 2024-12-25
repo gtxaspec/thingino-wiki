@@ -253,3 +253,5 @@ Note: Not all sensors supported on all SOC models
 **Sigmastar**  
 18. SSW101B  
 
+## WWAN Modems (GSM/LTE/5g)
+1. Yuga CLM920
